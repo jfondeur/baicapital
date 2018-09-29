@@ -25,11 +25,11 @@ get_template_part('include/hero');
                 <div class="col-12">
                     <h4 class="brown mb-3">
                     <?php
-                    if($currentlang == 'pt-br'):
-                        echo 'Projetos Disponíveis';
-                    elseif($currentlang == 'es'):
-                        echo 'Proyectos Disponibles';
-                    endif;
+                    if($currentlang == 'pt-br'){
+                         echo 'Projetos Disponíveis';
+                    }elseif($currentlang == 'es'){
+                        echo 'Projectos Disponibles';
+                    }
                     ?>
                     </h4>
                 </div>
