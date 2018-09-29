@@ -1,0 +1,60 @@
+header {
+  background: white;
+  .navbar {
+    .navbar-brand {
+      img {
+        max-width: 120px;
+      }
+    }
+    #menu-header {
+      @include breakpoint(md) {
+        margin-right: 20px;
+        li {
+          a {
+            font-size: 15px;
+            color: $primaryColor;
+          }
+        }
+      }
+    }
+    form {
+      input.form-control {
+        padding: 0 10px;
+        margin-bottom: 0 !important;
+      }
+      button.btn {
+        margin-bottom: 0 !important;
+      }
+    }
+    .dropdown-toggle::after {
+      display: none;
+    }
+    .dropdown-menu {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      padding: 0;
+      border-color: whitesmoke;
+      border-top: 0;
+      .dropdown-item {
+        @include breakpoint(md) {
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+        &:hover {
+          background: $primaryColor;
+          color: white !important;
+        }
+      }
+      .dropdown-item.active {
+        background: $primaryColor;
+        color: white !important;
+      }
+    }
+    //Boostrap menu hover
+    .dropdown:hover .dropdown-menu {
+      @include breakpoint(md) {
+        display: block;
+      }
+    }
+  }
+}

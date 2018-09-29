@@ -1,0 +1,44 @@
+body.page-template-page-investment {
+  .baiHero {
+    min-height: 500px;
+    display: flex;
+    background-position: center !important;
+    @include breakpoint(md) {
+      min-height: 600px;
+    }
+  }
+  .homeHero {
+    h2 {
+      color: white;
+      @include breakpoint(sm) {
+        // color: $primaryColor;
+      }
+    }
+    p {
+      color: white;
+      @include breakpoint(sm) {
+        // color: $primaryColor;
+      }
+    }
+    .row {
+      @include breakpoint(xs) {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+  .card {
+    ul {
+      .benefits {
+        i {
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+}
+
+// body.page-id-102 {
+//   .baiHero {
+//     background-position: bottom !important;
+//   }
+// }

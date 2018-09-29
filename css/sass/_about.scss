@@ -1,0 +1,48 @@
+body.page-id-8 {
+  .baiHero {
+    position: relative;
+    display: flex;
+    .heroSplitBg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 50%;
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+    h2 {
+      color: $primaryColor;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .baiTeam {
+    h2 {
+      color: $primaryColor;
+      border-bottom: 4px solid $primaryColor;
+      display: inline;
+    }
+    .teamMmeber {
+      div {
+        /* Rectangle 4: */
+        background: #fbfbfb;
+        box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.06);
+        border-radius: 14px;
+        padding: 20px 15px;
+        h4 {
+          color: $primaryColor;
+          border-bottom: 4px solid $primaryColor;
+          display: inline;
+          text-transform: uppercase;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

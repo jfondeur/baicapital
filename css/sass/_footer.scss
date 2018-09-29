@@ -1,0 +1,45 @@
+footer.footer {
+  div.d-flex {
+    flex-direction: column;
+    @include breakpoint(md) {
+      flex-direction: row;
+    }
+  }
+  div[class*="footer"] {
+    width: 100%;
+    @include breakpoint(md) {
+      width: calc(70% / 4);
+    }
+    text-align: left;
+    .footerLogo {
+      width: 30%;
+      margin-bottom: 20px;
+      @include breakpoint(xs) {
+      }
+      @include breakpoint(md) {
+        width: 70%;
+      }
+    }
+    a {
+      color: initial;
+      font-size: 14px;
+    }
+  }
+  .newsletter {
+    text-align: left;
+    width: 60% !important;
+    margin-top: 20px;
+    @include breakpoint(md) {
+      margin-top: 0;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .copyright {
+    font-size: 14px;
+    a {
+      color: $primaryColor;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+body.page-template-page-contact {
+  //form
+  .gform_wrapper {
+    .gform_footer {
+      text-align: center;
+      input[type="submit"] {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: 0.25rem;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        background-color: $primaryColor;
+        color: white;
+        display: inline-block;
+        width: 50%;
+        margin: auto;
+      }
+    }
+
+    .validation_error {
+      color: red;
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .validation_message {
+      color: red;
+      font-size: 12px;
+    }
+    .gform_fields {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      label {
+        color: $primaryColor;
+        font-weight: 500;
+      }
+      .gfield {
+        flex-grow: 1;
+        width: 50%;
+        margin-bottom: 15px;
+        input {
+          width: 95%;
+          display: block;
+          height: calc(2.25rem + 2px);
+          padding: 0.375rem 0.75rem;
+          font-size: 1rem;
+          line-height: 1.5;
+          color: #495057;
+          background-color: #fff;
+          background-clip: padding-box;
+          border: 1px solid #ced4da;
+          border-radius: 0.25rem;
+          transition: border-color 0.15s ease-in-out,
+            box-shadow 0.15s ease-in-out;
+        }
+        textarea {
+          width: 97%;
+          height: 200px;
+          display: block;
+          padding: 0.375rem 0.75rem;
+          font-size: 1rem;
+          line-height: 1.5;
+          color: #495057;
+          background-color: #fff;
+          background-clip: padding-box;
+          border: 1px solid #ced4da;
+          border-radius: 0.25rem;
+          transition: border-color 0.15s ease-in-out,
+            box-shadow 0.15s ease-in-out;
+        }
+      }
+      .gfield_error {
+        input,
+        textarea {
+          border-color: red;
+        }
+      }
+    }
+  }
+}
