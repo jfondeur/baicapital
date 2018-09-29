@@ -240,12 +240,12 @@ header .navbar .dropdown-menu .dropdown-item.active {
 }
 
 /* line 2, css/sass/_home.scss */
-body.page-id-6 section {
+body.home section {
   margin: 50px 0;
   padding: 100px 0;
 }
 /* line 7, css/sass/_home.scss */
-body.page-id-6 .baiHero {
+body.home .baiHero {
   display: flex;
   padding: 0;
   margin: 0;
@@ -254,42 +254,42 @@ body.page-id-6 .baiHero {
 }
 @media (min-width: 992px) {
   /* line 7, css/sass/_home.scss */
-  body.page-id-6 .baiHero {
+  body.home .baiHero {
     min-height: 600px;
   }
 }
 /* line 18, css/sass/_home.scss */
-body.page-id-6 .homeHero h2 {
+body.home .homeHero h2 {
   color: white;
 }
 @media (min-width: 768px) {
   /* line 18, css/sass/_home.scss */
-  body.page-id-6 .homeHero h2 {
+  body.home .homeHero h2 {
     color: #6b4c2d;
   }
 }
 /* line 24, css/sass/_home.scss */
-body.page-id-6 .homeHero p {
+body.home .homeHero p {
   color: white;
 }
 @media (min-width: 768px) {
   /* line 24, css/sass/_home.scss */
-  body.page-id-6 .homeHero p {
+  body.home .homeHero p {
     color: #6b4c2d;
   }
 }
 @media (max-width: 767px) {
   /* line 30, css/sass/_home.scss */
-  body.page-id-6 .homeHero .row {
+  body.home .homeHero .row {
     background-color: rgba(0, 0, 0, 0.2);
   }
 }
 /* line 37, css/sass/_home.scss */
-body.page-id-6 img.attachment-project {
+body.home img.attachment-project {
   height: initial !important;
 }
 /* line 40, css/sass/_home.scss */
-body.page-id-6 h4 {
+body.home h4 {
   margin-bottom: 15px;
 }
 
