@@ -1,6 +1,7 @@
 <?php 
 /* Template name: about */ 
 get_header();
+$currentlang = apply_filters( 'wpml_current_language', NULL );
  ?>
     <!-- hero -->
     <section class="baiHero aboutHero h-50 py-5 bg-light">
@@ -20,7 +21,15 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2 class="">Nossa Equipe</h2>
+                    <h2 class="">Nossa Equipe
+                    <?php
+                    if($currentlang == 'pt-br'){
+                         echo 'Nossa Equipe';
+                    }elseif($currentlang == 'es'){
+                        echo 'Nuestro Equipo';
+                    }
+                    ?>
+                    </h2>
                 </div>
             </div>
             <!-- Repeater loop -->

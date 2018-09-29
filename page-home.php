@@ -28,7 +28,7 @@ get_template_part('include/hero');
                     if($currentlang == 'pt-br'){
                          echo 'Projetos Disponíveis';
                     }elseif($currentlang == 'es'){
-                        echo 'Projectos Disponibles';
+                        echo 'Proyectos Disponibles';
                     }
                     ?>
                     </h4>
