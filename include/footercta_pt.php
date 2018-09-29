@@ -26,6 +26,3 @@ $currentlang = apply_filters( 'wpml_current_language', NULL );
             </div>
         </div>
     </section>
-
-    Nuestros consultores apoyan los inversores de América Latina en español y portugués
-    Nossos consultores apoiam investidores latino-americanos em espanhol e português
