@@ -1,5 +1,7 @@
-<?php /* Template name: homepage */ get_header(); ?>    
-    <?php get_template_part('include/hero'); ?>
+<?php /* Template name: homepage */ get_header();
+$currentlang = apply_filters( 'wpml_current_language', NULL );
+get_template_part('include/hero');
+?>    
 
     <!-- SalesPitch -->
     <section class="py-5 my-5">
@@ -21,7 +23,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h4 class="brown mb-3">Projetos Disponíveis</h4>
+                    <h4 class="brown mb-3">
+                    <?php
+                    if($currentlang == 'pt-br'):
+                        echo 'Projetos Disponíveis';
+                    elseif($currentlang == 'es-es'):
+                        echo 'Proyectos Disponibles';
+                    endif;
+                    ?>
+                    </h4>
                 </div>
             </div>
             <!-- Loop -->
