@@ -24,7 +24,7 @@ body.home {
     p {
       color: white;
       @include breakpoint(sm) {
-        color: $primaryColor;
+        // color: $primaryColor;
       }
     }
     .row {
