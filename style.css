@@ -262,12 +262,6 @@ body.home .baiHero {
 body.home .homeHero h2 {
   color: white;
 }
-@media (min-width: 768px) {
-  /* line 18, css/sass/_home.scss */
-  body.home .homeHero h2 {
-    color: #6b4c2d;
-  }
-}
 /* line 24, css/sass/_home.scss */
 body.home .homeHero p {
   color: white;
