@@ -48,8 +48,6 @@ get_header();
                                     <h5 class="card-title"><?php echo $project_title;?></h5>
                                 </a>
                             </div>
-                            <p class="card-text"><?php echo $c[0]->cat_name; ?></p>
-                            <a href="<?php echo $link; ?>" class="btn btn-primary btn-sm">Go somewhere</a>
                         </div>
                     </div>
                 </div>
