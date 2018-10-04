@@ -468,24 +468,28 @@ body.page-template-page-contact .gform_wrapper .validation_message {
   font-size: 12px;
 }
 /* line 41, css/sass/_contact.scss */
+body.page-template-page-contact .gform_wrapper .gform_hidden {
+  display: none;
+}
+/* line 44, css/sass/_contact.scss */
 body.page-template-page-contact .gform_wrapper .gform_fields {
   list-style: none;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
 }
-/* line 46, css/sass/_contact.scss */
+/* line 49, css/sass/_contact.scss */
 body.page-template-page-contact .gform_wrapper .gform_fields label {
   color: #6b4c2d;
   font-weight: 500;
 }
-/* line 50, css/sass/_contact.scss */
+/* line 53, css/sass/_contact.scss */
 body.page-template-page-contact .gform_wrapper .gform_fields .gfield {
   flex-grow: 1;
   width: 50%;
   margin-bottom: 15px;
 }
-/* line 54, css/sass/_contact.scss */
+/* line 57, css/sass/_contact.scss */
 body.page-template-page-contact .gform_wrapper .gform_fields .gfield input {
   width: 95%;
   display: block;
@@ -500,7 +504,7 @@ body.page-template-page-contact .gform_wrapper .gform_fields .gfield input {
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-/* line 69, css/sass/_contact.scss */
+/* line 72, css/sass/_contact.scss */
 body.page-template-page-contact .gform_wrapper .gform_fields .gfield textarea {
   width: 97%;
   height: 200px;
@@ -515,7 +519,7 @@ body.page-template-page-contact .gform_wrapper .gform_fields .gfield textarea {
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-/* line 86, css/sass/_contact.scss */
+/* line 89, css/sass/_contact.scss */
 body.page-template-page-contact .gform_wrapper .gform_fields .gfield_error input,
 body.page-template-page-contact .gform_wrapper .gform_fields .gfield_error textarea {
   border-color: red;

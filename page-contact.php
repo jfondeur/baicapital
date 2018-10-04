@@ -1,6 +1,13 @@
 <?php 
 /* Template name: Contact */ 
 get_header();
+global $utms;
+
+    if(isset($_COOKIE['leadsource'])) {
+        $leadsource = esc_url($_COOKIE['leadsource']);
+    } elseif(isset($_SERVER['HTTP_REFERER'])){
+        $leadsource = $_SERVER['HTTP_REFERER'];
+    };
 $currentlang = apply_filters( 'wpml_current_language', NULL );
  ?>
 
