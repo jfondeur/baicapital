@@ -2,12 +2,20 @@
 /* Template name: Contact */ 
 get_header();
 global $utms;
+if(isset($_COOKIE['leadsource'])) {
+    $leadsource = esc_url($_COOKIE['leadsource']);
+} elseif(isset($_SERVER['HTTP_REFERER'])){
+    $leadsource = $_SERVER['HTTP_REFERER'];
+};
 
-    if(isset($_COOKIE['leadsource'])) {
-        $leadsource = esc_url($_COOKIE['leadsource']);
-    } elseif(isset($_SERVER['HTTP_REFERER'])){
-        $leadsource = $_SERVER['HTTP_REFERER'];
-    };
+if (isset($utms)){ $source = $utms[0]; }
+if (isset($utms)){ $medium = $utms[1]; }
+if (isset($utms)){ $campaign = $utms[2]; }
+if (isset($utms)){ $term = $utms[3]; }
+if (isset($utms)){ $content = $utms[4]; }
+if (isset($leadsource)){ $urlSource = $leadsource; }
+
+
 $currentlang = apply_filters( 'wpml_current_language', NULL );
  ?>
 
@@ -20,7 +28,16 @@ $currentlang = apply_filters( 'wpml_current_language', NULL );
      </div>
      <div class="row justify-content-center">
          <div class="col-md-8">
-             <?php echo do_shortcode('[gravityform id="1" field_values="language=' . $currentlang . '" title="false" description="false" ]')?>
+             <?php echo do_shortcode('[gravityform id="1"
+              field_values="
+                language=' . $currentlang . ', 
+                campaign=' . $campaign . ',
+                source=' . $source . ',
+                medium=' . $medium . ',
+                term=' . $term . ',
+                content=' . $content . ',
+                url_source=' . $urlSource. '" 
+                title="false" description="false" ]')?>
          </div>
      </div>
  </section>
