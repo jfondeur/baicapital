@@ -36,7 +36,7 @@ $currentlang = apply_filters( 'wpml_current_language', NULL );
                 medium=' . $medium . ',
                 term=' . $term . ',
                 content=' . $content . ',
-                url_source=' . $urlSource. '" 
+                urlsource=' . $urlSource. '" 
                 title="false" description="false" ]')?>
          </div>
      </div>
