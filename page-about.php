@@ -21,7 +21,16 @@ $currentlang = apply_filters( 'wpml_current_language', NULL );
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2 class="">Nossa Equipe</h2>
+                    <h2 class="">
+                    <?php
+                    if($currentlang=='es'){
+                        echo 'Nuestro equipo';
+                    }
+                    elseif($currentlang=='pt-br'){
+                        echo 'Nossa Equipe';
+                    }
+                    ?>
+                    </h2>
                 </div>
             </div>
             <!-- Repeater loop -->
