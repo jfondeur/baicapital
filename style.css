@@ -282,12 +282,12 @@ body.home h4 {
 }
 
 /* line 2, css/sass/_about.scss */
-body.page-template-page-about .baiHero {
+body.page-id-8 .baiHero {
   position: relative;
   display: flex;
 }
 /* line 5, css/sass/_about.scss */
-body.page-template-page-about .baiHero .heroSplitBg {
+body.page-id-8 .baiHero .heroSplitBg {
   position: absolute;
   top: 0;
   right: 0;
@@ -296,26 +296,26 @@ body.page-template-page-about .baiHero .heroSplitBg {
 }
 @media (max-width: 768px) {
   /* line 5, css/sass/_about.scss */
-  body.page-template-page-about .baiHero .heroSplitBg {
+  body.page-id-8 .baiHero .heroSplitBg {
     display: none;
   }
 }
 /* line 15, css/sass/_about.scss */
-body.page-template-page-about .baiHero h2 {
+body.page-id-8 .baiHero h2 {
   color: #6b4c2d;
 }
 /* line 18, css/sass/_about.scss */
-body.page-template-page-about .baiHero p {
+body.page-id-8 .baiHero p {
   font-size: 14px;
 }
 /* line 24, css/sass/_about.scss */
-body.page-template-page-about .baiTeam h2 {
+body.page-id-8 .baiTeam h2 {
   color: #6b4c2d;
   border-bottom: 4px solid #6b4c2d;
   display: inline;
 }
 /* line 30, css/sass/_about.scss */
-body.page-template-page-about .baiTeam .teamMmeber div {
+body.page-id-8 .baiTeam .teamMmeber div {
   /* Rectangle 4: */
   background: #fbfbfb;
   box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.06);
@@ -323,14 +323,14 @@ body.page-template-page-about .baiTeam .teamMmeber div {
   padding: 20px 15px;
 }
 /* line 36, css/sass/_about.scss */
-body.page-template-page-about .baiTeam .teamMmeber div h4 {
+body.page-id-8 .baiTeam .teamMmeber div h4 {
   color: #6b4c2d;
   border-bottom: 4px solid #6b4c2d;
   display: inline;
   text-transform: uppercase;
 }
 /* line 42, css/sass/_about.scss */
-body.page-template-page-about .baiTeam .teamMmeber div p {
+body.page-id-8 .baiTeam .teamMmeber div p {
   font-size: 14px;
 }
 
