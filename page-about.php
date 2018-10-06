@@ -59,7 +59,7 @@ $currentlang = apply_filters( 'wpml_current_language', NULL );
             ?>
             <!-- Repeater loop -->
         </div>
-    </section>
+    </section> 
 
 <?php 
 
