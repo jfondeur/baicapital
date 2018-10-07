@@ -1,6 +1,7 @@
 <?php get_header(); 
 $location = get_field('location');
 $pc = get_the_category();
+global $currentlang;
 
 ?>
 
@@ -111,15 +112,23 @@ $pc = get_the_category();
 <div class="container my-5">
     <div class="row">
         <div class="col-md-12 text-center">
-            <h3 class="brown mb-4">Related News</h3>
+            <h3 class="brown mb-4"><?php
+                    if($currentlang=='es'){
+                        echo 'Articulos relacionados';
+                    }
+                    elseif($currentlang=='pt-br'){
+                        echo 'Artigos relacionados';
+                    }
+                    ?></h3>
         </div>
     </div>
     <?php
+    $currentID = get_the_ID();
             // Query Arguments
             $args = array(
                 'post_type' => array('post'),
                 'posts_per_page' => 3,
-                // 'orderby' => 'rand',
+                'post__not_in' => array($currentID),
             );
 
             // The Query
