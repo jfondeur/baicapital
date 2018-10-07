@@ -1,14 +1,29 @@
 <?php 
 /* Template name: Blog */ 
 get_header();
+global $curentlang;
  ?>
 
  <section>
      <div class="container my-5">
          <div class="row">
              <div class="col-md-12 text-center">
-                 <h1 class="brown">Recent news</h1>
-                 <p class="">Investment blog</p>
+                 <h1 class="brown"><?php
+                    if($currentlang=='es'){
+                        echo 'Noticias recientes';
+                    }
+                    elseif($currentlang=='pt-br'){
+                        echo 'Notícias recentes';
+                    }
+                    ?></h1>
+                 <p class=""><?php
+                    if($currentlang=='es'){
+                        echo 'Blog de inversión';
+                    }
+                    elseif($currentlang=='pt-br'){
+                        echo 'Blog de investimento';
+                    }
+                    ?></p>
 
              </div>
          </div>
