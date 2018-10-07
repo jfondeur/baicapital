@@ -185,11 +185,11 @@ header .navbar .navbar-brand img {
 }
 @media (min-width: 992px) {
   /* line 9, css/sass/_header.scss */
-  header .navbar .navbar-nav {
+  header .navbar ul[id*="menu-header"] {
     margin-right: 20px;
   }
   /* line 13, css/sass/_header.scss */
-  header .navbar .navbar-nav li a {
+  header .navbar ul[id*="menu-header"] li a {
     font-size: 15px;
     color: #6b4c2d;
   }
