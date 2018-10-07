@@ -1,6 +1,7 @@
 <?php 
 /* Template name: investment */ 
 get_header();
+$currentlang = apply_filters( 'wpml_current_language', NULL );
  ?>
     
     <?php get_template_part('include/hero'); ?>
