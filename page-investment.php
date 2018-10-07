@@ -53,7 +53,14 @@ get_header();
                 <div class="col-md-8 py-5">
                     <h4 class="brown mb-3"><?php the_sub_field('long_title') ?></h4>
                     <?php the_sub_field('long_description') ?>
-                    <h4 class="brown mt-5 mb-3">Available Projects</h4>
+                    <h4 class="brown mt-5 mb-3"><?php
+                    if($currentlang=='es'){
+                        echo 'Proyectos Disponibles';
+                    }
+                    elseif($currentlang=='pt-br'){
+                        echo 'Projetos Disponíveis';
+                    }
+                    ?></h4>
                     <?php
                     // Query Arguments
                     $args = array(
