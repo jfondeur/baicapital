@@ -6,7 +6,7 @@ header {
         max-width: 120px;
       }
     }
-    #menu-header {
+    .navbar-nav {
       @include breakpoint(md) {
         margin-right: 20px;
         li {
