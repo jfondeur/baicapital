@@ -7,6 +7,7 @@ if($id == 85):
 elseif($id == 108 ):
     $catName = "Equity";
 endif;
+global $currentlang;
  ?>
 
  <section>
@@ -14,7 +15,16 @@ endif;
          <div class="row">
              <div class="col-md-12 text-center">
                  <h1 class="brown"><?php the_title(); ?></h1>
-                 <p class="">Invista em Real Estate nos Estados Unidos com BAI Capital</p>
+                 <p class="">
+                 <?php
+                    if($currentlang=='es'){
+                        echo 'Invierta en propiedad inmobiliaria en los Estados Unidos con BAI Capital';
+                    }
+                    elseif($currentlang=='pt-br'){
+                        echo 'Invista em Real Estate nos Estados Unidos com BAI Capital';
+                    }
+                    ?>
+                 </p>
                  <!-- <div class="btn-group" role="group" aria-label="Basic example">
                     <button type="button" class="btn btn-secondary">All</button>
                     <button type="button" class="btn btn-secondary">EB5</button>

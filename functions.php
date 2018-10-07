@@ -585,4 +585,6 @@ if (isset($_SERVER['HTTP_REFERER'])){
 
     }
 }
+
+$currentlang = apply_filters( 'wpml_current_language', NULL );
 ?>
