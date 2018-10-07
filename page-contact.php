@@ -17,6 +17,13 @@ if (isset($leadsource)){ $urlSource = $leadsource; }
 
 
 $currentlang = apply_filters( 'wpml_current_language', NULL );
+
+if($currentlang == 'es'){
+    $gravityID = 2;
+}elseif ($currentlang == 'pt-br') {
+    $gravityID = 1;
+}
+
  ?>
 
  <section class="container py-5">
@@ -28,7 +35,7 @@ $currentlang = apply_filters( 'wpml_current_language', NULL );
      </div>
      <div class="row justify-content-center">
          <div class="col-md-8">
-             <?php echo do_shortcode('[gravityform id="1" field_values="language=' . $currentlang . '&campaign=' . $campaign . '&source=' . $source . '&medium=' . $medium . '&term=' . $term . '&content=' . $content . '&urlsource=' . $urlSource. '" title="false" description="false" ]')?>
+             <?php echo do_shortcode('[gravityform id="'.$gravityID.'" field_values="language=' . $currentlang . '&campaign=' . $campaign . '&source=' . $source . '&medium=' . $medium . '&term=' . $term . '&content=' . $content . '&urlsource=' . $urlSource. '" title="false" description="false" ]')?>
          </div>
      </div>
  </section>
