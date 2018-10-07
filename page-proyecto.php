@@ -69,7 +69,16 @@ global $currentlang;
                                 <p class="card-text"><?php echo $location->name; ?></p>
                             </div>
                             <p class="card-text"><?php echo $c[0]->cat_name; ?></p>
-                            <a href="<?php echo $link; ?>" class="btn btn-primary btn-sm">Learn more</a>
+                            <a href="<?php echo $link; ?>" class="btn btn-primary btn-sm">
+                            <?php
+                    if($currentlang=='es'){
+                        echo 'Más información';
+                    }
+                    elseif($currentlang=='pt-br'){
+                        echo 'Saber mais';
+                    }
+                    ?>
+                            </a>
                         </div>
                     </div>
                 </div>
