@@ -33,8 +33,8 @@ global $curentlang;
             // Query Arguments
             $args = array(
                 'post_type' => array('post'),
-                'posts_per_page' => 4,
-                'orderby' => 'rand',
+                'posts_per_page' => 10,
+                // 'orderby' => 'rand',
                 //'category_name' => $pc[0]->cat_name,
             );
 
@@ -46,7 +46,7 @@ global $curentlang;
             <div class="row">
             <?php while ( $projects->have_posts() ) : $projects->the_post(); 
             $i++;
-            $project_img_url = get_the_post_thumbnail_url(get_the_ID(),'large');
+            $project_img_url = get_the_post_thumbnail_url(get_the_ID(),'project');
             $project_title = get_the_title();
             $link = get_the_permalink();
             $c = get_the_category();

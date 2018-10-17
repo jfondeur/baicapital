@@ -165,6 +165,10 @@ img {
 .card {
   overflow: hidden;
   border-radius: 14px;
+  transition: box-shadow 0.2s; /* Animation */
+  &:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  }
   @include breakpoint(xs) {
     margin-bottom: 30px !important;
   }
@@ -174,6 +178,16 @@ img {
   .card-text {
     @include breakpoint(md) {
       //text-align: justify;
+    }
+  }
+  a {
+    display: block;
+    overflow: hidden;
+    img {
+      transition: transform 0.2s; /* Animation */
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 }
@@ -195,3 +209,16 @@ img {
 @import "projects";
 @import "contact";
 @import "footer";
+
+body.page-template-page-blog {
+  .card {
+    // @include breakpoint(md) {
+    //   min-height: 321px;
+    // }
+    .card-title {
+      @include breakpoint(md) {
+        min-height: 72px;
+      }
+    }
+  }
+}

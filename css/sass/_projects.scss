@@ -50,4 +50,35 @@ body.single {
       margin-bottom: 30px;
     }
   }
+  .relatedPost {
+    .card {
+      // @include breakpoint(md) {
+      //   min-height: 321px;
+      // }
+      .card-title {
+        @include breakpoint(md) {
+          min-height: 84px;
+        }
+      }
+    }
+  }
+  .sidebar {
+    @include breakpoint(md) {
+      border-left: 1px solid #d4d4d4;
+    }
+  }
+}
+
+body.page-template-page-proyecto,
+body.single-projects {
+  .card {
+    // @include breakpoint(md) {
+    //   min-height: 321px;
+    // }
+    .card-title {
+      @include breakpoint(md) {
+        min-height: 55px;
+      }
+    }
+  }
 }

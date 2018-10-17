@@ -29,9 +29,10 @@ if (function_exists('add_theme_support'))
     add_theme_support('post-thumbnails');
     add_image_size('large', 700, '', true); // Large Thumbnail
     add_image_size('medium', 250, '', true); // Medium Thumbnail
+    add_image_size('blog', 400, 200, true); // Medium Thumbnail
     add_image_size('small', 120, '', true); // Small Thumbnail
     add_image_size('custom-size', 700, 250, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
-    add_image_size('projects', 1920, 450, true);
+    add_image_size('projects', 1920, 550, true);
     add_image_size('project', 800, 450, true);
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use

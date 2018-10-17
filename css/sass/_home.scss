@@ -40,4 +40,17 @@ body.home {
   h4 {
     margin-bottom: 15px;
   }
+
+  .projectsModule {
+    .card {
+      // @include breakpoint(md) {
+      //   min-height: 321px;
+      // }
+      .card-title {
+        @include breakpoint(md) {
+          min-height: 55px;
+        }
+      }
+    }
+  }
 }

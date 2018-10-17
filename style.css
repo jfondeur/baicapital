@@ -158,6 +158,12 @@ img {
 .card {
   overflow: hidden;
   border-radius: 14px;
+  transition: box-shadow 0.2s;
+  /* Animation */
+}
+/* line 169, css/sass/style.scss */
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 @media (max-width: 767px) {
   /* line 165, css/sass/style.scss */
@@ -165,12 +171,26 @@ img {
     margin-bottom: 30px !important;
   }
 }
-/* line 171, css/sass/style.scss */
+/* line 175, css/sass/style.scss */
 .card .card-title {
   margin-right: 20px;
 }
+/* line 183, css/sass/style.scss */
+.card a {
+  display: block;
+  overflow: hidden;
+}
+/* line 186, css/sass/style.scss */
+.card a img {
+  transition: transform 0.2s;
+  /* Animation */
+}
+/* line 188, css/sass/style.scss */
+.card a img:hover {
+  transform: scale(1.2);
+}
 
-/* line 184, css/sass/style.scss */
+/* line 198, css/sass/style.scss */
 .projectsModule .card .card-body .badge {
   margin-bottom: 0 !important;
 }
@@ -282,6 +302,12 @@ body.home img.attachment-project {
 body.home h4 {
   margin-bottom: 15px;
 }
+@media (min-width: 992px) {
+  /* line 49, css/sass/_home.scss */
+  body.home .projectsModule .card .card-title {
+    min-height: 55px;
+  }
+}
 
 /* line 2, css/sass/_about.scss */
 body.page-template-page-about .baiHero {
@@ -334,6 +360,43 @@ body.page-template-page-about .baiTeam .teamMmeber div h4 {
 /* line 42, css/sass/_about.scss */
 body.page-template-page-about .baiTeam .teamMmeber div p {
   font-size: 14px;
+}
+/* line 49, css/sass/_about.scss */
+body.page-template-page-about .teamMembers .card {
+  background: #f7f7f7;
+  border-color: #f0ecec;
+}
+/* line 52, css/sass/_about.scss */
+body.page-template-page-about .teamMembers .card a {
+  display: block;
+  overflow: hidden;
+}
+/* line 55, css/sass/_about.scss */
+body.page-template-page-about .teamMembers .card a img {
+  transition: transform 0.2s;
+  /* Animation */
+}
+/* line 57, css/sass/_about.scss */
+body.page-template-page-about .teamMembers .card a img:hover {
+  transform: scale(1.2);
+}
+/* line 62, css/sass/_about.scss */
+body.page-template-page-about .teamMembers .card h5 {
+  margin-bottom: 1px;
+}
+@media (min-width: 768px) {
+  /* line 67, css/sass/_about.scss */
+  body.page-template-page-about .teamMembers .modal .modal-dialog {
+    max-width: 650px;
+  }
+}
+/* line 72, css/sass/_about.scss */
+body.page-template-page-about .teamMembers .modal .modal-header {
+  background: #6b4c2d;
+}
+/* line 74, css/sass/_about.scss */
+body.page-template-page-about .teamMembers .modal .modal-header h5 {
+  color: white;
 }
 
 /* line 2, css/sass/_investement.scss */
@@ -428,6 +491,26 @@ body.single .modal-body iframe {
   max-width: 100%;
   height: 280px;
   margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  /* line 58, css/sass/_projects.scss */
+  body.single .relatedPost .card .card-title {
+    min-height: 84px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 65, css/sass/_projects.scss */
+  body.single .sidebar {
+    border-left: 1px solid #d4d4d4;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 78, css/sass/_projects.scss */
+  body.page-template-page-proyecto .card .card-title,
+  body.single-projects .card .card-title {
+    min-height: 55px;
+  }
 }
 
 /* line 4, css/sass/_contact.scss */
@@ -587,4 +670,11 @@ footer.footer .copyright {
 /* line 41, css/sass/_footer.scss */
 footer.footer .copyright a {
   color: #6b4c2d;
+}
+
+@media (min-width: 992px) {
+  /* line 218, css/sass/style.scss */
+  body.page-template-page-blog .card .card-title {
+    min-height: 72px;
+  }
 }

@@ -45,4 +45,36 @@ body.page-template-page-about {
       }
     }
   }
+  .teamMembers {
+    .card {
+      background: #f7f7f7;
+      border-color: #f0ecec;
+      a {
+        display: block;
+        overflow: hidden;
+        img {
+          transition: transform 0.2s; /* Animation */
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+      h5 {
+        margin-bottom: 1px;
+      }
+    }
+    .modal {
+      .modal-dialog {
+        @include breakpoint(sm) {
+          max-width: 650px;
+        }
+      }
+      .modal-header {
+        background: $primaryColor;
+        h5 {
+          color: white;
+        }
+      }
+    }
+  }
 }
