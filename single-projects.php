@@ -14,14 +14,17 @@ global $currentlang;
 		<!-- article -->
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-            <div class="projectTop my-5 container">
+            <!-- <div class="projectTop my-5 container">
                 <div class="projectImage">
-                    <?php the_post_thumbnail('projects'); // Fullsize image for the single post ?>
+                    <?php //the_post_thumbnail('projects'); // Fullsize image for the single post ?>
                 </div>
-            </div>
-            <div class="container projectContent">
+            </div> -->
+            <div class="container projectContent mt-4">
                 <div class="row">
                     <div class="col-md-8">
+                    <div class="projectImage">
+                    <?php the_post_thumbnail('projects'); // Fullsize image for the single post ?>
+                </div>
                         <span class="projectCat"><?php echo $pc[0]->name; ?></span>
                         <span class="projectLocation"><?php echo $location->name; ?></span>
                         <h1 class="brown"><?php the_title(); ?></h1>

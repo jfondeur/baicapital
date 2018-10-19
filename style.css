@@ -430,6 +430,23 @@ body.page-template-page-investment .card ul .benefits i {
   color: #6b4c2d;
 }
 
+/* line 45, css/sass/_investement.scss */
+.faqs {
+  margin-top: 20px;
+}
+/* line 47, css/sass/_investement.scss */
+.faqs .card {
+  box-shadow: none;
+  margin-bottom: 20px;
+}
+/* line 51, css/sass/_investement.scss */
+.faqs .card .card-header button {
+  text-align: left;
+  width: 100%;
+  text-decoration: none;
+  color: #6b4c2d;
+}
+
 /* line 2, css/sass/_projects.scss */
 body.single .projectTop {
   position: relative;

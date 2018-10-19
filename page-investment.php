@@ -118,5 +118,52 @@ $currentlang = apply_filters( 'wpml_current_language', NULL );
             ?>
             <!-- Repeater loop -->
     </section>
+    <?php if(get_field('faqs')): ?>
+    <section class="my-3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="brown text-center"><?php 
+                    if($currentlang=='es'){
+                        echo 'Perguntas Frequentes';
+                    }
+                    elseif($currentlang=='pt-br'){
+                        echo 'Perguntas Frequentes';
+                    }?>
+                    </h2>
+                    <div class="faqs">
+                        <div id="accordion">
+                        <?php
+
+                            // check if the repeater field has rows of data
+                            if( have_rows('faqs') ):
+                                // loop through the rows of data
+                                while ( have_rows('faqs') ) : the_row();  $f++;
+                        ?>
+
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne<?php echo $f; ?>" aria-expanded="true" aria-controls="collapseOne<?php echo $f; ?>">
+                                    <?php the_sub_field('question');?>
+                                    </button>
+                                
+                                </div>
+                                <div id="collapseOne<?php echo $f; ?>" class="collapse <?php if($f == 1): echo "show"; endif;?>" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <?php the_sub_field('answer');?>
+                                </div>
+                                </div>
+                            </div>
+                        
+                        <?php endwhile;endif;?>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <?php endif;?>
 
 <?php get_footer(); ?>

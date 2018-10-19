@@ -42,3 +42,18 @@ body.page-template-page-investment {
 //     background-position: bottom !important;
 //   }
 // }
+.faqs {
+  margin-top: 20px;
+  .card {
+    box-shadow: none;
+    margin-bottom: 20px;
+    .card-header {
+      button {
+        text-align: left;
+        width: 100%;
+        text-decoration: none;
+        color: $primaryColor;
+      }
+    }
+  }
+}
