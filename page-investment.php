@@ -122,7 +122,7 @@ $currentlang = apply_filters( 'wpml_current_language', NULL );
     <section class="my-3">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-8">
+                <div class="col-md-10">
                     <h2 class="brown text-center"><?php 
                     if($currentlang=='es'){
                         echo 'Perguntas Frequentes';
@@ -143,11 +143,9 @@ $currentlang = apply_filters( 'wpml_current_language', NULL );
 
                             <div class="card">
                                 <div class="card-header" id="headingOne">
-                                
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne<?php echo $f; ?>" aria-expanded="true" aria-controls="collapseOne<?php echo $f; ?>">
-                                    <?php the_sub_field('question');?>
-                                    </button>
-                                
+                                    <a class="link" data-toggle="collapse" href="#collapseOne<?php echo $f; ?>" role="button" aria-expanded="false" aria-controls="collapseOne<?php echo $f; ?>">
+                                        <?php echo $f; ?>. <?php the_sub_field('question');?>
+                                    </a>
                                 </div>
                                 <div id="collapseOne<?php echo $f; ?>" class="collapse <?php if($f == 1): echo "show"; endif;?>" aria-labelledby="headingOne" data-parent="#accordion">
                                 <div class="card-body">
