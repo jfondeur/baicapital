@@ -588,4 +588,14 @@ if (isset($_SERVER['HTTP_REFERER'])){
 }
 
 $currentlang = apply_filters( 'wpml_current_language', NULL );
+
+function content($pt,$en,$es) {
+	$langs = apply_filters( 'wpml_current_language', NULL );
+    if($langs=='pt-br'): echo $pt;
+    elseif($lans=='en'):echo $en;
+    elseif($langs=='es'):echo $es;
+    endif;
+}
+//add_action( 'wp_head', 'content' );
+
 ?>

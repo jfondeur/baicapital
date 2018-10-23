@@ -55,14 +55,17 @@ global $currentlang;
                         </div>
                     </div>
                     <div class="col-md-4 sidebar">
+                        <?php if(get_field('url')): ?>
                         <h5 class="brown">Baixar Apresentação</h5>
-                        <p>For more details download the project brochure</p>
-                        <?php get_template_part('include/optin')?>
+                        <p><?php content('Para mais detalhes, baixe o folheto do projeto','EN','Para mas detalles descarge el formulario')?></p>
+                        <?php 
+                        echo do_shortcode('[gravityform id="3" title="false" description="true" ajax="false"]');
+                        //get_template_part('include/optin')
+                        endif;?>
                         <?php if(get_field('video_button')):?>
                         <h5 class="brown mb-3 mt-5">Videos</h5>
                         <p><a href="#" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-file-video"></i> <?php the_field('video_button')?></a></p>
                         <!-- Button trigger modal -->
-
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">

@@ -1,22 +1,36 @@
 body.page-template-page-about {
   .baiHero {
-    position: relative;
+    min-height: 500px;
     display: flex;
-    .heroSplitBg {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 100%;
-      width: 50%;
-      @media (max-width: 768px) {
-        display: none;
+    background-position: center !important;
+    //height: 100vh !important;
+    @include breakpoint(md) {
+      min-height: 600px;
+    }
+  }
+  .homeHero {
+    h2 {
+      color: white;
+      @include breakpoint(md) {
+        //font-size: 60px;
       }
     }
+    p {
+      color: white;
+      @include breakpoint(sm) {
+        // color: $primaryColor;
+      }
+    }
+    .row {
+      @include breakpoint(xs) {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  section.about {
     h2 {
       color: $primaryColor;
-    }
-    p {
-      font-size: 14px;
     }
   }
 

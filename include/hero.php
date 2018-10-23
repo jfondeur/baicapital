@@ -4,8 +4,13 @@
             <div class="row align-items-center h-100">
                 <div class="col-md-6">
                     <h2 class=""><?php the_field('hero_heading') ?></h2>
-                    <p><?php the_field('hero_text') ?></p>
-                    <?php get_template_part('include/optin')?>
+                    <p><?php the_field('hero_text') ; ?></p>
+
+                    <?php 
+                    if ( !is_page_template( 'page-about.php' ) ) {
+                           get_template_part('include/optin');
+                        }
+                    ?>
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 body.home {
   section {
-    margin: 50px 0;
-    padding: 100px 0;
+    //margin: 50px 0;
+    padding: 55px 0;
   }
 
   .baiHero {
@@ -10,6 +10,7 @@ body.home {
     margin: 0;
     min-height: 400px;
     background-position: center !important;
+    //height: 100vh !important;
     @include breakpoint(md) {
       min-height: 600px;
     }
@@ -17,8 +18,8 @@ body.home {
   .homeHero {
     h2 {
       color: white;
-      @include breakpoint(sm) {
-        //color: $primaryColor;
+      @include breakpoint(md) {
+        //font-size: 40px;
       }
     }
     p {

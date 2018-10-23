@@ -44,7 +44,7 @@ global $currentlang;
                             // Query Arguments
                             $args = array(
                                 'post_type' => array('post'),
-                                'posts_per_page' => 3,
+                                'posts_per_page' => 2,
                                 'post__not_in' => array($currentID),
                             );
 
@@ -85,6 +85,15 @@ global $currentlang;
 				
 					<?php wp_reset_postdata();?>
 					<!-- Loop -->
+                    <br>
+                        <?php if($currentlang=='es'){
+                            //facebook ES
+                            echo '<div class="fb-page" data-href="https://www.facebook.com/baicapitallatam/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/baicapitallatam/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/baicapitallatam/">Become American Investor Es</a></blockquote></div>';
+                        }
+                        elseif($currentlang=='pt-br'){
+                            //facebook PT-BR
+                            echo '<div class="fb-page" data-href="https://www.facebook.com/baicapitalbrasil/" data-tabs="timeline" data-width="350px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/baicapitalbrasil/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/baicapitalbrasil/">Become American Investor</a></blockquote></div>';
+                        }?>
                     </div>
                 </div>
             </div>

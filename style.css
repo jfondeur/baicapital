@@ -263,8 +263,7 @@ header .navbar .dropdown-menu .dropdown-item.active {
 
 /* line 2, css/sass/_home.scss */
 body.home section {
-  margin: 50px 0;
-  padding: 100px 0;
+  padding: 55px 0;
 }
 /* line 7, css/sass/_home.scss */
 body.home .baiHero {
@@ -280,30 +279,30 @@ body.home .baiHero {
     min-height: 600px;
   }
 }
-/* line 18, css/sass/_home.scss */
+/* line 19, css/sass/_home.scss */
 body.home .homeHero h2 {
   color: white;
 }
-/* line 24, css/sass/_home.scss */
+/* line 25, css/sass/_home.scss */
 body.home .homeHero p {
   color: white;
 }
 @media (max-width: 767px) {
-  /* line 30, css/sass/_home.scss */
+  /* line 31, css/sass/_home.scss */
   body.home .homeHero .row {
     background-color: rgba(0, 0, 0, 0.2);
   }
 }
-/* line 37, css/sass/_home.scss */
+/* line 38, css/sass/_home.scss */
 body.home img.attachment-project {
   height: initial !important;
 }
-/* line 40, css/sass/_home.scss */
+/* line 41, css/sass/_home.scss */
 body.home h4 {
   margin-bottom: 15px;
 }
 @media (min-width: 992px) {
-  /* line 49, css/sass/_home.scss */
+  /* line 50, css/sass/_home.scss */
   body.home .projectsModule .card .card-title {
     min-height: 55px;
   }
@@ -311,38 +310,41 @@ body.home h4 {
 
 /* line 2, css/sass/_about.scss */
 body.page-template-page-about .baiHero {
-  position: relative;
+  min-height: 500px;
   display: flex;
+  background-position: center !important;
 }
-/* line 5, css/sass/_about.scss */
-body.page-template-page-about .baiHero .heroSplitBg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 50%;
-}
-@media (max-width: 768px) {
-  /* line 5, css/sass/_about.scss */
-  body.page-template-page-about .baiHero .heroSplitBg {
-    display: none;
+@media (min-width: 992px) {
+  /* line 2, css/sass/_about.scss */
+  body.page-template-page-about .baiHero {
+    min-height: 600px;
   }
 }
-/* line 15, css/sass/_about.scss */
-body.page-template-page-about .baiHero h2 {
-  color: #6b4c2d;
+/* line 12, css/sass/_about.scss */
+body.page-template-page-about .homeHero h2 {
+  color: white;
 }
 /* line 18, css/sass/_about.scss */
-body.page-template-page-about .baiHero p {
-  font-size: 14px;
+body.page-template-page-about .homeHero p {
+  color: white;
 }
-/* line 24, css/sass/_about.scss */
+@media (max-width: 767px) {
+  /* line 24, css/sass/_about.scss */
+  body.page-template-page-about .homeHero .row {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+/* line 32, css/sass/_about.scss */
+body.page-template-page-about section.about h2 {
+  color: #6b4c2d;
+}
+/* line 38, css/sass/_about.scss */
 body.page-template-page-about .baiTeam h2 {
   color: #6b4c2d;
   border-bottom: 4px solid #6b4c2d;
   display: inline;
 }
-/* line 30, css/sass/_about.scss */
+/* line 44, css/sass/_about.scss */
 body.page-template-page-about .baiTeam .teamMmeber div {
   /* Rectangle 4: */
   background: #fbfbfb;
@@ -350,51 +352,51 @@ body.page-template-page-about .baiTeam .teamMmeber div {
   border-radius: 14px;
   padding: 20px 15px;
 }
-/* line 36, css/sass/_about.scss */
+/* line 50, css/sass/_about.scss */
 body.page-template-page-about .baiTeam .teamMmeber div h4 {
   color: #6b4c2d;
   border-bottom: 4px solid #6b4c2d;
   display: inline;
   text-transform: uppercase;
 }
-/* line 42, css/sass/_about.scss */
+/* line 56, css/sass/_about.scss */
 body.page-template-page-about .baiTeam .teamMmeber div p {
   font-size: 14px;
 }
-/* line 49, css/sass/_about.scss */
+/* line 63, css/sass/_about.scss */
 body.page-template-page-about .teamMembers .card {
   background: #f7f7f7;
   border-color: #f0ecec;
 }
-/* line 52, css/sass/_about.scss */
+/* line 66, css/sass/_about.scss */
 body.page-template-page-about .teamMembers .card a {
   display: block;
   overflow: hidden;
 }
-/* line 55, css/sass/_about.scss */
+/* line 69, css/sass/_about.scss */
 body.page-template-page-about .teamMembers .card a img {
   transition: transform 0.2s;
   /* Animation */
 }
-/* line 57, css/sass/_about.scss */
+/* line 71, css/sass/_about.scss */
 body.page-template-page-about .teamMembers .card a img:hover {
   transform: scale(1.2);
 }
-/* line 62, css/sass/_about.scss */
+/* line 76, css/sass/_about.scss */
 body.page-template-page-about .teamMembers .card h5 {
   margin-bottom: 1px;
 }
 @media (min-width: 768px) {
-  /* line 67, css/sass/_about.scss */
+  /* line 81, css/sass/_about.scss */
   body.page-template-page-about .teamMembers .modal .modal-dialog {
     max-width: 650px;
   }
 }
-/* line 72, css/sass/_about.scss */
+/* line 86, css/sass/_about.scss */
 body.page-template-page-about .teamMembers .modal .modal-header {
   background: #6b4c2d;
 }
-/* line 74, css/sass/_about.scss */
+/* line 88, css/sass/_about.scss */
 body.page-template-page-about .teamMembers .modal .modal-header h5 {
   color: white;
 }
@@ -532,11 +534,11 @@ body.single .modal-body iframe {
 }
 
 /* line 4, css/sass/_contact.scss */
-body.page-template-page-contact .gform_wrapper .gform_footer {
+.gform_wrapper .gform_footer {
   text-align: center;
 }
 /* line 6, css/sass/_contact.scss */
-body.page-template-page-contact .gform_wrapper .gform_footer input[type="submit"] {
+.gform_wrapper .gform_footer input[type="submit"] {
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -559,41 +561,41 @@ body.page-template-page-contact .gform_wrapper .gform_footer input[type="submit"
   margin: auto;
 }
 /* line 31, css/sass/_contact.scss */
-body.page-template-page-contact .gform_wrapper .validation_error {
+.gform_wrapper .validation_error {
   color: red;
   font-size: 12px;
   text-align: center;
   margin-bottom: 15px;
 }
 /* line 37, css/sass/_contact.scss */
-body.page-template-page-contact .gform_wrapper .validation_message {
+.gform_wrapper .validation_message {
   color: red;
   font-size: 12px;
 }
 /* line 41, css/sass/_contact.scss */
-body.page-template-page-contact .gform_wrapper .gform_hidden {
+.gform_wrapper .gform_hidden {
   display: none;
 }
 /* line 44, css/sass/_contact.scss */
-body.page-template-page-contact .gform_wrapper .gform_fields {
+.gform_wrapper .gform_fields {
   list-style: none;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
 }
 /* line 49, css/sass/_contact.scss */
-body.page-template-page-contact .gform_wrapper .gform_fields label {
+.gform_wrapper .gform_fields label {
   color: #6b4c2d;
   font-weight: 500;
 }
 /* line 53, css/sass/_contact.scss */
-body.page-template-page-contact .gform_wrapper .gform_fields .gfield {
+.gform_wrapper .gform_fields .gfield {
   flex-grow: 1;
   width: 50%;
   margin-bottom: 15px;
 }
 /* line 57, css/sass/_contact.scss */
-body.page-template-page-contact .gform_wrapper .gform_fields .gfield input {
+.gform_wrapper .gform_fields .gfield input {
   width: 95%;
   display: block;
   height: calc(2.25rem + 2px);
@@ -607,8 +609,8 @@ body.page-template-page-contact .gform_wrapper .gform_fields .gfield input {
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-/* line 72, css/sass/_contact.scss */
-body.page-template-page-contact .gform_wrapper .gform_fields .gfield textarea {
+/* line 71, css/sass/_contact.scss */
+.gform_wrapper .gform_fields .gfield textarea {
   width: 97%;
   height: 200px;
   display: block;
@@ -622,9 +624,9 @@ body.page-template-page-contact .gform_wrapper .gform_fields .gfield textarea {
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-/* line 89, css/sass/_contact.scss */
-body.page-template-page-contact .gform_wrapper .gform_fields .gfield_error input,
-body.page-template-page-contact .gform_wrapper .gform_fields .gfield_error textarea {
+/* line 87, css/sass/_contact.scss */
+.gform_wrapper .gform_fields .gfield_error input,
+.gform_wrapper .gform_fields .gfield_error textarea {
   border-color: red;
 }
 
@@ -695,4 +697,36 @@ footer.footer .copyright a {
   body.page-template-page-blog .card .card-title {
     min-height: 72px;
   }
+}
+
+/* line 229, css/sass/style.scss */
+#gform_wrapper_2 form .gform_footer {
+  width: 100%;
+}
+/* line 231, css/sass/style.scss */
+#gform_wrapper_2 form .gform_footer input[type="submit"] {
+  width: 100%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+/* line 238, css/sass/style.scss */
+#gform_wrapper_2 #gform_fields_2 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 242, css/sass/style.scss */
+#gform_wrapper_2 #gform_fields_2 li {
+  margin: 0;
+}
+/* line 245, css/sass/style.scss */
+#gform_wrapper_2 #gform_fields_2 label {
+  display: none;
+}
+/* line 248, css/sass/style.scss */
+#gform_wrapper_2 #gform_fields_2 input[type="email"] {
+  width: 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  text-align: center;
 }
