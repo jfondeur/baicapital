@@ -26,9 +26,10 @@ global $currentlang;
                         <?php the_content();?>
                     </div>
                     <div class="col-md-4 sidebar">
-                        <span class="brown"><strong>Newsletter</strong></span>
-                        <p>Se inscreva e receba atualizações importantes no seu email</p>
-                        <?php get_template_part('include/optin')?>
+                        <?php get_sidebar() ?>
+                        <!-- <span class="brown"><strong>Newsletter</strong></span>
+                        <p>Se inscreva e receba atualizações importantes no seu email</p> -->
+                        <?php //get_template_part('include/optin')?>
 						<p class="brown mt-5">
                             <strong>
                             <?php if($currentlang=='es'){
