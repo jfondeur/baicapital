@@ -9,7 +9,7 @@
 						<ul class="list-unstyled">
 							<li class="mb-2"><a href="/sobrebaicapital/">Sobre BAI Capital</a></li>
 							<li class="mb-2"><a href="/projetos-eb5/">Projetos EB5</a></li>
-							<li class="mb-2"><a href="/projetos-equity/">Projetos Equity</a></li>
+							<li class="mb-2 not-us"><a href="/projetos-equity/">Projetos Equity</a></li>
 						</ul>
 					</div>
 					<div class="footer-3">
