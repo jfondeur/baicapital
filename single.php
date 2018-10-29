@@ -26,10 +26,15 @@ global $currentlang;
                         <?php the_content();?>
                     </div>
                     <div class="col-md-4 sidebar">
-                        <?php get_sidebar() ?>
-                        <!-- <span class="brown"><strong>Newsletter</strong></span>
-                        <p>Se inscreva e receba atualizações importantes no seu email</p> -->
-                        <?php //get_template_part('include/optin')?>
+                        <div class="sidebarCta border rounded">
+                            <img src="https://baicapital.com/wp-content/uploads/2018/09/rawpixel-743067-unsplash-1.jpg" alt="">
+                            <div class="p-2">
+                                <span class="brown"><strong>Newsletter</strong></span>
+                                <p>Se inscreva e receba atualizações importantes no seu email</p>
+                                <?php get_template_part('include/optin')?>
+                            </div>
+                        </div>
+                        
 						<p class="brown mt-5">
                             <strong>
                             <?php if($currentlang=='es'){

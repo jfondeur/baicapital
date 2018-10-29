@@ -2,7 +2,13 @@
 $currentlang = apply_filters( 'wpml_current_language', NULL );
 get_template_part('include/hero');
 ?>    
-
+    <?php if (function_exists('isCountryInFilter')) { ?>
+    <?php if(isCountryInFilter(array("us"))) { ?> 
+    
+    // The content here is displayed only for users 
+    // browsing from US, UK or Australia.
+    
+    
     <!-- SalesPitch -->
     <section class="">
         <div class="container">
@@ -17,6 +23,8 @@ get_template_part('include/hero');
             </div>
         </div>
     </section>
+
+    <?php } } ?>
 
     <!-- projects -->
     <section class="projectsModule bg-light">
