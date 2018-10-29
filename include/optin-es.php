@@ -12,7 +12,7 @@
 ?>
 
 
-<form accept-charset="UTF-8" action="https://qz363.infusionsoft.com/app/form/process/0520ed8b0f23faa8e5fa56bd5f0e1226" class="infusion-form" id="inf_form_0520ed8b0f23faa8e5fa56bd5f0e1226" method="POST">
+<form accept-charset="UTF-8" action="https://qz363.infusionsoft.com/app/form/process/0520ed8b0f23faa8e5fa56bd5f0e1226" class="infusion-form form-inline" id="inf_form_0520ed8b0f23faa8e5fa56bd5f0e1226" method="POST">
     <input name="inf_form_xid" type="hidden" value="0520ed8b0f23faa8e5fa56bd5f0e1226" />
     <input name="inf_form_name" type="hidden" value="Website Get&#a;Started Form&#a;ES" />
     <input name="infusionsoft_version" type="hidden" value="1.70.0.69820" />
