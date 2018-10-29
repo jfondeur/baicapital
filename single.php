@@ -31,7 +31,11 @@ global $currentlang;
                             <div class="p-2">
                                 <span class="brown"><strong>Newsletter</strong></span>
                                 <p>Se inscreva e receba atualizações importantes no seu email</p>
-                                <?php get_template_part('include/optin')?>
+                                <?php if($currentlang == 'pt-br'){
+                                    get_template_part('include/optin');
+                                }elseif($currentlang == 'es'){
+                                    get_template_part('include/optin-es');
+                                }?>
                             </div>
                         </div>
                         
