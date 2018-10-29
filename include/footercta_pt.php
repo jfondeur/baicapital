@@ -21,7 +21,13 @@ $currentlang = apply_filters( 'wpml_current_language', NULL );
                             echo 'Nuestros consultores apoyan los inversionistas de América Latina en español y portugués';
                         }
                     ?></p>
-                    <?php get_template_part('include/optin')?>
+                    <?php
+                        if($currentlang == 'pt-br'){
+                            get_template_part('include/optin');
+                        }elseif($currentlang == 'es'){
+                            get_template_part('include/optin-es');
+                        }
+                    ?>
                 </div>
             </div>
         </div>
