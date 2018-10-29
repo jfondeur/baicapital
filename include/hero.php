@@ -7,6 +7,7 @@
                     <p><?php the_field('hero_text') ; ?></p>
 
                     <?php 
+                    global $currentlang;
                     if ( !is_page_template( 'page-about.php' ) ) {
                            if($currentlang == 'pt-br'){
                                 get_template_part('include/optin');
