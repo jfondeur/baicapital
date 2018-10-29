@@ -3,7 +3,12 @@ $currentlang = apply_filters( 'wpml_current_language', NULL );
 get_template_part('include/hero');
 ?>    
     <?php if (function_exists('isCountryInFilter')) { ?>
-    <?php if(!isCountryInFilter(array("us"))) { ?>     
+    <?php if(!isCountryInFilter(array("us"))) { ?>  
+    <style>
+    .not-us{
+        display:none;
+    }    
+    </style>   
     <!-- SalesPitch -->
     <section class="">
         <div class="container">
@@ -92,9 +97,7 @@ get_template_part('include/hero');
                 </div>
             </div>
             <div class="row justify-content-center">
-            <?php if (function_exists('isCountryInFilter')) { ?>
-            <?php if(!isCountryInFilter(array("us"))) { ?> 
-                <div class="col-md-4">
+                <div class="col-md-4 not-us">
                         <div class="card shadow">
                             <!-- Image goes here -->
                             <!-- Image goes here -->
@@ -119,7 +122,6 @@ get_template_part('include/hero');
                             </div>
                         </div>
                 </div>
-                <?php } } ?>
                 <div class="col-md-4">
                     <a href="<?php echo home_url();?>/?page_id=102">
                         <div class="card shadow">
