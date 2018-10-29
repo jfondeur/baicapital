@@ -92,6 +92,8 @@ get_template_part('include/hero');
                 </div>
             </div>
             <div class="row justify-content-center">
+            <?php if (function_exists('isCountryInFilter')) { ?>
+            <?php if(!isCountryInFilter(array("us"))) { ?> 
                 <div class="col-md-4">
                         <div class="card shadow">
                             <!-- Image goes here -->
@@ -117,6 +119,7 @@ get_template_part('include/hero');
                             </div>
                         </div>
                 </div>
+                <?php } } ?>
                 <div class="col-md-4">
                     <a href="<?php echo home_url();?>/?page_id=102">
                         <div class="card shadow">
