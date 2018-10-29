@@ -8,7 +8,11 @@
 
                     <?php 
                     if ( !is_page_template( 'page-about.php' ) ) {
-                           get_template_part('include/optin');
+                           if($currentlang == 'pt-br'){
+                                get_template_part('include/optin');
+                            }elseif($currentlang == 'es'){
+                                get_template_part('include/optin-es');
+                            }
                         }
                     ?>
                 </div>
