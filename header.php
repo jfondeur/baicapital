@@ -51,6 +51,15 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
+ <?php if (function_exists('isCountryInFilter')) { ?>
+    <?php if(isCountryInFilter(array("us"))) { ?>  
+    <style>
+    .not-us{
+        display:none;
+    }    
+    </style> 
+    <?php } } ?>  
+
 <header class="shadow-sm sticky-top">
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light">
