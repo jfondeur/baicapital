@@ -1,3 +1,4 @@
+		<?php global $currentlang; ?>
 		<!-- footer -->
 		<footer class="footer text-center py-5" role="contentinfo">
 			<div class="container">
@@ -27,7 +28,13 @@
 					<div class="newsletter footer-5">
 						<h6 class="brown">Newsletter</h6>
 						<p>Se inscreva e receba atualizações importantes no seu email</p>
-						<?php get_template_part('include/optin') ?>
+						<?php 
+							if($currentlang == 'pt-br'){
+                                get_template_part('include/optin');
+                            }elseif($currentlang == 'es'){
+                                get_template_part('include/optin-es');
+							} 
+						?>
 					</div>
 				</div>
 			</div>
