@@ -4,6 +4,7 @@ get_template_part('include/hero');
 ?>    
    
     <!-- SalesPitch -->
+    <?php echo do_shortcode('[country-filter code="us, in"  display="0"]')?>
     <section class="">
         <div class="container">
             <div class="row align-items-center py-5">
@@ -17,6 +18,7 @@ get_template_part('include/hero');
             </div>
         </div>
     </section>
+    <?php echo do_shortcode('[/country-filter]')?>
 
 
     <!-- projects -->
