@@ -2,7 +2,7 @@
 $currentlang = apply_filters( 'wpml_current_language', NULL );
 get_template_part('include/hero');
 ?>    
-   <?php echo do_shortcode('[CBC show="y" country="us"]'.'not USA'.'[/CBC]')?>
+   <?php echo do_shortcode('[CBC show="n" country="us"]'.'not USA'.'[/CBC]')?>
     <!-- SalesPitch -->
     <section class="">
         <div class="container">
