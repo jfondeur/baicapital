@@ -38,17 +38,7 @@ get_template_part('include/hero');
             <!-- Loop -->
 
 
-        <?php if (function_exists('isCountryInFilter')) {
-            if(isCountryInFilter(array("us"))) { 
-            
-                $catname = array('EB5', 'Equity');
-            
-            } else { 
-            
-                $catname = array('Equity');
-        
-         } } 
-         ?>
+     
   
             <?php
             $args = array(
