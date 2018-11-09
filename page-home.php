@@ -40,11 +40,11 @@ get_template_part('include/hero');
 <?php if (function_exists('isCountryInFilter')) { ?>
     <?php if(isCountryInFilter(array("us"))) { ?> 
         <span class="d-none">usa</span>
-        <?php $catname = array("equity-es", "equity");?>
+        <?php $catid = array(7);?>
  
     <?php } else { ?>
         <span class="d-none"> not usa</span>
-        <?php $catname = array("eb5-es", "eb5");?>
+        <?php $catid = array(7,4);?>
  
 <?php } } ?>
      
@@ -54,7 +54,7 @@ get_template_part('include/hero');
                 'post_type' => array('projects'),
                 'posts_per_page' => 3,
                 'order' => 'DESC',
-                'category_name' => $catname,
+                'cat' => $catid,
             );
 
             // The Query
