@@ -61,7 +61,9 @@
     <?php } } ?>  
 
     <div class="d-none">
-      <?php echo $conditions;?>
+      <?php 
+      global $conditions;
+      echo $conditions;?>
     </div>
 
 <header class="shadow-sm sticky-top">
