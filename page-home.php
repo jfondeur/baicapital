@@ -37,7 +37,18 @@ get_template_part('include/hero');
             </div>
             <!-- Loop -->
 
-
+<?php if (function_exists('isCountryInFilter')) { ?>
+<?php if(isCountryInFilter(array("us"))) { ?> 
+ 
+// The content here is displayed only for users 
+// browsing from US, UK or Australia.
+ 
+<?php } else { ?>
+ 
+// People from other countries will see the content
+// given here but not the above.
+ 
+<?php } } ?>
      
   
             <?php
