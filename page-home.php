@@ -2,9 +2,9 @@
 $currentlang = apply_filters( 'wpml_current_language', NULL );
 get_template_part('include/hero');
 ?>    
-   
+   <?php echo do_shortcode('[country-filter code="us"  display="0"]'.'not USA'.'[country-filter]')?>
     <!-- SalesPitch -->
-    <section class="not-us">
+    <section class="">
         <div class="container">
             <div class="row align-items-center py-5">
                 <div class="col-md-6">
