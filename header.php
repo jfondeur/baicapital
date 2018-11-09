@@ -60,6 +60,10 @@
     </style> 
     <?php } } ?>  
 
+    <div class="d-none">
+      <?php echo $conditions;?>
+    </div>
+
 <header class="shadow-sm sticky-top">
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light">
