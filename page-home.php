@@ -38,11 +38,13 @@ get_template_part('include/hero');
             <!-- Loop -->
 
 <?php if (function_exists('isCountryInFilter')) { ?>
-<?php if(isCountryInFilter(array("us"))) { ?> 
+    <?php if(isCountryInFilter(array("us"))) { ?> 
+        <span>usa</span>
+        <?php $catname = array("equity-es", "equity");?>
  
-<?php $catname = array("equity-es", "equity");?>
- 
-<?php } else { ?>
+    <?php } else { ?>
+        <span> not usa</span>
+        <?php $catname = array("eb5-es", "eb5");?>
  
 <?php } } ?>
      
