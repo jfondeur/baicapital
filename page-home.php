@@ -36,12 +36,20 @@ get_template_part('include/hero');
                 </div>
             </div>
             <!-- Loop -->
-            <?php if (function_exists('isCountryInFilter')) { ?>
-                <?php if(!isCountryInFilter(array("us"))) {
-                    $catname = array('EB5', 'Equity');
-                } } else {
-                    $catname = array('Equity');
-                } ?>   
+
+
+        <?php if (function_exists('isCountryInFilter')) {
+            if(isCountryInFilter(array("us"))) { 
+            
+                $catname = array('EB5', 'Equity');
+            
+            } else { 
+            
+                $catname = array('Equity');
+        
+         } } 
+         ?>
+  
             <?php
             $args = array(
                 'post_type' => array('projects'),
