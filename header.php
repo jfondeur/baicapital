@@ -52,7 +52,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
  <?php if (function_exists('isCountryInFilter')) { ?>
-    <?php if(isCountryInFilter(array("us"))) { ?>  
+    <?php if(!isCountryInFilter(array("us"))) { ?>  
     <style>
     .not-us{
         display:none;
