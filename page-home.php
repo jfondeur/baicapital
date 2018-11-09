@@ -40,7 +40,7 @@ get_template_part('include/hero');
 <?php if (function_exists('isCountryInFilter')) { ?>
 <?php if(!isCountryInFilter(array("us"))) { ?> 
  
-<?php $catname = 'Equity';?>
+<?php $catname = 'equity';?>
  
 <?php } else { ?>
  
