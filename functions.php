@@ -599,17 +599,17 @@ function content($pt,$en,$es) {
 //add_action( 'wp_head', 'content' );
 
 
-// add_filter( 'if_menu_conditions', 'wpb_new_menu_conditions' );
+add_filter( 'if_menu_conditions', 'wpb_new_menu_conditions' );
  
-// function wpb_new_menu_conditions( $conditions ) {
-//   $conditions[] = array(
-//     'name'    =>  'If Country is USA', // name of the condition
-//     'condition' =>  function($item) {          // callback - must return TRUE or FALSE
-//       return isCountryInFilter(array("us"));
-//     }
-//   );
+function wpb_new_menu_conditions( $conditions ) {
+  $conditions[] = array(
+    'name'    =>  'If Country is USA', // name of the condition
+    'condition' =>  function($item) {          // callback - must return TRUE or FALSE
+      return isCountryInFilter(array("us"));
+    }
+  );
  
-//   return $conditions;
-// }
+  return $conditions;
+}
 
 ?>
