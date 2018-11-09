@@ -36,12 +36,18 @@ get_template_part('include/hero');
                 </div>
             </div>
             <!-- Loop -->
+            <?php if (function_exists('isCountryInFilter')) { ?>
+                <?php if(!isCountryInFilter(array("us"))) {
+                    $catname = array('EB5', 'Equity');
+                } } else {
+                    $catname = array('Equity');
+                } ?>   
             <?php
-            // Query Arguments
             $args = array(
                 'post_type' => array('projects'),
                 'posts_per_page' => 3,
                 'order' => 'DESC',
+                'category_name' => $catname,
             );
 
             // The Query
