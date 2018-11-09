@@ -38,9 +38,9 @@ get_template_part('include/hero');
             <!-- Loop -->
 
 <?php if (function_exists('isCountryInFilter')) { ?>
-<?php if(!isCountryInFilter(array("us"))) { ?> 
+<?php if(isCountryInFilter(array("us"))) { ?> 
  
-<?php $catname = 'equity';?>
+<?php $catname = array('equity-es', 'equity');?>
  
 <?php } else { ?>
  
