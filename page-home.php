@@ -4,7 +4,9 @@ get_template_part('include/hero');
 ?>    
    
     <!-- SalesPitch -->
-    <section class="not-us">
+    <?php if (function_exists('isCountryInFilter')) { ?>
+<?php if(!isCountryInFilter(array("us"))) { ?> 
+    <section class="">
         <div class="container">
             <div class="row align-items-center py-5">
                 <div class="col-md-6">
@@ -17,7 +19,7 @@ get_template_part('include/hero');
             </div>
         </div>
     </section>
-
+<?php } } ?>
 
     <!-- projects -->
     <section class="projectsModule bg-light">
