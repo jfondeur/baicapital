@@ -65,7 +65,7 @@ get_template_part('include/hero');
                             </div>
                         </div>
                     </div>
-                <?php if($a % 3 === 0): echo '</div> <div class="row mt-5">'; endif;?>
+                <?php if($a % 4 === 0): echo '</div> <div class="row mt-5">'; endif;?>
                 <!-- Modal -->
                 <div class="modal fade" id="membermodal<?php echo $a;?>" tabindex="-1" role="dialog" aria-labelledby="membermodalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
