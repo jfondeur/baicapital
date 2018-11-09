@@ -40,11 +40,11 @@ get_template_part('include/hero');
 <?php if (function_exists('isCountryInFilter')) { ?>
     <?php if(isCountryInFilter(array("us"))) { ?> 
         <span class="d-none">usa</span>
-        <?php $catid = array(7);?>
+        <?php $catid = array(7,27);?>
  
     <?php } else { ?>
         <span class="d-none"> not usa</span>
-        <?php $catid = array(7,4);?>
+        <?php $catid = array(7,4,24,27);?>
  
 <?php } } ?>
      
