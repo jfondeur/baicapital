@@ -50,7 +50,7 @@ get_template_part('include/hero');
                     </div>
             </div>
             <?php if( have_rows('members')): ?>
-            <div class="row mt-5">
+            <div class="row mt-5 justify-content-center">
                 <?php while( have_rows('members')) : the_row(); $a++; ?>
                     <div class="col-md-3">
                         <div class="card">
@@ -65,7 +65,7 @@ get_template_part('include/hero');
                             </div>
                         </div>
                     </div>
-                <?php if($a % 4 === 0): echo '</div> <div class="row mt-5">'; endif;?>
+                <?php if($a % 3 === 0): echo '</div> <div class="row mt-5 justify-content-center">'; endif;?>
                 <!-- Modal -->
                 <div class="modal fade" id="membermodal<?php echo $a;?>" tabindex="-1" role="dialog" aria-labelledby="membermodalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
