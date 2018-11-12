@@ -77,12 +77,12 @@ get_template_part('include/hero');
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="<?php the_sub_field('picture')?>" alt="">
+                                <div class="row justify-content-center">
+                                    <!-- <div class="col-md-4">
+                                        <img src="<?php //the_sub_field('picture')?>" alt="">
                                         <span class="small text-center d-block mt-1"><?php the_sub_field('position')?></span>
-                                    </div>
-                                    <div class="col-md-8"><?php the_sub_field('bio')?></div>
+                                    </div> -->
+                                    <div class="col-md-10"><?php the_sub_field('bio')?></div>
                                 </div>
                             </div>
                         </div>
