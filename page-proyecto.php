@@ -3,9 +3,9 @@
 get_header();
 $id = get_the_id();
 if($id == 85):
-    $catName = "EB5";
+    $catid = array(4, 30, 24);
 elseif($id == 108 ):
-    $catName = "Equity";
+    $catid = array(27, 29, 7);
 endif;
 global $currentlang;
  ?>
@@ -43,7 +43,7 @@ global $currentlang;
                 'post_type' => array('projects'),
                 'posts_per_page' => 4,
                 'orderby' => 'date',
-                'category_name' => $catName,
+                'cat' => $catid,
             );
 
             // The Query
