@@ -4,7 +4,7 @@ get_header();
 $id = get_the_id();
 if($id == 85 || $id == 489):
     $catid = array(4, 30, 24);
-elseif($id == 108 || $id == 491 ):
+elseif($id == 108 || $id == 481 ):
     $catid = array(27, 29, 7);
 endif;
 global $currentlang;
