@@ -35,6 +35,8 @@ global $currentlang;
                                     get_template_part('include/optin');
                                 }elseif($currentlang == 'es'){
                                     get_template_part('include/optin-es');
+                                }elseif($currentlang == 'en'){
+                                    get_template_part('include/optin-en');
                                 }?>
                             </div>
                         </div>
