@@ -13,6 +13,8 @@
                                 get_template_part('include/optin');
                             }elseif($currentlang == 'es'){
                                 get_template_part('include/optin-es');
+                            }else{
+                                get_template_part('include/optin-en');
                             }
                         }
                     ?>
