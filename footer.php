@@ -46,7 +46,7 @@
 						<?php elseif($currentlang == 'es'): ?>
 							<li class="mb-2"><a href="/es/blog/">Blog</a></li>
 						<?php elseif($currentlang == 'en'): ?>
-							<li class="mb-2"><a href="en/blog/">Blog</a></li>
+							<li class="mb-2"><a href="/en/blog/">Blog</a></li>
 						<?php endif;?>
 						</ul>
 					</div>
