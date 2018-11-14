@@ -13,7 +13,11 @@ global $currentlang;
 
 		<!-- article -->
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <div class="d-none"><?php echo get_cat_ID()?></div>
+            <div class="d-none"><?php 
+            $categories = get_the_category();
+            $category_id = $categories[0]->cat_ID;
+            echo $category_id;
+            ?></div>
             <!-- <div class="projectTop my-5 container">
                 <div class="projectImage">
                     <?php //the_post_thumbnail('projects'); // Fullsize image for the single post ?>
