@@ -22,6 +22,8 @@ if($currentlang == 'es'){
     $gravityID = 2;
 }elseif ($currentlang == 'pt-br') {
     $gravityID = 1;
+}else{
+    $gravityID = 4;
 }
 
  ?>
