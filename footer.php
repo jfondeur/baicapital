@@ -9,30 +9,30 @@
 					<div class="footer-2">
 						<ul class="list-unstyled">
 						<?php if($currentlang == 'pt-br'): ?>
-							<li class="mb-2"><a href="/?page_id=8">Sobre BAI Capital</a></li>
-							<li class="mb-2"><a href="/?page_id=85">Projetos EB5</a></li>
-							<li class="mb-2 not-us"><a href="//?page_id=108">Projetos Equity</a></li>
+							<li class="mb-2"><a href="/pt-br/?page_id=8">Sobre BAI Capital</a></li>
+							<li class="mb-2"><a href="/pt-br/?page_id=85">Projetos EB5</a></li>
+							<li class="mb-2 not-us"><a href="/pt-br/?page_id=108">Projetos Equity</a></li>
 						<?php elseif($currentlang == 'es'): ?>
 							<li class="mb-2"><a href="/es/?page_id=323">Sobre BAI Capital</a></li>
 							<li class="mb-2"><a href="/es/?page_id=353">Proyetos EB5</a></li>
 							<li class="mb-2 not-us"><a href="/?page_id=354">Proyetos Equity</a></li>
 						<?php elseif($currentlang == 'en'): ?>
-							<li class="mb-2"><a href="/en/?page_id=475">About BAI Capital</a></li>
-							<li class="mb-2"><a href="/en/?page_id=489">EB5 Projects</a></li>
-							<li class="mb-2 not-us"><a href="/en/?page_id=491">Equity projects</a></li>
+							<li class="mb-2"><a href="/?page_id=475">About BAI Capital</a></li>
+							<li class="mb-2"><a href="/?page_id=489">EB5 Projects</a></li>
+							<li class="mb-2 not-us"><a href="/?page_id=491">Equity projects</a></li>
 						<?php endif;?>
 						</ul>
 					</div>
 					<div class="footer-3">
 						<ul class="list-unstyled">
 						<?php if($currentlang == 'pt-br'): ?>
-							<li class="mb-2"><a href="/?page_id=102/">Equity</a></li>
+							<li class="mb-2"><a href="pt-br/?page_id=102/">Equity</a></li>
 							<li class="mb-2 not-us"><a href="/?page_id=51">EB5</a></li>
 						<?php elseif($currentlang == 'es'): ?>
-							<li class="mb-2"><a href="/es//?page_id=347">Equity</a></li>
+							<li class="mb-2"><a href="/es/?page_id=347">Equity</a></li>
 							<li class="mb-2 not-us"><a href="/es/?page_id=330">EB5</a></li>
 						<?php elseif($currentlang == 'en'): ?>
-							<li class="mb-2"><a href="/en/?page_id=487">Equity</a></li>
+							<li class="mb-2"><a href="/?page_id=487">Equity</a></li>
 							<li class="mb-2 not-us"><a href="/en/?page_id=485">EB5</a></li>
 						<?php endif;?>
 
@@ -42,11 +42,11 @@
 						<ul class="list-unstyled">
 							<!-- <li class="mb-2"><a href="#">Imprensa</a></li> -->
 						<?php if($currentlang == 'pt-br'): ?>
-							<li class="mb-2"><a href="/blog/">Blog</a></li>
+							<li class="mb-2"><a href="/pt-br/blog/">Blog</a></li>
 						<?php elseif($currentlang == 'es'): ?>
 							<li class="mb-2"><a href="/es/blog/">Blog</a></li>
 						<?php elseif($currentlang == 'en'): ?>
-							<li class="mb-2"><a href="/en/blog/">Blog</a></li>
+							<li class="mb-2"><a href="/blog/">Blog</a></li>
 						<?php endif;?>
 						</ul>
 					</div>
