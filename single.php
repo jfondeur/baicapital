@@ -30,12 +30,15 @@ global $currentlang;
                             <img src="https://baicapital.com/wp-content/uploads/2018/09/rawpixel-743067-unsplash-1.jpg" alt="">
                             <div class="p-2">
                                 <span class="brown"><strong>Newsletter</strong></span>
-                                <p>Se inscreva e receba atualizações importantes no seu email</p>
+                                <p>Sign up for important email updates</p>
                                 <?php if($currentlang == 'pt-br'){
+                                    echo '<p>Se inscreva e receba atualizações importantes no seu email</p>';
                                     get_template_part('include/optin');
                                 }elseif($currentlang == 'es'){
+                                    echo '<p>Si inscribe y recibe actualizaciones importantes en su correo electrónico</p>';
                                     get_template_part('include/optin-es');
                                 }elseif($currentlang == 'en'){
+                                    echo '<p>Sign up for important email updates</p>';
                                     get_template_part('include/optin-en');
                                 }?>
                             </div>
