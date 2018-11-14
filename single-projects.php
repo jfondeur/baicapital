@@ -71,7 +71,7 @@ global $currentlang;
                             }
                         ?>
                         </h5>
-                        <p><?php content('Para mais detalhes, baixe o folheto do projeto','EN','Para mas detalles descarge el formulario')?></p>
+                        <p><?php content('Para mais detalhes, baixe o folheto do projeto','For more information download the brochure','Para mas detalles descarge el folleto')?></p>
                         <?php 
                         echo do_shortcode('[gravityform id="3" title="false" description="true" ajax="false"]');
                         //get_template_part('include/optin')
