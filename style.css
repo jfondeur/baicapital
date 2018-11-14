@@ -206,30 +206,32 @@ header .navbar .navbar-brand img {
 @media (min-width: 992px) {
   /* line 9, css/sass/_header.scss */
   header .navbar #menu-header,
-  header .navbar #menu-header-es {
+  header .navbar #menu-header-es,
+  header .navbar #menu-header-en {
     margin-right: 20px;
   }
-  /* line 14, css/sass/_header.scss */
+  /* line 15, css/sass/_header.scss */
   header .navbar #menu-header li a,
-  header .navbar #menu-header-es li a {
+  header .navbar #menu-header-es li a,
+  header .navbar #menu-header-en li a {
     font-size: 15px;
     color: #6b4c2d;
   }
 }
-/* line 22, css/sass/_header.scss */
+/* line 23, css/sass/_header.scss */
 header .navbar form input.form-control {
   padding: 0 10px;
   margin-bottom: 0 !important;
 }
-/* line 26, css/sass/_header.scss */
+/* line 27, css/sass/_header.scss */
 header .navbar form button.btn {
   margin-bottom: 0 !important;
 }
-/* line 30, css/sass/_header.scss */
+/* line 31, css/sass/_header.scss */
 header .navbar .dropdown-toggle::after {
   display: none;
 }
-/* line 33, css/sass/_header.scss */
+/* line 34, css/sass/_header.scss */
 header .navbar .dropdown-menu {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -238,24 +240,24 @@ header .navbar .dropdown-menu {
   border-top: 0;
 }
 @media (min-width: 992px) {
-  /* line 39, css/sass/_header.scss */
+  /* line 40, css/sass/_header.scss */
   header .navbar .dropdown-menu .dropdown-item {
     padding-top: 10px;
     padding-bottom: 10px;
   }
 }
-/* line 44, css/sass/_header.scss */
+/* line 45, css/sass/_header.scss */
 header .navbar .dropdown-menu .dropdown-item:hover {
   background: #6b4c2d;
   color: white !important;
 }
-/* line 49, css/sass/_header.scss */
+/* line 50, css/sass/_header.scss */
 header .navbar .dropdown-menu .dropdown-item.active {
   background: #6b4c2d;
   color: white !important;
 }
 @media (min-width: 992px) {
-  /* line 55, css/sass/_header.scss */
+  /* line 56, css/sass/_header.scss */
   header .navbar .dropdown:hover .dropdown-menu {
     display: block;
   }
