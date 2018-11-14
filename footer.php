@@ -12,6 +12,14 @@
 							<li class="mb-2"><a href="/sobrebaicapital/">Sobre BAI Capital</a></li>
 							<li class="mb-2"><a href="/projetos-eb5/">Projetos EB5</a></li>
 							<li class="mb-2 not-us"><a href="/projetos-equity/">Projetos Equity</a></li>
+						<?php elseif($currentlang == 'es'): ?>
+							<li class="mb-2"><a href="/sobrebaicapital/">Sobre BAI Capital</a></li>
+							<li class="mb-2"><a href="/projetos-eb5/">Proyetos EB5</a></li>
+							<li class="mb-2 not-us"><a href="/projetos-equity/">Proyetos Equity</a></li>
+						<?php elseif($currentlang == 'en'): ?>
+							<li class="mb-2"><a href="/sobrebaicapital/">About BAI Capital</a></li>
+							<li class="mb-2"><a href="/projetos-eb5/">EB5 Projects</a></li>
+							<li class="mb-2 not-us"><a href="/projetos-equity/">Equity projects</a></li>
 						<?php endif;?>
 						</ul>
 					</div>
@@ -46,7 +54,7 @@
 			</div>
 			<!-- copyright -->
 			<p class="copyright mt-5">
-				&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Desenvolvido', 'html5blank'); ?>
+				&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Developed by', 'html5blank'); ?>
 				<a href="//jeanfondeur.com" title="Jean Fondeur" target="_blank">Jean Fondeur</a>.
 			</p>
 			<!-- /copyright -->
