@@ -56,7 +56,17 @@ global $currentlang;
                     </div>
                     <div class="col-md-4 sidebar">
                         <?php if(get_field('url')): ?>
-                        <h5 class="brown">Baixar Apresentação</h5>
+                        <h5 class="brown">
+                        <?php
+                            if($currentlang == 'pt-br'){
+                                echo 'Baixar Apresentação';
+                            }elseif($currentlang == 'es'){
+                                echo 'Descargar Folleto';
+                            }else{
+                                echo 'Download Brochure';
+                            }
+                        ?>
+                        </h5>
                         <p><?php content('Para mais detalhes, baixe o folheto do projeto','EN','Para mas detalles descarge el formulario')?></p>
                         <?php 
                         echo do_shortcode('[gravityform id="3" title="false" description="true" ajax="false"]');
