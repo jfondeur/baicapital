@@ -10,6 +10,10 @@ elseif($id == 481):
     $catName = "equity-en";
 elseif($id == 489):
     $catName = 'eb5-en';
+elseif($id == 354):
+    $catName = "equity-es";
+elseif($id == 353):
+    $catName = 'eb5-es';
 endif;
 global $currentlang;
  ?>
