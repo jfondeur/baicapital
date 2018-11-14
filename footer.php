@@ -9,7 +9,7 @@
 					<div class="footer-2">
 						<ul class="list-unstyled">
 						<?php if($currentlang == 'pt-br'): ?>
-							<li class="mb-2"><a href="/en/?page_id=8">Sobre BAI Capital</a></li>
+							<li class="mb-2"><a href="/?page_id=8">Sobre BAI Capital</a></li>
 							<li class="mb-2"><a href="/?page_id=85">Projetos EB5</a></li>
 							<li class="mb-2 not-us"><a href="//?page_id=108">Projetos Equity</a></li>
 						<?php elseif($currentlang == 'es'): ?>
@@ -17,7 +17,7 @@
 							<li class="mb-2"><a href="/?page_id=353">Proyetos EB5</a></li>
 							<li class="mb-2 not-us"><a href="/?page_id=354">Proyetos Equity</a></li>
 						<?php elseif($currentlang == 'en'): ?>
-							<li class="mb-2"><a href="/?page_id=475">About BAI Capital</a></li>
+							<li class="mb-2"><a href="/en/?page_id=475">About BAI Capital</a></li>
 							<li class="mb-2"><a href="/?page_id=489">EB5 Projects</a></li>
 							<li class="mb-2 not-us"><a href="/?page_id=491">Equity projects</a></li>
 						<?php endif;?>
