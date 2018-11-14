@@ -71,7 +71,16 @@ global $currentlang;
                             }
                         ?>
                         </h5>
-                        <p><?php content('Para mais detalhes, baixe o folheto do projeto','For more information download the brochure','Para mas detalles descarge el folleto')?></p>
+        
+                        <?php
+                            if($currentlang == 'pt-br'){
+                                echo '<p>Para mais detalhes, baixe o folheto do projeto</p>';
+                            }elseif($currentlang == 'es'){
+                                echo '<p>Para mas detalles descarge el folleto</p>';
+                            }else{
+                                echo '<p>For more information download the brochure</p>';
+                            }
+                        ?>
                         <?php 
                         echo do_shortcode('[gravityform id="3" title="false" description="true" ajax="false"]');
                         //get_template_part('include/optin')
