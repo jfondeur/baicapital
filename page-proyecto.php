@@ -2,9 +2,9 @@
 /* Template name: Project */ 
 get_header();
 $id = get_the_id();
-if($id == 85):
+if($id == 85 || $id == 489):
     $catid = array(4, 30, 24);
-elseif($id == 108 ):
+elseif($id == 108 || $id == 491 ):
     $catid = array(27, 29, 7);
 endif;
 global $currentlang;
