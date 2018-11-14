@@ -8,7 +8,7 @@ elseif($id == 108 ):
     $catName = "equity";
 elseif($id == 481):
     $catName = "equity-en";
-elseif($id == 489):
+elseif($id == 491):
     $catName = 'eb5-en';
 endif;
 global $currentlang;
