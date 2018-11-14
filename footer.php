@@ -9,8 +9,8 @@
 					<div class="footer-2">
 						<ul class="list-unstyled">
 						<?php if($currentlang == 'pt-br'): ?>
-							<li class="mb-2"><a href="/?page_id=8">Sobre BAI Capital</a></li>
-							<li class="mb-2"><a href="//?page_id=85">Projetos EB5</a></li>
+							<li class="mb-2"><a href="/en/?page_id=8">Sobre BAI Capital</a></li>
+							<li class="mb-2"><a href="/?page_id=85">Projetos EB5</a></li>
 							<li class="mb-2 not-us"><a href="//?page_id=108">Projetos Equity</a></li>
 						<?php elseif($currentlang == 'es'): ?>
 							<li class="mb-2"><a href="/?page_id=323">Sobre BAI Capital</a></li>
