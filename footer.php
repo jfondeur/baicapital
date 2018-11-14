@@ -8,9 +8,11 @@
 					</div>
 					<div class="footer-2">
 						<ul class="list-unstyled">
+						<?php if($currentlang == 'pt-br'): ?>
 							<li class="mb-2"><a href="/sobrebaicapital/">Sobre BAI Capital</a></li>
 							<li class="mb-2"><a href="/projetos-eb5/">Projetos EB5</a></li>
 							<li class="mb-2 not-us"><a href="/projetos-equity/">Projetos Equity</a></li>
+						<?php endif;?>
 						</ul>
 					</div>
 					<div class="footer-3">
@@ -27,13 +29,17 @@
 					</div>
 					<div class="newsletter footer-5">
 						<h6 class="brown">Newsletter</h6>
-						<p>Se inscreva e receba atualizações importantes no seu email</p>
 						<?php 
 							if($currentlang == 'pt-br'){
+								echo '<p>Se inscreva e receba atualizações importantes no seu email</p>';
                                 get_template_part('include/optin');
                             }elseif($currentlang == 'es'){
+								echo '<p>Si inscribe y recibe actualizaciones importantes en su correo electrónico</p>';
                                 get_template_part('include/optin-es');
-							} 
+							}else{
+								echo '<p>Sign up for important email updates</p>';
+								get_template_part('include/optin-en');
+							}
 						?>
 					</div>
 				</div>

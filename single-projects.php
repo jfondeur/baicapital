@@ -90,7 +90,10 @@ global $currentlang;
                             }
                             elseif($currentlang=='pt-br'){
                                 echo 'Projectos relacionados';
-                            }?>
+                            }else{
+                                echo 'Related projects';
+                            }
+                        ?>
                             </strong>
                         </p>
 						<?php

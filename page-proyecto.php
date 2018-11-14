@@ -23,6 +23,9 @@ global $currentlang;
                     elseif($currentlang=='pt-br'){
                         echo 'Invista em Real Estate nos Estados Unidos com BAI Capital';
                     }
+                    else{
+                        echo 'Invest in real estate in the United States with BAI Capital';
+                    }
                     ?>
                  </p>
                  <!-- <div class="btn-group" role="group" aria-label="Basic example">
@@ -76,6 +79,8 @@ global $currentlang;
                     }
                     elseif($currentlang=='pt-br'){
                         echo 'Saber mais';
+                    }else{
+                        echo 'Learn more';
                     }
                     ?>
                             </a>

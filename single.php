@@ -46,7 +46,10 @@ global $currentlang;
                             }
                             elseif($currentlang=='pt-br'){
                                 echo 'Artigos relacionados';
-                            }?>
+                            }else{
+                                echo 'Related articles';
+                            }
+                            ?>
                             </strong>
                         </p>
 						<?php
