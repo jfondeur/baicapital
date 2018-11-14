@@ -43,7 +43,7 @@ global $currentlang;
                 'post_type' => array('projects'),
                 'posts_per_page' => 4,
                 'orderby' => 'date',
-                'cat' => $catid,
+                'cat' => '$catid',
             );
 
             // The Query
