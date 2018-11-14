@@ -2,10 +2,10 @@
 /* Template name: Project */ 
 get_header();
 $id = get_the_id();
-if($id == 85 || $id == 489):
-    $catid = array(4, 30, 24);
-elseif($id == 108 || $id == 481 ):
-    $catid = array(27, 29, 7);
+if($id == 85):
+    $catName = "eb5";
+elseif($id == 108 ):
+    $catName = "equity";
 endif;
 global $currentlang;
  ?>
@@ -43,7 +43,7 @@ global $currentlang;
                 'post_type' => array('projects'),
                 'posts_per_page' => 4,
                 'orderby' => 'date',
-                'cat' => '$catid',
+                'category_name' => $catName,
             );
 
             // The Query
