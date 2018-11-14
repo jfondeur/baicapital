@@ -82,7 +82,7 @@ global $currentlang;
                             }
                         ?>
                         <?php 
-                        echo do_shortcode('[gravityform id="3" title="false" description="true" ajax="false"]');
+                        echo do_shortcode('[gravityform id="3" field_values="language=' . $currentlang . '&campaign=' . $campaign . '&source=' . $source . '&medium=' . $medium . '&term=' . $term . '&content=' . $content . '&urlsource=' . $urlSource. '" title="false" description="false" ]');
                         //get_template_part('include/optin')
                         endif;?>
                         <?php if(get_field('video_button')):?>
