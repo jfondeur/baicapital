@@ -13,7 +13,7 @@ global $currentlang;
 
 		<!-- article -->
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+            <div class="d-none"><?php get_cat_ID()?></div>
             <div class="container projectContent mt-4">
                 <div class="row">
                     <div class="col-md-8">
