@@ -58,9 +58,9 @@ get_template_part('include/hero');
                                 <img class="card-img-top d-none" src="<?php the_sub_field('picture')?>" alt="Card image cap">
                             </a>
                             <div class="card-body">
-                                <a href="#"data-toggle="modal" data-target="#membermodal<?php echo $a;?>">
+                                <!-- <a href="#" data-toggle="modal" data-target="#membermodal<?php //echo $a;?>"> -->
                                     <h5 class="card-title brown"><?php the_sub_field('name')?></h5>
-                                </a>
+                                <!-- </a> -->
                                 <p class="card-text small"><?php the_sub_field('position')?></p>
                             </div>
                         </div>
