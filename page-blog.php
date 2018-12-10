@@ -15,6 +15,9 @@ global $curentlang;
                     elseif($currentlang=='pt-br'){
                         echo 'Notícias recentes';
                     }
+                    else{
+                        echo 'Recent news';
+                    }
                     ?></h1>
                  <p class=""><?php
                     if($currentlang=='es'){
@@ -22,6 +25,8 @@ global $curentlang;
                     }
                     elseif($currentlang=='pt-br'){
                         echo 'Blog de investimento';
+                    }else{
+                        echo 'Investment blog';
                     }
                     ?></p>
 
