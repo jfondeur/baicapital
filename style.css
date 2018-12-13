@@ -725,7 +725,7 @@ footer.footer .copyright a {
 /* line 243, css/sass/style.scss */
 #gform_wrapper_3 #gform_fields_3 li {
   margin: 0;
-  width: 100%;
+  width: 100% !important;
 }
 /* line 247, css/sass/style.scss */
 #gform_wrapper_3 #gform_fields_3 label {

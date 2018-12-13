@@ -242,7 +242,7 @@ body.page-template-page-blog {
     flex-direction: column;
     li {
       margin: 0;
-      width: 100%;
+      width: 100% !important;
     }
     label {
       display: none;
