@@ -43,7 +43,7 @@ global $currentlang;
                             </div>
                         </div>
                         
-						<p class="brown mt-5">
+						<p class="brown">
                             <strong>
                             <?php if($currentlang=='es'){
                                 echo 'Articulos relacionados';
