@@ -50,7 +50,7 @@
 						<?php endif;?>
 						</ul>
 					</div>
-					<div class="newsletter footer-5">
+					<div class="newsletter footer-5 d-none">
 						<h6 class="brown">Newsletter</h6>
 						<?php 
 							if($currentlang == 'pt-br'){

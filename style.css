@@ -633,63 +633,67 @@ body.single .modal-body iframe {
 }
 
 /* line 2, css/sass/_footer.scss */
+footer.footer .container {
+  max-width: 800px;
+}
+/* line 5, css/sass/_footer.scss */
 footer.footer div.d-flex {
   flex-direction: column;
 }
 @media (min-width: 992px) {
-  /* line 2, css/sass/_footer.scss */
+  /* line 5, css/sass/_footer.scss */
   footer.footer div.d-flex {
     flex-direction: row;
   }
 }
-/* line 8, css/sass/_footer.scss */
+/* line 11, css/sass/_footer.scss */
 footer.footer div[class*="footer"] {
   width: 100%;
   text-align: left;
 }
 @media (min-width: 992px) {
-  /* line 8, css/sass/_footer.scss */
+  /* line 11, css/sass/_footer.scss */
   footer.footer div[class*="footer"] {
     width: calc(70% / 4);
   }
 }
-/* line 14, css/sass/_footer.scss */
+/* line 17, css/sass/_footer.scss */
 footer.footer div[class*="footer"] .footerLogo {
   width: 30%;
   margin-bottom: 20px;
 }
 @media (min-width: 992px) {
-  /* line 14, css/sass/_footer.scss */
+  /* line 17, css/sass/_footer.scss */
   footer.footer div[class*="footer"] .footerLogo {
     width: 70%;
   }
 }
-/* line 23, css/sass/_footer.scss */
+/* line 26, css/sass/_footer.scss */
 footer.footer div[class*="footer"] a {
   color: initial;
   font-size: 14px;
 }
-/* line 28, css/sass/_footer.scss */
+/* line 31, css/sass/_footer.scss */
 footer.footer .newsletter {
   text-align: left;
   width: 60% !important;
   margin-top: 20px;
 }
 @media (min-width: 992px) {
-  /* line 28, css/sass/_footer.scss */
+  /* line 31, css/sass/_footer.scss */
   footer.footer .newsletter {
     margin-top: 0;
   }
 }
-/* line 35, css/sass/_footer.scss */
+/* line 38, css/sass/_footer.scss */
 footer.footer .newsletter p {
   font-size: 14px;
 }
-/* line 39, css/sass/_footer.scss */
+/* line 42, css/sass/_footer.scss */
 footer.footer .copyright {
   font-size: 14px;
 }
-/* line 41, css/sass/_footer.scss */
+/* line 44, css/sass/_footer.scss */
 footer.footer .copyright a {
   color: #6b4c2d;
 }

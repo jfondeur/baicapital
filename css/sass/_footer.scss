@@ -1,4 +1,7 @@
 footer.footer {
+  .container {
+    max-width: 800px;
+  }
   div.d-flex {
     flex-direction: column;
     @include breakpoint(md) {
