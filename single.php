@@ -26,7 +26,7 @@ global $currentlang;
                         <?php the_content();?>
                     </div>
                     <div class="col-md-4 sidebar">
-                        <div class="sidebarCta border rounded">
+                        <div class="sidebarCta border rounded d-none">
                             <img src="https://baicapital.com/wp-content/uploads/2018/09/rawpixel-743067-unsplash-1.jpg" alt="">
                             <div class="p-2">
                                 <span class="brown"><strong>Newsletter</strong></span>
