@@ -10,11 +10,14 @@
                     global $currentlang;
                     if ( !is_page_template( 'page-about.php' ) ) {
                            if($currentlang == 'pt-br'){
-                                get_template_part('include/optin');
+                                //get_template_part('include/optin');
+                                echo '<a class="btn btn-primary" href="/pt-br/contact/">Entre em contato com BAI Capital</a>';
                             }elseif($currentlang == 'es'){
-                                get_template_part('include/optin-es');
+                                //get_template_part('include/optin-es');
+                                echo '<a class="btn btn-primary" href="/es/contacto/">Pongase en contacto con Bai Capital</a>';
                             }else{
-                                get_template_part('include/optin-en');
+                                //get_template_part('include/optin-en');
+                                echo '<a class="btn btn-primary" href="/contact/">Get in touch with Bai Capital</a>';
                             }
                         }
                     ?>
