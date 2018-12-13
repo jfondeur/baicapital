@@ -725,12 +725,13 @@ footer.footer .copyright a {
 /* line 243, css/sass/style.scss */
 #gform_wrapper_3 #gform_fields_3 li {
   margin: 0;
+  width: 50%;
 }
-/* line 246, css/sass/style.scss */
+/* line 247, css/sass/style.scss */
 #gform_wrapper_3 #gform_fields_3 label {
   display: none;
 }
-/* line 249, css/sass/style.scss */
+/* line 250, css/sass/style.scss */
 #gform_wrapper_3 #gform_fields_3 input[type="email"],
 #gform_wrapper_3 #gform_fields_3 input[type="tel"] {
   width: 100%;
