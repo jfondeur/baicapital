@@ -720,17 +720,19 @@ footer.footer .copyright a {
   list-style: none;
   padding: 0;
   margin: 0;
+  flex-direction: column;
 }
-/* line 242, css/sass/style.scss */
+/* line 243, css/sass/style.scss */
 #gform_wrapper_3 #gform_fields_3 li {
   margin: 0;
 }
-/* line 245, css/sass/style.scss */
+/* line 246, css/sass/style.scss */
 #gform_wrapper_3 #gform_fields_3 label {
   display: none;
 }
-/* line 248, css/sass/style.scss */
-#gform_wrapper_3 #gform_fields_3 input[type="email"] {
+/* line 249, css/sass/style.scss */
+#gform_wrapper_3 #gform_fields_3 input[type="email"],
+#gform_wrapper_3 #gform_fields_3 input[type="tel"] {
   width: 100%;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
