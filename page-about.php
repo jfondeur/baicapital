@@ -78,10 +78,10 @@ get_template_part('include/hero');
                             </div>
                             <div class="modal-body">
                                 <div class="row justify-content-center">
-                                    <!-- <div class="col-md-4">
+                                    <div class="col-md-4">
                                         <img src="<?php //the_sub_field('picture')?>" alt="">
                                         <span class="small text-center d-block mt-1"><?php the_sub_field('position')?></span>
-                                    </div> -->
+                                    </div>
                                     <div class="col-md-10"><?php the_sub_field('bio')?></div>
                                 </div>
                             </div>
