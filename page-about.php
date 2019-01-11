@@ -55,7 +55,7 @@ get_template_part('include/hero');
                     <div class="col-md-3">
                         <div class="card">
                             <a class="card-img-container" href="#"data-toggle="modal" data-target="#membermodal<?php echo $a;?>">
-                                <img class="card-img-top d-none" src="<?php the_sub_field('picture')?>" alt="Card image cap">
+                                <img class="card-img-top" src="<?php the_sub_field('picture')?>" alt="Card image cap">
                             </a>
                             <div class="card-body">
                                 <!-- <a href="#" data-toggle="modal" data-target="#membermodal<?php //echo $a;?>"> -->
