@@ -54,9 +54,9 @@ get_template_part('include/hero');
                 <?php while( have_rows('members')) : the_row(); $a++; ?>
                     <div class="col-md-3">
                         <div class="card">
-                            <a class="card-img-container" href="#"data-toggle="modal" data-target="#membermodal<?php echo $a;?>">
+                            <!-- <a class="card-img-container" href="#"data-toggle="modal" data-target="#membermodal<?php echo $a;?>"> -->
                                 <img class="card-img-top" src="<?php the_sub_field('picture')?>" alt="Card image cap">
-                            </a>
+                            <!-- </a> -->
                             <div class="card-body">
                                 <!-- <a href="#" data-toggle="modal" data-target="#membermodal<?php //echo $a;?>"> -->
                                     <h5 class="card-title brown"><?php the_sub_field('name')?></h5>
