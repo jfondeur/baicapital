@@ -49,7 +49,6 @@ global $currentlang;
             // Query Arguments
             $args = array(
                 'post_type' => array('projects'),
-                'posts_per_page' => 4,
                 'orderby' => 'date',
                 'category_name' => $catName,
             );
