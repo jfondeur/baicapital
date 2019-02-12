@@ -11,195 +11,185 @@
 	License URI: http://opensource.org/licenses/mit-license.php
 */
 
-@import url("node_modules/bootstrap/dist/css/bootstrap.min.css");
+@import url("node_modules/bootstrap/dist/css/bootstrap.css");
 @import "mixin";
-
 //===========
 //Global
 //===========
-
 //variables
 $primaryColor: #6b4c2d;
-
 //fonts
 @font-face {
-  font-family: "Proxima Nova A";
-  src: url("fonts/proxima/ProximaNovaA-Bold.eot");
-  src: url("fonts/proxima/ProximaNovaA-Bold.eot?#iefix")
-      format("embedded-opentype"),
-    url("fonts/proxima/ProximaNovaA-Bold.woff2") format("woff2"),
-    url("fonts/proxima/ProximaNovaA-Bold.woff") format("woff"),
-    url("fonts/proxima/ProximaNovaA-Bold.ttf") format("truetype"),
-    url("fonts/proxima/ProximaNovaA-Bold.svg#ProximaNovaA-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal;
+    font-family: "Proxima Nova A";
+    src: url("fonts/proxima/ProximaNovaA-Bold.eot");
+    src: url("fonts/proxima/ProximaNovaA-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/proxima/ProximaNovaA-Bold.woff2") format("woff2"), url("fonts/proxima/ProximaNovaA-Bold.woff") format("woff"), url("fonts/proxima/ProximaNovaA-Bold.ttf") format("truetype"), url("fonts/proxima/ProximaNovaA-Bold.svg#ProximaNovaA-Bold") format("svg");
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Proxima Nova";
-  src: url("fonts/proxima/ProximaNova-Regular.eot");
-  src: url("fonts/proxima/ProximaNova-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("fonts/proxima/ProximaNova-Regular.woff2") format("woff2"),
-    url("fonts/proxima/ProximaNova-Regular.woff") format("woff"),
-    url("fonts/proxima/ProximaNova-Regular.ttf") format("truetype"),
-    url("fonts/proxima/ProximaNova-Regular.svg#ProximaNova-Regular")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Proxima Nova";
+    src: url("fonts/proxima/ProximaNova-Regular.eot");
+    src: url("fonts/proxima/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/proxima/ProximaNova-Regular.woff2") format("woff2"), url("fonts/proxima/ProximaNova-Regular.woff") format("woff"), url("fonts/proxima/ProximaNova-Regular.ttf") format("truetype"), url("fonts/proxima/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Proxima Nova A";
-  src: url("fonts/proxima/ProximaNovaA-Medium.eot");
-  src: url("fonts/proxima/ProximaNovaA-Medium.eot?#iefix")
-      format("embedded-opentype"),
-    url("fonts/proxima/ProximaNovaA-Medium.woff2") format("woff2"),
-    url("fonts/proxima/ProximaNovaA-Medium.woff") format("woff"),
-    url("fonts/proxima/ProximaNovaA-Medium.ttf") format("truetype"),
-    url("fonts/proxima/ProximaNovaA-Medium.svg#ProximaNovaA-Medium")
-      format("svg");
-  font-weight: 500;
-  font-style: normal;
+    font-family: "Proxima Nova A";
+    src: url("fonts/proxima/ProximaNovaA-Medium.eot");
+    src: url("fonts/proxima/ProximaNovaA-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/proxima/ProximaNovaA-Medium.woff2") format("woff2"), url("fonts/proxima/ProximaNovaA-Medium.woff") format("woff"), url("fonts/proxima/ProximaNovaA-Medium.ttf") format("truetype"), url("fonts/proxima/ProximaNovaA-Medium.svg#ProximaNovaA-Medium") format("svg");
+    font-weight: 500;
+    font-style: normal;
 }
+
 // $headingFont: "Montserrat", sans-serif;
-$bodyFont: "Proxima Nova", serif;
+$bodyFont: "Proxima Nova",
+serif;
 // $headingFont: 'Fanwood Text', serif;
-$headingFont: "Proxima Nova A", sans-serif;
+$headingFont: "Proxima Nova A",
+sans-serif;
 // Typefaces
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: $headingFont;
-  font-weight: bold;
+    font-family: $headingFont;
+    font-weight: bold;
 }
+
 p,
 span,
 li {
-  font-family: $bodyFont;
-  font-size: 16px;
-  line-height: 1.8;
+    font-family: $bodyFont;
+    font-size: 16px;
+    line-height: 1.8;
 }
+
 button,
 a {
-  font-family: $bodyFont;
-  font-size: 16px;
-  color: initial;
-  &:hover {
-    text-decoration: none;
-    color: inherit;
-  }
+    font-family: $bodyFont;
+    font-size: 16px;
+    color: initial;
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
 }
+
 .brown {
-  color: $primaryColor;
+    color: $primaryColor;
 }
+
 .white {
-  color: #fff;
+    color: #fff;
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .btn-primary {
-  /* Rectangle 24: */
-  background-image: linear-gradient(45deg, #6b4c2d 0%, #967857 100%);
-  border-color: $primaryColor;
-  &:hover {
-    background-image: linear-gradient(45deg, #967857 0%, #6b4c2d 100%);
+    /* Rectangle 24: */
+    background-image: linear-gradient(45deg, #6b4c2d 0%, #967857 100%);
     border-color: $primaryColor;
-  }
+    &:hover {
+        background-image: linear-gradient(45deg, #967857 0%, #6b4c2d 100%);
+        border-color: $primaryColor;
+    }
 }
 
 .badge-primary {
-  background-image: linear-gradient(45deg, #6b4c2d 0%, #967857 100%);
-  border-color: $primaryColor;
-  padding: 5px 10px;
+    background-image: linear-gradient(45deg, #6b4c2d 0%, #967857 100%);
+    border-color: $primaryColor;
+    padding: 5px 10px;
 }
 
 .btn-outline-primary {
-  color: $primaryColor;
-  border-color: $primaryColor;
-
-  &:hover {
-    background-color: $primaryColor;
+    color: $primaryColor;
     border-color: $primaryColor;
-  }
+    &:hover {
+        background-color: $primaryColor;
+        border-color: $primaryColor;
+    }
 }
 
 .getStartedModule {
-  margin: 50px 0;
-  padding: 100px 0;
-  form {
-    justify-content: center;
-  }
+    margin: 50px 0;
+    padding: 100px 0;
+    form {
+        justify-content: center;
+    }
 }
 
 .infusion-form.form-inline {
-  .form-control {
-    margin-right: 0 !important;
-    font-size: 14px;
-    color: $primaryColor;
-    @include breakpoint(sm) {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-      border-right: 0;
+    .form-control {
+        margin-right: 0 !important;
+        font-size: 14px;
+        color: $primaryColor;
+        @include breakpoint(sm) {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-right: 0;
+        }
+        @include breakpoint(xs) {
+            width: 100%;
+        }
     }
-    @include breakpoint(xs) {
-      width: 100%;
+    .btn {
+        @include breakpoint(sm) {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        @include breakpoint(xs) {
+            width: 100%;
+        }
     }
-  }
-  .btn {
-    @include breakpoint(sm) {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-    }
-    @include breakpoint(xs) {
-      width: 100%;
-    }
-  }
 }
+
 //Card
 .card {
-  overflow: hidden;
-  border-radius: 14px;
-  transition: box-shadow 0.2s; /* Animation */
-  &:hover {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-  }
-  @include breakpoint(xs) {
-    margin-bottom: 30px !important;
-  }
-  .card-title {
-    margin-right: 20px;
-  }
-  .card-text {
-    @include breakpoint(md) {
-      //text-align: justify;
-    }
-  }
-  a {
-    display: block;
     overflow: hidden;
-    img {
-      transition: transform 0.2s; /* Animation */
-      &:hover {
-        transform: scale(1.2);
-      }
+    border-radius: 14px;
+    transition: box-shadow 0.2s;
+    /* Animation */
+    &:hover {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
     }
-  }
+    @include breakpoint(xs) {
+        margin-bottom: 30px !important;
+    }
+    .card-title {
+        margin-right: 20px;
+    }
+    .card-text {
+        @include breakpoint(md) {
+            //text-align: justify;
+        }
+    }
+    a {
+        display: block;
+        overflow: hidden;
+        img {
+            transition: transform 0.2s;
+            /* Animation */
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
 }
+
 //Project
 .projectsModule {
-  .card {
-    .card-body {
-      .badge {
-        margin-bottom: 0 !important;
-      }
+    .card {
+        .card-body {
+            .badge {
+                margin-bottom: 0 !important;
+            }
+        }
     }
-  }
 }
 
 @import "header";
@@ -209,50 +199,49 @@ img {
 @import "projects";
 @import "contact";
 @import "footer";
-
 body.page-template-page-blog {
-  .card {
-    // @include breakpoint(md) {
-    //   min-height: 321px;
-    // }
-    .card-title {
-      @include breakpoint(md) {
-        min-height: 72px;
-      }
+    .card {
+        // @include breakpoint(md) {
+        //   min-height: 321px;
+        // }
+        .card-title {
+            @include breakpoint(md) {
+                min-height: 72px;
+            }
+        }
     }
-  }
 }
 
 #gform_wrapper_3 {
-  form {
-    //display: flex;
-    .gform_footer {
-      width: 100%;
-      input[type="submit"] {
-        width: 100%;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-      }
+    form {
+        //display: flex;
+        .gform_footer {
+            width: 100%;
+            input[type="submit"] {
+                width: 100%;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+        }
     }
-  }
-  #gform_fields_3 {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    flex-direction: column;
-    li {
-      margin: 0;
-      width: 100% !important;
+    #gform_fields_3 {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        li {
+            margin: 0;
+            width: 100% !important;
+        }
+        label {
+            display: none;
+        }
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            text-align: center;
+        }
     }
-    label {
-      display: none;
-    }
-    input[type="email"],
-    input[type="tel"] {
-      width: 100%;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-      text-align: center;
-    }
-  }
 }

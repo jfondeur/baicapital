@@ -10,7 +10,7 @@
 	License: MIT
 	License URI: http://opensource.org/licenses/mit-license.php
 */
-@import url("node_modules/bootstrap/dist/css/bootstrap.min.css");
+@import url("node_modules/bootstrap/dist/css/bootstrap.css");
 @font-face {
   font-family: "Proxima Nova A";
   src: url("fonts/proxima/ProximaNovaA-Bold.eot");
@@ -32,7 +32,7 @@
   font-weight: 500;
   font-style: normal;
 }
-/* line 70, css/sass/style.scss */
+/* line 53, css/sass/style.scss */
 h1,
 h2,
 h3,
@@ -42,7 +42,7 @@ h5 {
   font-weight: bold;
 }
 
-/* line 78, css/sass/style.scss */
+/* line 62, css/sass/style.scss */
 p,
 span,
 li {
@@ -51,83 +51,83 @@ li {
   line-height: 1.8;
 }
 
-/* line 85, css/sass/style.scss */
+/* line 70, css/sass/style.scss */
 button,
 a {
   font-family: "Proxima Nova", serif;
   font-size: 16px;
   color: initial;
 }
-/* line 90, css/sass/style.scss */
+/* line 75, css/sass/style.scss */
 button:hover,
 a:hover {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 95, css/sass/style.scss */
+/* line 81, css/sass/style.scss */
 .brown {
   color: #6b4c2d;
 }
 
-/* line 98, css/sass/style.scss */
+/* line 85, css/sass/style.scss */
 .white {
   color: #fff;
 }
 
-/* line 102, css/sass/style.scss */
+/* line 89, css/sass/style.scss */
 img {
   max-width: 100%;
 }
 
-/* line 106, css/sass/style.scss */
+/* line 93, css/sass/style.scss */
 .btn-primary {
   /* Rectangle 24: */
   background-image: linear-gradient(45deg, #6b4c2d 0%, #967857 100%);
   border-color: #6b4c2d;
 }
-/* line 110, css/sass/style.scss */
+/* line 97, css/sass/style.scss */
 .btn-primary:hover {
   background-image: linear-gradient(45deg, #967857 0%, #6b4c2d 100%);
   border-color: #6b4c2d;
 }
 
-/* line 116, css/sass/style.scss */
+/* line 103, css/sass/style.scss */
 .badge-primary {
   background-image: linear-gradient(45deg, #6b4c2d 0%, #967857 100%);
   border-color: #6b4c2d;
   padding: 5px 10px;
 }
 
-/* line 122, css/sass/style.scss */
+/* line 109, css/sass/style.scss */
 .btn-outline-primary {
   color: #6b4c2d;
   border-color: #6b4c2d;
 }
-/* line 126, css/sass/style.scss */
+/* line 112, css/sass/style.scss */
 .btn-outline-primary:hover {
   background-color: #6b4c2d;
   border-color: #6b4c2d;
 }
 
-/* line 132, css/sass/style.scss */
+/* line 118, css/sass/style.scss */
 .getStartedModule {
   margin: 50px 0;
   padding: 100px 0;
 }
-/* line 135, css/sass/style.scss */
+/* line 121, css/sass/style.scss */
 .getStartedModule form {
   justify-content: center;
 }
 
-/* line 141, css/sass/style.scss */
+/* line 127, css/sass/style.scss */
 .infusion-form.form-inline .form-control {
   margin-right: 0 !important;
   font-size: 14px;
   color: #6b4c2d;
 }
 @media (min-width: 768px) {
-  /* line 141, css/sass/style.scss */
+  /* line 127, css/sass/style.scss */
   .infusion-form.form-inline .form-control {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -135,62 +135,62 @@ img {
   }
 }
 @media (max-width: 767px) {
-  /* line 141, css/sass/style.scss */
+  /* line 127, css/sass/style.scss */
   .infusion-form.form-inline .form-control {
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  /* line 154, css/sass/style.scss */
+  /* line 140, css/sass/style.scss */
   .infusion-form.form-inline .btn {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
 }
 @media (max-width: 767px) {
-  /* line 154, css/sass/style.scss */
+  /* line 140, css/sass/style.scss */
   .infusion-form.form-inline .btn {
     width: 100%;
   }
 }
 
-/* line 165, css/sass/style.scss */
+/* line 152, css/sass/style.scss */
 .card {
   overflow: hidden;
   border-radius: 14px;
   transition: box-shadow 0.2s;
   /* Animation */
 }
-/* line 169, css/sass/style.scss */
+/* line 157, css/sass/style.scss */
 .card:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 @media (max-width: 767px) {
-  /* line 165, css/sass/style.scss */
+  /* line 152, css/sass/style.scss */
   .card {
     margin-bottom: 30px !important;
   }
 }
-/* line 175, css/sass/style.scss */
+/* line 163, css/sass/style.scss */
 .card .card-title {
   margin-right: 20px;
 }
-/* line 183, css/sass/style.scss */
+/* line 171, css/sass/style.scss */
 .card a {
   display: block;
   overflow: hidden;
 }
-/* line 186, css/sass/style.scss */
+/* line 174, css/sass/style.scss */
 .card a img {
   transition: transform 0.2s;
   /* Animation */
 }
-/* line 188, css/sass/style.scss */
+/* line 177, css/sass/style.scss */
 .card a img:hover {
   transform: scale(1.2);
 }
 
-/* line 198, css/sass/style.scss */
+/* line 188, css/sass/style.scss */
 .projectsModule .card .card-body .badge {
   margin-bottom: 0 !important;
 }
@@ -699,39 +699,39 @@ footer.footer .copyright a {
 }
 
 @media (min-width: 992px) {
-  /* line 218, css/sass/style.scss */
+  /* line 207, css/sass/style.scss */
   body.page-template-page-blog .card .card-title {
     min-height: 72px;
   }
 }
 
-/* line 229, css/sass/style.scss */
+/* line 218, css/sass/style.scss */
 #gform_wrapper_3 form .gform_footer {
   width: 100%;
 }
-/* line 231, css/sass/style.scss */
+/* line 220, css/sass/style.scss */
 #gform_wrapper_3 form .gform_footer input[type="submit"] {
   width: 100%;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-/* line 238, css/sass/style.scss */
+/* line 227, css/sass/style.scss */
 #gform_wrapper_3 #gform_fields_3 {
   list-style: none;
   padding: 0;
   margin: 0;
   flex-direction: column;
 }
-/* line 243, css/sass/style.scss */
+/* line 232, css/sass/style.scss */
 #gform_wrapper_3 #gform_fields_3 li {
   margin: 0;
   width: 100% !important;
 }
-/* line 247, css/sass/style.scss */
+/* line 236, css/sass/style.scss */
 #gform_wrapper_3 #gform_fields_3 label {
   display: none;
 }
-/* line 250, css/sass/style.scss */
+/* line 239, css/sass/style.scss */
 #gform_wrapper_3 #gform_fields_3 input[type="email"],
 #gform_wrapper_3 #gform_fields_3 input[type="tel"] {
   width: 100%;
