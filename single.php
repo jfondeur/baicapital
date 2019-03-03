@@ -1,6 +1,4 @@
 <?php get_header(); 
-$location = get_field('location');
-$pc = get_the_category();
 global $currentlang;
 
 ?>
@@ -13,15 +11,12 @@ global $currentlang;
 
 		<!-- article -->
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <div class="d-none"><?php get_cat_ID()?></div>
             <div class="container projectContent mt-4">
                 <div class="row">
                     <div class="col-md-8">
                         <div class="projectImage mb-3">
-                            <?php the_post_thumbnail('projects'); // Fullsize image for the single post ?>
+                            <?php the_post_thumbnail('project'); // Fullsize image for the single post ?>
                         </div>
-                        <span class="projectCat"><?php echo $pc[0]->name; ?></span>
-                        <span class="projectLocation"><?php echo $location->name; ?></span>
                         <h1 class="brown"><?php the_title(); ?></h1>
                         <?php the_content();?>
                     </div>
@@ -75,12 +70,12 @@ global $currentlang;
                             $project_img_url = get_the_post_thumbnail_url(get_the_ID(),'project');
                             $project_title = get_the_title();
                             $link = get_the_permalink(); 
-                            $location = get_field('location');
+                            //$location = get_field('location');
                             $c = get_the_category();
                         ?>
 						<!-- Custom loop -->
 						
-							<div class="card">
+							<div class="card mb-3">
 								<a href="<?php echo $link; ?>">
 									<img class="card-img-top" src="<?php echo esc_url($project_img_url) ?>" alt="Card image cap">
 								</a>
@@ -136,4 +131,5 @@ global $currentlang;
 	<!-- /section -->
 	</main>
 
-<?php get_template_part('include/footercta_pt');get_footer(); ?>
+<?php get_template_part('include/footercta_pt');
+get_footer(); ?>
