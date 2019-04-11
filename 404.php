@@ -5,12 +5,12 @@
 		<section>
 
 			<!-- article -->
-			<article id="post-404">
+			<article class="text-center my-5 py-5" id="post-404">
 
 				<h1><?php _e( 'Page not found', 'html5blank' ); ?></h1>
-				<h2>
-					<a href="<?php echo home_url(); ?>"><?php _e( 'Return home?', 'html5blank' ); ?></a>
-				</h2>
+
+				<a class="btn btn-primary" href="<?php echo home_url(); ?>"><?php _e( 'Return home?', 'html5blank' ); ?></a>
+				
 
 			</article>
 			<!-- /article -->
