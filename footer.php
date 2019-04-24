@@ -43,7 +43,7 @@
 							<!-- <li class="mb-2"><a href="#">Imprensa</a></li> -->
 						<?php if($currentlang == 'pt-br'): ?>
 							<li class="mb-2"><a href="/pt-br/blog/">Blog</a></li>
-							<li class="mb-2"><a href="/pt-br/contato/">Contato</a></li>
+							<li class="mb-2"><a href="/pt-br/contact/">Contato</a></li>
 						<?php elseif($currentlang == 'es'): ?>
 							<li class="mb-2"><a href="/es/blog/">Blog</a></li>
 							<li class="mb-2"><a href="/es/contacto/">Contacto</a></li>
