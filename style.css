@@ -417,34 +417,35 @@ body.page-template-page-investment .baiHero {
   }
 }
 /* line 11, css/sass/_investement.scss */
-body.page-template-page-investment .homeHero h2 {
+body.page-template-page-investment .homeHero h2,
+body.page-template-page-investment .homeHero h1 {
   color: white;
 }
-/* line 17, css/sass/_investement.scss */
+/* line 18, css/sass/_investement.scss */
 body.page-template-page-investment .homeHero p {
   color: white;
 }
 @media (max-width: 767px) {
-  /* line 23, css/sass/_investement.scss */
+  /* line 24, css/sass/_investement.scss */
   body.page-template-page-investment .homeHero .row {
     background-color: rgba(0, 0, 0, 0.2);
   }
 }
-/* line 32, css/sass/_investement.scss */
+/* line 33, css/sass/_investement.scss */
 body.page-template-page-investment .card ul .benefits i {
   color: #6b4c2d;
 }
 
-/* line 45, css/sass/_investement.scss */
+/* line 46, css/sass/_investement.scss */
 .faqs {
   margin-top: 20px;
 }
-/* line 47, css/sass/_investement.scss */
+/* line 48, css/sass/_investement.scss */
 .faqs .card {
   box-shadow: none;
   margin-bottom: 20px;
 }
-/* line 51, css/sass/_investement.scss */
+/* line 52, css/sass/_investement.scss */
 .faqs .card .card-header a {
   text-align: left;
   width: 100%;
