@@ -26,7 +26,7 @@
 					<div class="footer-3">
 						<ul class="list-unstyled">
 						<?php if($currentlang == 'pt-br'): ?>
-							<li class="mb-2"><a href="pt-br/investimento-equity">Equity</a></li>
+							<li class="mb-2"><a href="/pt-br/investimento-equity">Equity</a></li>
 							<li class="mb-2 not-us"><a href="/investimento-eb-5">EB5</a></li>
 						<?php elseif($currentlang == 'es'): ?>
 							<li class="mb-2"><a href="/es/inversion-equity">Equity</a></li>
