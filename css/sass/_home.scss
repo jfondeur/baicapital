@@ -1,57 +1,55 @@
 body.home {
-  section {
-    //margin: 50px 0;
-    padding: 55px 0;
-  }
-
-  .baiHero {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    min-height: 400px;
-    background-position: center !important;
-    //height: 100vh !important;
-    @include breakpoint(md) {
-      min-height: 600px;
+    section {
+        //margin: 50px 0;
+        padding: 55px 0;
     }
-  }
-  .homeHero {
-    h2 {
-      color: white;
-      @include breakpoint(md) {
-        //font-size: 40px;
-      }
-    }
-    p {
-      color: white;
-      @include breakpoint(sm) {
-        // color: $primaryColor;
-      }
-    }
-    .row {
-      @include breakpoint(xs) {
-        background-color: rgba(0, 0, 0, 0.2);
-      }
-    }
-  }
-
-  img.attachment-project {
-    height: initial !important;
-  }
-  h4 {
-    margin-bottom: 15px;
-  }
-
-  .projectsModule {
-    .card {
-      // @include breakpoint(md) {
-      //   min-height: 321px;
-      // }
-      .card-title {
+    .baiHero {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        min-height: 400px;
+        background-position: center !important;
+        //height: 100vh !important;
         @include breakpoint(md) {
-          min-height: 55px;
+            min-height: 600px;
         }
-      }
     }
-  }
+    .homeHero {
+        h2,
+        h1 {
+            color: white;
+            @include breakpoint(md) {
+                //font-size: 40px;
+            }
+        }
+        p {
+            color: white;
+            @include breakpoint(sm) {
+                // color: $primaryColor;
+            }
+        }
+        .row {
+            @include breakpoint(xs) {
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+    img.attachment-project {
+        height: initial !important;
+    }
+    h4 {
+        margin-bottom: 15px;
+    }
+    .projectsModule {
+        .card {
+            // @include breakpoint(md) {
+            //   min-height: 321px;
+            // }
+            .card-title {
+                @include breakpoint(md) {
+                    min-height: 55px;
+                }
+            }
+        }
+    }
 }

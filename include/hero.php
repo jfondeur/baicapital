@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row align-items-center h-100">
                 <div class="col-md-6">
-                    <h2 class=""><?php the_field('hero_heading') ?></h2>
+                    <h1 class=""><?php the_field('hero_heading') ?></h1>
                     <p><?php the_field('hero_text') ; ?></p>
 
                     <?php 

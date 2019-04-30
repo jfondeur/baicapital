@@ -267,7 +267,7 @@ header .navbar .dropdown-menu .dropdown-item.active {
 body.home section {
   padding: 55px 0;
 }
-/* line 7, css/sass/_home.scss */
+/* line 6, css/sass/_home.scss */
 body.home .baiHero {
   display: flex;
   padding: 0;
@@ -276,13 +276,14 @@ body.home .baiHero {
   background-position: center !important;
 }
 @media (min-width: 992px) {
-  /* line 7, css/sass/_home.scss */
+  /* line 6, css/sass/_home.scss */
   body.home .baiHero {
     min-height: 600px;
   }
 }
-/* line 19, css/sass/_home.scss */
-body.home .homeHero h2 {
+/* line 18, css/sass/_home.scss */
+body.home .homeHero h2,
+body.home .homeHero h1 {
   color: white;
 }
 /* line 25, css/sass/_home.scss */
@@ -295,16 +296,16 @@ body.home .homeHero p {
     background-color: rgba(0, 0, 0, 0.2);
   }
 }
-/* line 38, css/sass/_home.scss */
+/* line 37, css/sass/_home.scss */
 body.home img.attachment-project {
   height: initial !important;
 }
-/* line 41, css/sass/_home.scss */
+/* line 40, css/sass/_home.scss */
 body.home h4 {
   margin-bottom: 15px;
 }
 @media (min-width: 992px) {
-  /* line 50, css/sass/_home.scss */
+  /* line 48, css/sass/_home.scss */
   body.home .projectsModule .card .card-title {
     min-height: 55px;
   }
