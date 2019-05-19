@@ -9,7 +9,7 @@ body.page-template-page-about {
     }
   }
   .homeHero {
-    h2 {
+    h1 {
       color: white;
       @include breakpoint(md) {
         //font-size: 60px;
