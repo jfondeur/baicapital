@@ -741,3 +741,8 @@ footer.footer .copyright a {
   border-bottom-right-radius: 0;
   text-align: center;
 }
+
+/* line 250, css/sass/style.scss */
+li.gform_validation_container {
+  display: none !important;
+}
