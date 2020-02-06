@@ -290,12 +290,6 @@ body.home .homeHero h1 {
 body.home .homeHero p {
   color: white;
 }
-@media (max-width: 767px) {
-  /* line 31, css/sass/_home.scss */
-  body.home .homeHero .row {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-}
 /* line 37, css/sass/_home.scss */
 body.home img.attachment-project {
   height: initial !important;
