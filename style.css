@@ -287,6 +287,13 @@ body.home .homeHero h2,
 body.home .homeHero h1 {
   color: white;
 }
+@media (max-width: 767px) {
+  /* line 19, css/sass/_home.scss */
+  body.home .homeHero h2,
+  body.home .homeHero h1 {
+    font-size: 30px;
+  }
+}
 /* line 26, css/sass/_home.scss */
 body.home .homeHero p {
   color: white;

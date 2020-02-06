@@ -19,8 +19,8 @@ body.home {
         h2,
         h1 {
             color: white;
-            @include breakpoint(md) {
-                //font-size: 40px;
+            @include breakpoint(xs) {
+                font-size: 30px;
             }
         }
         p {
