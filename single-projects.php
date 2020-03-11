@@ -41,8 +41,10 @@ global $currentlang;
                                 <p><?php the_field('location_text') ?></p>
                                 <p class="strong">Developer</p>
                                 <p><?php the_field('developer') ?></p>
+                                <?php if ($pc[0]->name == 'EB5') :?>
                                 <p class="strong">General partner of EB5 investors</p>
                                 <p><?php the_field('general_partner_of_eb5_investors') ?></p>
+                                <?php endif; ?>
                                 <p class="strong">Regional Center</p>
                                 <p><?php the_field('regional_center') ?></p>
                             </div>
