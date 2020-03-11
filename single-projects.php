@@ -55,8 +55,10 @@ global $currentlang;
                                 <p>$<?php the_field('eb5_capital_raise') ?></p>
                                 <p class="strong">Total Project Capital</p>
                                 <p>$<?php the_field('total_project_capital') ?></p>
-                                <p class="strong">Total Jobs Impact</p>
-                                <p><?php the_field('total_jobs_impact') ?></p>
+                                <?php if(get_field('total_jobs_impact')):?>
+                                    <p class="strong">Total Jobs Impact</p>
+                                    <p><?php the_field('total_jobs_impact') ?></p>
+                                <?php endif;?>
                             </div>
                         </div>
                     </div>
