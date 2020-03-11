@@ -52,10 +52,14 @@ global $currentlang;
                                 <p class="strong">Counselor Attorney</p>
                                 <p><?php the_field('counselor_attorney') ?></p>
                                 <?php if ($pc[0]->name == 'EB5') :?>
-                                    <p class="strong">EB5 Capital Raise</p>
-                                    <p>$<?php the_field('eb5_capital_raise') ?></p>
-                                    <p class="strong">Total Project Capital</p>
-                                    <p>$<?php the_field('total_project_capital') ?></p>
+                                    <?php if(get_field('eb5_capital_raise')):?>
+                                        <p class="strong">EB5 Capital Raise</p>
+                                        <p>$<?php the_field('eb5_capital_raise') ?></p>
+                                    <?php endif;?>
+                                    <?php if(get_field('total_project_capital')):?>
+                                        <p class="strong">Total Project Capital</p>
+                                        <p>$<?php the_field('total_project_capital') ?></p>
+                                    <?php endif;?>
                                 <?php endif;?>
                                 <?php if(get_field('total_jobs_impact')):?>
                                     <p class="strong">Total Jobs Impact</p>
