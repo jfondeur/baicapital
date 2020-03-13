@@ -89,7 +89,12 @@ a {
 img {
     max-width: 100%;
 }
-
+a{
+    color:$primaryColor;
+    &:hover{
+        text-decoration: underline;
+    }
+}
 .btn-primary {
     /* Rectangle 24: */
     background-image: linear-gradient(45deg, #6b4c2d 0%, #967857 100%);
