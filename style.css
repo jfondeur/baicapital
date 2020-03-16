@@ -762,3 +762,8 @@ li.gform_validation_container {
 #field_4_4 {
   width: 100%;
 }
+
+/* line 263, css/sass/style.scss */
+.hidden_sub_label {
+  display: none;
+}
