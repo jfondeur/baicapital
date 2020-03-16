@@ -757,3 +757,8 @@ footer.footer .copyright a {
 li.gform_validation_container {
   display: none !important;
 }
+
+/* line 260, css/sass/style.scss */
+#field_4_4 {
+  width: 100%;
+}
