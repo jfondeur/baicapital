@@ -2,7 +2,7 @@
 
 	<main role="main">
 		<!-- section -->
-		<section>
+		<section class="container py-5">
 
 			<h1><?php the_title(); ?></h1>
 
