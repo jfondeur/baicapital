@@ -51,6 +51,7 @@ global $currentlang;
                 'post_type' => array('projects'),
                 'orderby' => 'date',
                 'category_name' => $catName,
+                'posts_per_page' => 10,
             );
 
             // The Query
