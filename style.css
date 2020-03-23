@@ -164,11 +164,6 @@ a:hover {
 }
 
 /* line 157, css/sass/style.scss */
-.badge {
-  background: #6b4c2d;
-}
-
-/* line 160, css/sass/style.scss */
 .card {
   overflow: hidden;
   border-radius: 14px;
@@ -176,43 +171,44 @@ a:hover {
   position: relative;
   /* Animation */
 }
-/* line 165, css/sass/style.scss */
-.card .badge-container {
+/* line 162, css/sass/style.scss */
+.card .badge {
   position: absolute;
   top: 10px;
   left: 15px;
   z-index: 1000;
+  background: #6b4c2d;
 }
-/* line 172, css/sass/style.scss */
+/* line 170, css/sass/style.scss */
 .card:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 @media (max-width: 767px) {
-  /* line 160, css/sass/style.scss */
+  /* line 157, css/sass/style.scss */
   .card {
     margin-bottom: 30px !important;
   }
 }
-/* line 178, css/sass/style.scss */
+/* line 176, css/sass/style.scss */
 .card .card-title {
   margin-right: 20px;
 }
-/* line 186, css/sass/style.scss */
+/* line 184, css/sass/style.scss */
 .card a {
   display: block;
   overflow: hidden;
 }
-/* line 189, css/sass/style.scss */
+/* line 187, css/sass/style.scss */
 .card a img {
   transition: transform 0.2s;
   /* Animation */
 }
-/* line 192, css/sass/style.scss */
+/* line 190, css/sass/style.scss */
 .card a img:hover {
   transform: scale(1.2);
 }
 
-/* line 203, css/sass/style.scss */
+/* line 201, css/sass/style.scss */
 .projectsModule .card .card-body .badge {
   margin-bottom: 0 !important;
 }
@@ -725,39 +721,39 @@ footer.footer .copyright a {
 }
 
 @media (min-width: 992px) {
-  /* line 222, css/sass/style.scss */
+  /* line 220, css/sass/style.scss */
   body.page-template-page-blog .card .card-title {
     min-height: 72px;
   }
 }
 
-/* line 233, css/sass/style.scss */
+/* line 231, css/sass/style.scss */
 #gform_wrapper_3 form .gform_footer {
   width: 100%;
 }
-/* line 235, css/sass/style.scss */
+/* line 233, css/sass/style.scss */
 #gform_wrapper_3 form .gform_footer input[type="submit"] {
   width: 100%;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-/* line 242, css/sass/style.scss */
+/* line 240, css/sass/style.scss */
 #gform_wrapper_3 #gform_fields_3 {
   list-style: none;
   padding: 0;
   margin: 0;
   flex-direction: column;
 }
-/* line 247, css/sass/style.scss */
+/* line 245, css/sass/style.scss */
 #gform_wrapper_3 #gform_fields_3 li {
   margin: 0;
   width: 100% !important;
 }
-/* line 251, css/sass/style.scss */
+/* line 249, css/sass/style.scss */
 #gform_wrapper_3 #gform_fields_3 label {
   display: none;
 }
-/* line 254, css/sass/style.scss */
+/* line 252, css/sass/style.scss */
 #gform_wrapper_3 #gform_fields_3 input[type="email"],
 #gform_wrapper_3 #gform_fields_3 input[type="tel"] {
   width: 100%;
@@ -766,17 +762,17 @@ footer.footer .copyright a {
   text-align: center;
 }
 
-/* line 265, css/sass/style.scss */
+/* line 263, css/sass/style.scss */
 li.gform_validation_container {
   display: none !important;
 }
 
-/* line 270, css/sass/style.scss */
+/* line 268, css/sass/style.scss */
 #field_4_4, #field_7_4, #field_8_4 {
   width: 100%;
 }
 
-/* line 273, css/sass/style.scss */
+/* line 271, css/sass/style.scss */
 .hidden_sub_label {
   display: none;
 }

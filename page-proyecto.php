@@ -75,11 +75,9 @@ global $currentlang;
                         <!-- badge -->
                             <?php
                                 if ($posttags) {
-                                    echo '<div class="badge-container">';
                                     foreach($posttags as $tag) {
                                       echo '<span class="badge badge-secondary">' . $tag->name . '</span>'; 
                                     }
-                                    echo '</div">';
                                   }
                             ?>
                         <!-- badge -->
