@@ -158,6 +158,12 @@ a{
     overflow: hidden;
     border-radius: 14px;
     transition: box-shadow 0.2s;
+    position: relative;
+    .badge{
+        position: absolute;
+        top:5px;
+        left:5px;
+    }
     /* Animation */
     &:hover {
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;

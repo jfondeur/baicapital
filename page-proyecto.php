@@ -67,10 +67,20 @@ global $currentlang;
             $link = get_the_permalink(); 
             $location = get_field('location');
             $c = get_the_category();
+            $posttags = get_the_tags();
             ?>
                 <!-- Custom loop -->
                 <div class="col-md-4">
                     <div class="card">
+                        <!-- badge -->
+                            <?php
+                                if ($posttags) {
+                                    foreach($posttags as $tag) {
+                                      echo '<span class="badge badge-secondary">' . $tag->name . '</span>'; 
+                                    }
+                                  }
+                            ?>
+                        <!-- badge -->
                         <a href="<?php echo $link; ?>">
                             <img class="card-img-top" src="<?php echo esc_url($project_img_url) ?>" alt="Card image cap">
                         </a>
