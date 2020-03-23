@@ -154,17 +154,19 @@ a{
 }
 
 //Card
+.badge{
+    background: $primaryColor;
+}
 .card {
     overflow: hidden;
     border-radius: 14px;
     transition: box-shadow 0.2s;
     position: relative;
-    .badge{
+    .badge-container{
         position: absolute;
         top:10px;
         left:15px;
         z-index: 1000;
-        background: $primaryColor;
     }
     /* Animation */
     &:hover {
