@@ -72,21 +72,21 @@ global $currentlang;
                 <!-- Custom loop -->
                 <div class="col-md-4">
                     <div class="card">
-                        <!-- badge -->
-                            <?php
-                                if ($posttags) {
-                                    foreach($posttags as $tag) {
-                                      echo '<span class="badge badge-secondary">' . $tag->name . '</span>'; 
-                                    }
-                                  }
-                            ?>
-                        <!-- badge -->
                         <a href="<?php echo $link; ?>">
                             <img class="card-img-top" src="<?php echo esc_url($project_img_url) ?>" alt="Card image cap">
                         </a>
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
                                 <h5 class="card-title brown"><?php echo $project_title;?></h5>
+                                 <!-- badge -->
+                                    <?php
+                                        if ($posttags) {
+                                            foreach($posttags as $tag) {
+                                            echo '<span class="badge badge-secondary">' . $tag->name . '</span>'; 
+                                            }
+                                        }
+                                    ?>
+                                <!-- badge -->
                                 <p class="card-text"><?php echo $location->name; ?></p>
                             </div>
                             <p class="card-text"><?php echo $c[0]->cat_name; ?></p>
