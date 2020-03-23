@@ -31,6 +31,15 @@ global $currentlang;
                 </div>
                         <span class="projectCat"><?php echo $pc[0]->name; ?></span>
                         <span class="projectLocation"><?php echo $location->name; ?></span>
+                        <!-- badge -->
+                        <?php
+                                if ($posttags) {
+                                    foreach($posttags as $tag) {
+                                      echo '<p class="badge badge-secondary">' . $tag->name . '</p>'; 
+                                    }
+                                  }
+                            ?>
+                        <!-- badge -->
                         <h1 class="brown"><?php the_title(); ?></h1>
                         <?php the_content();?>
                         <div class="row mt-5">
