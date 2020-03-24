@@ -132,7 +132,7 @@ global $currentlang;
                         //get_template_part('include/optin')
                         endif;?>
                         <?php if(get_field('video_button')):?>
-                        <h5 class="brown mb-3 mt-5">Videos</h5>
+                        <h5 class="brown mb-3">Videos</h5>
                         <p><a href="#" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-file-video"></i> <?php the_field('video_button')?></a></p>
                         <!-- Button trigger modal -->
                         <!-- Modal -->
