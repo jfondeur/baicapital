@@ -48,7 +48,7 @@ global $currentlang;
                                     $statuss         = get_field('status');
                                     $location_text  = get_field('loctation_text');
                                     $developer      = get_field('developer');
-                                    $partner        = get_field('general_partner_of_eb5_investors');
+                                    $partners        = get_field('general_partner_of_eb5_investors');
                                     $regional       = get_field('regional_center');
                                 ?>
 
@@ -67,9 +67,9 @@ global $currentlang;
                                     <p><?php echo $developer; ?></p>
                                 <?php endif;?>
                                 
-                                <?php if($partner):?>
+                                <?php if($partners):?>
                                     <p class="strong">General partner of EB5 investors</p>
-                                    <p><?php echo $partner; ?></p>
+                                    <p><?php echo $partners; ?></p>
                                 <?php endif;?>
 
                                 <?php if($regional):?>
