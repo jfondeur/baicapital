@@ -45,14 +45,14 @@ global $currentlang;
                         <div class="row mt-5">
                             <div class="col-md-6">
                                 <?php
-                                    $status         = get_field('status');
+                                    $statuss         = get_field('status');
                                     $location_text  = get_field('loctation_text');
                                     $developer      = get_field('developer');
                                 ?>
 
-                                <?php if($status):?>
+                                <?php if($statuss):?>
                                     <p class="strong">Status</p>
-                                    <p><?php echo $status; ?></p>
+                                    <p><?php echo $statuss; ?></p>
                                 <?php endif;?>
                                 
                                 <?php if($location_text):?>
