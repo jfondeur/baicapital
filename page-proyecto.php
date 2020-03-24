@@ -69,18 +69,12 @@ global $currentlang;
             $c              = get_the_category();
             $posttags       = get_the_tags();
             $type_eb5       = get_field('type_eb5');
-            $type_equity    = get_field('type_equity');
             ?>
                 <!-- Custom loop -->
                 <div class="col-md-4">
                     <div class="card">
                         <!-- badges -->
-                        <?php 
-                            
-                                echo 'Hola';
-                           
-                        ?>
-                        
+                
                         <!-- badges -->
 
                         <a href="<?php echo $link; ?>">
@@ -91,7 +85,7 @@ global $currentlang;
                                 <h5 class="card-title brown"><?php echo $project_title;?></h5>
                                 <p class="card-text"><?php echo $location->name; ?></p>
                             </div>
-                            <p class="card-text"><?php echo $c[0]->cat_name; ?></p>
+                            <p class="card-text"><?php echo $c[0]->cat_name . " - " . $type_eb5; ?></p>
                             <a href="<?php echo $link; ?>" class="btn btn-primary btn-sm">
                             <?php
                     if($currentlang=='es'){
