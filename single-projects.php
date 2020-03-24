@@ -152,7 +152,7 @@ global $currentlang;
                         </div>
                         </div>
                         <?php endif;?>
-                        <p class="brown mt-5">
+                        <h5 class="brown">
                             <strong>
                             <?php if($currentlang=='es'){
                                 echo 'Proyectos relacionados';
@@ -164,7 +164,7 @@ global $currentlang;
                             }
                         ?>
                             </strong>
-                        </p>
+                        </h5>
 						<?php
                             $currentID = get_the_ID();
                             // Query Arguments
