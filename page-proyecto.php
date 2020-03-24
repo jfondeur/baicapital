@@ -69,6 +69,7 @@ global $currentlang;
             $c              = get_the_category();
             $posttags       = get_the_tags();
             $type_eb5       = get_field('type_eb5');
+            $type_eb5       = get_field('type_equity');
             ?>
                 <!-- Custom loop -->
                 <div class="col-md-4">
@@ -84,7 +85,7 @@ global $currentlang;
                             <?php if ($catName == 'eb5-en'):?>
                                 <p class="card-text"><?php echo "EB5" . " - " . $type_eb5; ?></p>
                             <?php elseif($catName == 'equity-en'):?>
-                                <p class="card-text"><?php echo "Equity"; ?></p>
+                                <p class="card-text"><?php echo "Equity" . " - " . $type_equity;; ?></p>
                             <?php endif; ?>
                             <a href="<?php echo $link; ?>" class="btn btn-primary btn-sm">
                             <?php
