@@ -74,7 +74,9 @@ global $currentlang;
                 <div class="col-md-4">
                     <div class="card">
                         <!-- badges -->
-                
+                        <?php if($id == 489): ?>
+                            <span class="badge badge-secondary"><?php echo $type_eb5; ?></span>
+                        <?php endif;?>
                         <!-- badges -->
 
                         <a href="<?php echo $link; ?>">
