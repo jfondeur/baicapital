@@ -80,8 +80,13 @@ global $currentlang;
                 
                             </div>
                             <div class="col-md-6">
-                                <p class="strong">Counselor Attorney</p>
-                                <p><?php the_field('counselor_attorney') ?></p>
+                                <?php
+                                    $attorney = get_field('counselor_attorney');
+                                ?>
+                                <?php if($attorney):?>
+                                    <p class="strong">Counselor Attorney</p>
+                                    <p><?php echo $attorney; ?></p>
+                                <?php endif;?>
                                 <?php if ($pc[0]->name == 'EB5') :?>
                                     <?php if(get_field('eb5_capital_raise')):?>
                                         <p class="strong">EB5 Capital Raise</p>
