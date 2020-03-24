@@ -73,12 +73,6 @@ global $currentlang;
                 <!-- Custom loop -->
                 <div class="col-md-4">
                     <div class="card">
-                        <!-- badges -->
-                        <?php if($id == 489): ?>
-                            <span class="badge badge-secondary"><?php echo $type_eb5; ?></span>
-                        <?php endif;?>
-                        <!-- badges -->
-
                         <a href="<?php echo $link; ?>">
                             <img class="card-img-top" src="<?php echo esc_url($project_img_url) ?>" alt="Card image cap">
                         </a>
@@ -87,7 +81,9 @@ global $currentlang;
                                 <h5 class="card-title brown"><?php echo $project_title;?></h5>
                                 <p class="card-text"><?php echo $location->name; ?></p>
                             </div>
-                            <p class="card-text"><?php echo $c[0]->cat_name . " - " . $type_eb5; ?></p>
+                            <?php if ($catName == 'eb5-en'):?>
+                                <p class="card-text"><?php echo "EB5" . " - " . $type_eb5; ?></p>
+                            <?php endif; ?>
                             <a href="<?php echo $link; ?>" class="btn btn-primary btn-sm">
                             <?php
                     if($currentlang=='es'){
