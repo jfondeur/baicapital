@@ -225,9 +225,11 @@ get_template_part('include/hero');
             </div> 
             <?php wp_reset_postdata();?>
             <!-- Loop -->
-            <?php
+            <div class="row mt-5">
+                <div class="col-md-12 text-center">
+                <?php
                     if($currentlang=='es'){
-                        echo '<a class="btn btn-primary m-auto mt-4" href="https://baicapital.com/es/blog/">Más noticias</a>';
+                        echo '<a class="btn btn-primary" href="https://baicapital.com/es/blog/">Más noticias</a>';
                     }
                     elseif($currentlang=='pt-br'){
                         echo '<a class="btn btn-primary" href="https://baicapital.com/pt-br/blog/">Notícias recentes</a>';
@@ -236,6 +238,8 @@ get_template_part('include/hero');
                         echo '<a class="btn btn-primary" href="https://baicapital.com/blog/">Read more</a>';
                     }
                     ?>
+                </div>
+            </div>
      </div>
  </section>
 
