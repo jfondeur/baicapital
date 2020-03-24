@@ -83,6 +83,8 @@ global $currentlang;
                             </div>
                             <?php if ($catName == 'eb5-en'):?>
                                 <p class="card-text"><?php echo "EB5" . " - " . $type_eb5; ?></p>
+                            <?php elseif($catName == 'equity-en'):?>
+                                <p class="card-text"><?php echo "Equity"; ?></p>
                             <?php endif; ?>
                             <a href="<?php echo $link; ?>" class="btn btn-primary btn-sm">
                             <?php
