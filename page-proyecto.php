@@ -78,15 +78,19 @@ global $currentlang;
                         <?php 
                             if ($catName == 'eb5-en' ) {
                                 if($type_eb5){
-                                   echo '<span class="badge badge-secondary">' . $type_eb5 . '<span>';
+                                    foreach($type_eb5 as $type){
+                                        echo '<span class="badge badge-secondary">' . $type . '<span>';
+                                    }
                                 }
                             }
 
-                            // if ($catName == 'equity-en' ) {
-                            //     if($type_equity){
-                                    
-                            //     }
-                            // }
+                            if ($catName == 'equity-en' ) {
+                                if($type_equity){
+                                    foreach($type_equity as $type){
+                                        echo '<span class="badge badge-secondary">' . $type . '<span>';
+                                    }
+                                }
+                            }
                         ?>
                         
                         <!-- badges -->
