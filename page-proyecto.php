@@ -9,7 +9,7 @@ elseif($id == 108 ):
 elseif($id == 491):
     $catName = "equity-en";
 elseif($id == 489):
-    $catName = array('eb5-en', 'active-eb5', 'full-funding-eb5');
+    $catName = 'eb5-en';
 elseif($id == 354):
     $catName = "equity-es";
 elseif($id == 353):
@@ -63,15 +63,38 @@ global $currentlang;
             <?php while ( $projects->have_posts() ) : $projects->the_post(); 
             $i++;
             $project_img_url = get_the_post_thumbnail_url(get_the_ID(),'project');
-            $project_title = get_the_title();
-            $link = get_the_permalink(); 
-            $location = get_field('location');
-            $c = get_the_category();
-            $posttags = get_the_tags();
+            $project_title  = get_the_title();
+            $link           = get_the_permalink(); 
+            $location       = get_field('location');
+            $c              = get_the_category();
+            $posttags       = get_the_tags();
+            $type_eb5       = get_field('type_eb5');
+            $type_equity    = get_field('type_equity');
             ?>
                 <!-- Custom loop -->
                 <div class="col-md-4">
                     <div class="card">
+                        <!-- badges -->
+                        <?php 
+                            if ($catName == 'eb5-en' ) {
+                                if($type_eb5){
+                                    foreach($type_eb5 as $type){
+                                        echo '<span class="badge badge-secondary">' . $type . '<span>';
+                                    }
+                                }
+                            }
+
+                            if ($catName == 'equity-en' ) {
+                                if($type_equity){
+                                    foreach($type_equity as $type){
+                                        echo '<span class="badge badge-secondary">' . $type . '<span>';
+                                    }
+                                }
+                            }
+                        ?>
+                        
+                        <!-- badges -->
+
                         <a href="<?php echo $link; ?>">
                             <img class="card-img-top" src="<?php echo esc_url($project_img_url) ?>" alt="Card image cap">
                         </a>
