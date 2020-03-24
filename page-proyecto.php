@@ -85,7 +85,7 @@ global $currentlang;
                              <?php
                                         if ($posttags) {
                                             foreach($posttags as $tag) {
-                                            echo '<span class="badge badge-secondary">' . $tag->name . '</span>'; 
+                                            echo '<span class="badge badge-secondary">' . $tag->name . '</span>' . ' '; 
                                             }
                                         }
                                     ?>
