@@ -76,9 +76,9 @@ global $currentlang;
                     <div class="card">
                         <!-- badges -->
                         <?php 
-                            if ($catName == 'eb5-en' ) {
+                            
                                 echo 'Hola';
-                            }
+                           
                         ?>
                         
                         <!-- badges -->
