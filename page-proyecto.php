@@ -90,6 +90,7 @@ global $currentlang;
                                         }
                                     ?>
                                 <!-- badge -->
+                                <br>
                             <a href="<?php echo $link; ?>" class="btn btn-primary btn-sm">
                             <?php
                     if($currentlang=='es'){
