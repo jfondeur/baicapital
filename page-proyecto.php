@@ -9,7 +9,7 @@ elseif($id == 108 ):
 elseif($id == 491):
     $catName = "equity-en";
 elseif($id == 489):
-    $catName = 'eb5-en';
+    $catName = array('eb5-en', 'active-eb5', 'full-funding-eb5');
 elseif($id == 354):
     $catName = "equity-es";
 elseif($id == 353):
