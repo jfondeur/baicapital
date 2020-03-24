@@ -27,7 +27,7 @@ global $currentlang;
                 <div class="row">
                     <div class="col-md-8">
                     <div class="projectImage">
-                    <?php the_post_thumbnail('projects'); // Fullsize image for the single post ?>
+                    <?php the_post_thumbnail('project'); // Fullsize image for the single post ?>
                 </div>
                         <!-- <span class="projectCat"><?php //echo $pc[0]->name; ?></span> -->
                         <span class="projectLocation"><?php echo $location->name; ?></span>
