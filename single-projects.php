@@ -49,7 +49,7 @@ global $currentlang;
                                     $location_text  = get_field('loctation_text');
                                     $developer      = get_field('developer');
                                     $partner        = get_field('general_partner_of_eb5_investors');
-                                    $regional       = getfield('regional_center');
+                                    $regional       = get_field('regional_center');
                                 ?>
 
                                 <?php if($statuss):?>
