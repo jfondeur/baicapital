@@ -86,8 +86,8 @@ global $currentlang;
 
                             if ($catName == 'equity-en' ) {
                                 if($type_equity){
-                                    foreach($type_equity as $type){
-                                        echo '<span class="badge badge-secondary">' . $type . '<span>';
+                                    foreach($type_equity as $typess){
+                                        echo '<span class="badge badge-secondary">' . $typess . '<span>';
                                     }
                                 }
                             }
