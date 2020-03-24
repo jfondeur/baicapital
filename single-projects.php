@@ -66,18 +66,18 @@ global $currentlang;
                                     <p class="strong">Developer</p>
                                     <p><?php echo $developer; ?></p>
                                 <?php endif;?>
-                                <?php if ($pc[0]->name == 'EB5') :?>
-                                    <?php if($partner):?>
-                                        <p class="strong">General partner of EB5 investors</p>
-                                        <p><?php echo $partner; ?></p>
-                                    <?php endif;?>
+                                
+                                <?php if($partner):?>
+                                    <p class="strong">General partner of EB5 investors</p>
+                                    <p><?php echo $partner; ?></p>
+                                <?php endif;?>
 
-                                    <?php if($regional):?>
-                                        <p class="strong">Regional Center</p>
-                                        <p><?php echo $regional; ?></p>
-                                    <?php endif;?>
+                                <?php if($regional):?>
+                                    <p class="strong">Regional Center</p>
+                                    <p><?php echo $regional; ?></p>
+                                <?php endif;?>
 
-                                <?php endif; ?>
+                
                             </div>
                             <div class="col-md-6">
                                 <p class="strong">Counselor Attorney</p>
