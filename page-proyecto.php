@@ -81,16 +81,6 @@ global $currentlang;
                                 <p class="card-text"><?php echo $location->name; ?></p>
                             </div>
                             <p class="card-text"><?php echo $c[0]->cat_name; ?></p>
-                             <!-- badge -->
-                             <?php
-                                        if ($posttags) {
-                                            foreach($posttags as $tag) {
-                                            echo '<span class="badge badge-secondary">' . $tag->name . '</span>' . ' '; 
-                                            }
-                                        }
-                                    ?>
-                                <!-- badge -->
-                                <br>
                             <a href="<?php echo $link; ?>" class="btn btn-primary btn-sm">
                             <?php
                     if($currentlang=='es'){
