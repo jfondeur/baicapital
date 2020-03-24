@@ -93,9 +93,63 @@ get_template_part('include/hero');
         </div>
     </section>
 
-    <!-- blog -->
+    <!-- why to invest -->
+    <section class="">
+        <div class="container homeInvestment">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h4 class="brown"><?php the_field('sales_pitch_heading_2') ?></h4>
+                    <span class=""><?php the_field('sales_pitch_text_2') ?> </span>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4 not-us">
+                        <div class="card shadow">
+                            <!-- Image goes here -->
+                            <!-- Image goes here -->
+                             <a href="<?php echo home_url();?>/?page_id=51">
+                             <?php 
+                            function img($imgfield, $size){
+                                $image = get_field($imgfield);
+                                $sizeeb = $size;
+                                if($image) :
+                                    echo wp_get_attachment_image( $image, $sizeeb );
+                                endif;
+                            }
+                            img('investment_eb5_image', 'project');
+                            ?>
+                            </a>
+                            <!-- Image goes here -->
+                            <div class="card-body">
+                                 <a href="<?php echo home_url();?>/?page_id=51">
+                                    <h5 class="card-title brown">EB5</h5>
+                                </a>
+                                <p class="card-text"><?php the_field('investment_eb-5') ?></p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md-4">
+                    <a href="<?php echo home_url();?>/?page_id=102">
+                        <div class="card shadow">
+                            <!-- Image goes here -->
+                            <a href="<?php echo home_url();?>/?page_id=51">
+                            <?php img('investment_equity_image', 'project');?>
+                        </a>
+                            <!-- Image goes here -->
+                            <div class="card-body">
+                                <a href="<?php echo home_url();?>/?page_id=51"><h5 class="card-title brown">Equity</h5></a>
+                                <p class="card-text"><?php the_field('investment_equity') ?></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section>
+      <!-- blog -->
+
+      <section>
      <div class="container my-5">
          <div class="row">
              <div class="col-md-12 text-center">
@@ -173,60 +227,6 @@ get_template_part('include/hero');
             <!-- Loop -->
      </div>
  </section>
-
-    <!-- why to invest -->
-    <section class="">
-        <div class="container homeInvestment">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <h4 class="brown"><?php the_field('sales_pitch_heading_2') ?></h4>
-                    <span class=""><?php the_field('sales_pitch_text_2') ?> </span>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-4 not-us">
-                        <div class="card shadow">
-                            <!-- Image goes here -->
-                            <!-- Image goes here -->
-                             <a href="<?php echo home_url();?>/?page_id=51">
-                             <?php 
-                            function img($imgfield, $size){
-                                $image = get_field($imgfield);
-                                $sizeeb = $size;
-                                if($image) :
-                                    echo wp_get_attachment_image( $image, $sizeeb );
-                                endif;
-                            }
-                            img('investment_eb5_image', 'project');
-                            ?>
-                            </a>
-                            <!-- Image goes here -->
-                            <div class="card-body">
-                                 <a href="<?php echo home_url();?>/?page_id=51">
-                                    <h5 class="card-title brown">EB5</h5>
-                                </a>
-                                <p class="card-text"><?php the_field('investment_eb-5') ?></p>
-                            </div>
-                        </div>
-                </div>
-                <div class="col-md-4">
-                    <a href="<?php echo home_url();?>/?page_id=102">
-                        <div class="card shadow">
-                            <!-- Image goes here -->
-                            <a href="<?php echo home_url();?>/?page_id=51">
-                            <?php img('investment_equity_image', 'project');?>
-                        </a>
-                            <!-- Image goes here -->
-                            <div class="card-body">
-                                <a href="<?php echo home_url();?>/?page_id=51"><h5 class="card-title brown">Equity</h5></a>
-                                <p class="card-text"><?php the_field('investment_equity') ?></p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
 
 <?php 
 get_template_part('include/footercta_pt');
