@@ -77,7 +77,7 @@ global $currentlang;
                         <!-- badges -->
                         <?php 
                             if ($catName == 'eb5-en' ) {
-                                echo '<span class="badge badge-secondary">' . $$type_eb5 . '<span>';
+                                echo 'Hola';
                             }
                         ?>
                         
