@@ -48,6 +48,8 @@ global $currentlang;
                                     $statuss         = get_field('status');
                                     $location_text  = get_field('loctation_text');
                                     $developer      = get_field('developer');
+                                    $partner        = get_field('general_partner_of_eb5_investors');
+                                    $regional       = getfield('regional_center');
                                 ?>
 
                                 <?php if($statuss):?>
@@ -65,10 +67,16 @@ global $currentlang;
                                     <p><?php echo $developer; ?></p>
                                 <?php endif;?>
                                 <?php if ($pc[0]->name == 'EB5') :?>
-                                    <p class="strong">General partner of EB5 investors</p>
-                                    <p><?php the_field('general_partner_of_eb5_investors') ?></p>
-                                    <p class="strong">Regional Center</p>
-                                    <p><?php the_field('regional_center') ?></p>
+                                    <?php if($partner):?>
+                                        <p class="strong">General partner of EB5 investors</p>
+                                        <p><?php echo $partner; ?></p>
+                                    <?php endif;?>
+
+                                    <?php if($regional):?>
+                                        <p class="strong">Regional Center</p>
+                                        <p><?php echo $regional; ?></p>
+                                    <?php endif;?>
+
                                 <?php endif; ?>
                             </div>
                             <div class="col-md-6">
