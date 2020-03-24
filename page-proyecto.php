@@ -77,9 +77,9 @@ global $currentlang;
                         <!-- badges -->
                         <?php 
                             // if ($catName == 'eb5-en' ) {
-                                if($type_eb5){
+                                
                                    echo '<span class="badge badge-secondary">' . $type_eb5 . '<span>';
-                                }
+                                
                             // }
 
                             // if ($catName == 'equity-en' ) {
