@@ -29,7 +29,7 @@ global $currentlang;
                     <div class="projectImage">
                     <?php the_post_thumbnail('projects'); // Fullsize image for the single post ?>
                 </div>
-                        <span class="projectCat"><?php echo $pc[0]->name; ?></span>
+                        <!-- <span class="projectCat"><?php //echo $pc[0]->name; ?></span> -->
                         <span class="projectLocation"><?php echo $location->name; ?></span>
                         <!-- badge -->
                         <?php
@@ -46,7 +46,7 @@ global $currentlang;
                             <div class="col-md-6">
                                 <?php
                                     $statuss         = get_field('status');
-                                    $location_text  = get_field('loctation_text');
+                                    $location_text    = get_field('loctation_text');
                                     $developer      = get_field('developer');
                                     $partners        = get_field('general_partner_of_eb5_investors');
                                     $regional       = get_field('regional_center');
