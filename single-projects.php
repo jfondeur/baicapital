@@ -200,7 +200,7 @@ global $currentlang;
                                         </a>
 										<p class="card-text"><?php echo $location->name; ?></p>
 									</div>
-									<p class="card-text"><?php echo $c[0]->cat_name; ?></p>
+									<!-- <p class="card-text"><?php //echo $c[0]->cat_name; ?></p> -->
 								</div>
 							</div>
 						
