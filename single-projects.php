@@ -46,7 +46,7 @@ global $currentlang;
                             <div class="col-md-6">
                                 <?php if(the_field('status')): ?>
                                     <p class="strong">Status</p>
-                                    <p><?php the_field('status') ?></p>
+                                    <p><?php the_field('status'); ?></p>
                                 <?php endif;?>
                                 <p class="strong">Location</p>
                                 <p><?php the_field('location_text') ?></p>
