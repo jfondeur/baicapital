@@ -225,6 +225,17 @@ get_template_part('include/hero');
             </div> 
             <?php wp_reset_postdata();?>
             <!-- Loop -->
+            <?php
+                    if($currentlang=='es'){
+                        echo '<a class="btn btn-primary m-auto mt-4" href="https://baicapital.com/es/blog/">Más noticias</a>';
+                    }
+                    elseif($currentlang=='pt-br'){
+                        echo '<a class="btn btn-primary" href="https://baicapital.com/pt-br/blog/">Notícias recentes</a>';
+                    }
+                    else{
+                        echo '<a class="btn btn-primary" href="https://baicapital.com/blog/">Read more</a>';
+                    }
+                    ?>
      </div>
  </section>
 
