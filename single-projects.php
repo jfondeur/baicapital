@@ -44,10 +44,8 @@ global $currentlang;
                         <?php the_content();?>
                         <div class="row mt-5">
                             <div class="col-md-6">
-                                <?php if(get_field('status')): ?>
-                                    <p class="strong">Status</p>
-                                    <p><?php the_field('status'); ?></p>
-                                <?php endif;?>
+                                <p class="strong">Status</p>
+                                <p><?php the_field('status') ?></p>
                                 <p class="strong">Location</p>
                                 <p><?php the_field('location_text') ?></p>
                                 <p class="strong">Developer</p>
