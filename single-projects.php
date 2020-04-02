@@ -139,7 +139,7 @@ global $currentlang;
                                         if($currentlang == 'pt-br'){
                                             echo 'Despacho de Abogados';
                                         }elseif($currentlang == 'es'){
-                                            echo 'Despacho de Abogados';
+                                            echo 'Representante Legal';
                                         }else{
                                             echo 'Counselor Attorney';
                                         }
