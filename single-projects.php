@@ -53,7 +53,16 @@ global $currentlang;
                                 ?>
 
                                 <?php if($statuss):?>
-                                    <p class="strong">Status</p>
+                                    <p class="strong"><?php
+                                        if($currentlang == 'pt-br'){
+                                            echo 'Status';
+                                        }elseif($currentlang == 'es'){
+                                            echo 'Estatus';
+                                        }else{
+                                            echo 'Status';
+                                        }
+                                    ?>
+                                    </p>
                                     <p><?php echo $statuss; ?></p>
                                 <?php endif;?>
                                 
