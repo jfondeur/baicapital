@@ -53,7 +53,8 @@ global $currentlang;
                                 ?>
 
                                 <?php if($statuss):?>
-                                    <p class="strong"><?php
+                                    <p class="strong">
+                                    <?php
                                         if($currentlang == 'pt-br'){
                                             echo 'Status';
                                         }elseif($currentlang == 'es'){
@@ -67,22 +68,62 @@ global $currentlang;
                                 <?php endif;?>
                                 
                                 <?php if($location_text):?>
-                                    <p class="strong">Location</p>
+                                    <p class="strong"> 
+                                    <?php
+                                        if($currentlang == 'pt-br'){
+                                            echo 'Localização';
+                                        }elseif($currentlang == 'es'){
+                                            echo 'Ubicación';
+                                        }else{
+                                            echo 'Location';
+                                        }
+                                    ?>
+                                    </p>
                                     <p><?php echo $location_text; ?></p>
                                 <?php endif;?>
 
                                 <?php if($developer):?>
-                                    <p class="strong">Developer</p>
+                                    <p class="strong">
+                                    <?php
+                                        if($currentlang == 'pt-br'){
+                                            echo 'Desenvolvedor';
+                                        }elseif($currentlang == 'es'){
+                                            echo 'Desarrollador';
+                                        }else{
+                                            echo 'Developer';
+                                        }
+                                    ?>
+                                    </p>
                                     <p><?php echo $developer; ?></p>
                                 <?php endif;?>
                                 
                                 <?php if($partners):?>
-                                    <p class="strong">General partner of EB5 investors</p>
+                                    <p class="strong">
+                                    <?php
+                                        if($currentlang == 'pt-br'){
+                                            echo 'General partner of EB5 investors';
+                                        }elseif($currentlang == 'es'){
+                                            echo 'Socio general de inversores EB5';
+                                        }else{
+                                            echo 'General partner of EB5 investors';
+                                        }
+                                    ?>
+                                    </p>
                                     <p><?php echo $partners; ?></p>
                                 <?php endif;?>
 
                                 <?php if($regional):?>
-                                    <p class="strong">Regional Center</p>
+                                    <p class="strong">
+                                    <?php
+                                        if($currentlang == 'pt-br'){
+                                            echo 'Centro Regional';
+                                        }elseif($currentlang == 'es'){
+                                            echo 'Centro Regional';
+                                        }else{
+                                            echo 'Regional Center';
+                                        }
+                                    ?>
+                                    </p>
                                     <p><?php echo $regional; ?></p>
                                 <?php endif;?>
 
@@ -93,21 +134,60 @@ global $currentlang;
                                     $attorney = get_field('counselor_attorney');
                                 ?>
                                 <?php if($attorney):?>
-                                    <p class="strong">Counselor Attorney</p>
+                                    <p class="strong">
+                                    <?php
+                                        if($currentlang == 'pt-br'){
+                                            echo 'Despacho de Abogados';
+                                        }elseif($currentlang == 'es'){
+                                            echo 'Despacho de Abogados';
+                                        }else{
+                                            echo 'Counselor Attorney';
+                                        }
+                                    ?>
+                                    </p>
                                     <p><?php echo $attorney; ?></p>
                                 <?php endif;?>
                                 <?php if ($pc[0]->name == 'EB5') :?>
                                     <?php if(get_field('eb5_capital_raise')):?>
-                                        <p class="strong">EB5 Capital Raise</p>
+                                        <p class="strong">
+                                        <?php
+                                            if($currentlang == 'pt-br'){
+                                                echo 'EB5 Capital Raise';
+                                            }elseif($currentlang == 'es'){
+                                                echo 'Total Capital EB5';
+                                            }else{
+                                                echo 'EB5 Capital Raise';
+                                            }
+                                        ?>
+                                        </p>
                                         <p>$<?php the_field('eb5_capital_raise') ?></p>
                                     <?php endif;?>
                                     <?php if(get_field('total_project_capital')):?>
-                                        <p class="strong">Total Project Capital</p>
+                                        <p class="strong">
+                                        <?php
+                                            if($currentlang == 'pt-br'){
+                                                echo 'Total Project Capital';
+                                            }elseif($currentlang == 'es'){
+                                                echo 'Capital Total Proyecto';
+                                            }else{
+                                                echo 'Total Project Capital';
+                                            }
+                                        ?>
+                                        </p>
                                         <p>$<?php the_field('total_project_capital') ?></p>
                                     <?php endif;?>
                                 <?php endif;?>
                                 <?php if(get_field('total_jobs_impact')):?>
-                                    <p class="strong">Total Jobs Impact</p>
+                                    <p class="strong">
+                                    <?php
+                                            if($currentlang == 'pt-br'){
+                                                echo 'Impacto total de empregos';
+                                            }elseif($currentlang == 'es'){
+                                                echo 'Creación de Empleos';
+                                            }else{
+                                                echo 'Total Jobs Impact';
+                                            }
+                                        ?></p>
                                     <p><?php the_field('total_jobs_impact') ?></p>
                                 <?php endif;?>
                             </div>
