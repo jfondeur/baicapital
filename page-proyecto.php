@@ -87,17 +87,22 @@ global $currentlang;
                             <?php elseif($catName == 'equity-en'):?>
                                 <p class="card-text"><?php echo "Equity" . " - " . $type_equity; ?></p>
                             <?php endif; ?>
+                            <?php if ($catName == 'eb5-es'):?>
+                                <p class="card-text"><?php echo "EB5" . " - " . $type_eb5; ?></p>
+                            <?php elseif($catName == 'equity-es'):?>
+                                <p class="card-text"><?php echo "Equity" . " - " . $type_equity; ?></p>
+                            <?php endif; ?>
                             <a href="<?php echo $link; ?>" class="btn btn-primary btn-sm">
                             <?php
-                    if($currentlang=='es'){
-                        echo 'Más información';
-                    }
-                    elseif($currentlang=='pt-br'){
-                        echo 'Saber mais';
-                    }else{
-                        echo 'Learn more';
-                    }
-                    ?>
+                            if($currentlang=='es'){
+                                echo 'Más información';
+                            }
+                            elseif($currentlang=='pt-br'){
+                                echo 'Saber mais';
+                            }else{
+                                echo 'Learn more';
+                            }
+                            ?>
                             </a>
                         </div>
                     </div>
