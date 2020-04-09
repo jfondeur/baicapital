@@ -214,6 +214,7 @@ global $currentlang;
                                     'post_type' => array('projects'),
                                     'posts_per_page' => 2,
                                     'post__not_in' => array($currentID),
+                                    'order_by' => 'rand',
                                 );
 
                                 // The Query
