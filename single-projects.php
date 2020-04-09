@@ -194,32 +194,41 @@ global $currentlang;
                         </div>
                     </div>
                     <div class="col-md-4 sidebar">
-                        <?php if(get_field('url')): ?>
+                        <?php //if(get_field('url')): ?>
                         <h5 class="brown">
                         <?php
-                            if($currentlang == 'pt-br'){
-                                echo 'Baixar Apresentação';
-                            }elseif($currentlang == 'es'){
-                                echo 'Descargar Folleto';
+                            // if($currentlang == 'pt-br'){
+                            //     echo 'Baixar Apresentação';
+                            // }elseif($currentlang == 'es'){
+                            //     echo 'Descargar Folleto';
+                            // }else{
+                            //     echo 'Download Brochure';
+                            // }
+
+                            if($currentlang == 'es'){
+                                $gravityID = 7;
+                            }elseif ($currentlang == 'pt-br') {
+                                $gravityID = 8;
                             }else{
-                                echo 'Download Brochure';
+                                $gravityID = 4;
                             }
                         ?>
                         </h5>
         
                         <?php
                             if($currentlang == 'pt-br'){
-                                echo '<p>Para mais detalhes, baixe o folheto do projeto</p>';
+                                echo '<p>Para mais detalhes</p>';
                             }elseif($currentlang == 'es'){
-                                echo '<p>Para mas detalles descarge el folleto</p>';
+                                echo '<p>Para mas detalles </p>';
                             }else{
-                                echo '<p>For more information download the brochure</p>';
+                                echo '<p>For more information </p>';
                             }
                         ?>
                         <?php 
-                        echo do_shortcode('[gravityform id="3" field_values="language=' . $currentlang . '&campaign=' . $campaign . '&source=' . $source . '&medium=' . $medium . '&term=' . $term . '&content=' . $content . '&urlsource=' . $urlSource. '" title="false" description="false" ]');
+                        echo do_shortcode('[gravityform id="'.$gravityID.'" field_values="language=' . $currentlang . '&campaign=' . $campaign . '&source=' . $source . '&medium=' . $medium . '&term=' . $term . '&content=' . $content . '&urlsource=' . $urlSource. '" title="false" description="false" ]');
                         //get_template_part('include/optin')
-                        endif;?>
+                        //endif;
+                        ?>
                         <?php if(get_field('video_button')):?>
                         <h5 class="brown mb-3">Videos</h5>
                         <p><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-file-video"></i> <?php the_field('video_button')?></a></p>
