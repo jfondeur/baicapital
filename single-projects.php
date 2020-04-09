@@ -219,9 +219,9 @@ global $currentlang;
                             if($currentlang == 'pt-br'){
                                 echo '<h5 class="brown">Para mais detalhes</h5>';
                             }elseif($currentlang == 'es'){
-                                echo '<h5 class="brown">Para mas detalles </h5>';
+                                echo '<h5 class="brown">Para mas detalles</h5>';
                             }else{
-                                echo '<h5 class="brown">For more information </h5>'; 
+                                echo '<h5 class="brown">For more information</h5>'; 
                             }
                         ?>
                         <?php 
