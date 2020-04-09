@@ -81,6 +81,10 @@ body.single-projects {
       .gform_body{
         .gfield{
           width: 100%;
+          margin-bottom:8px;
+          .gfield_label{
+            margin-bottom:0;
+          }
         }
       }
       .gform_footer{
