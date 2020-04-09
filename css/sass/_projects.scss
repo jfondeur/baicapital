@@ -71,6 +71,21 @@ body.single {
 
 body.page-template-page-proyecto,
 body.single-projects {
+  .sidebar{
+    .gform_wrapper{
+      .gform_body{
+        .gfield{
+          width: 100%;
+        }
+      }
+      .gform_footer{
+        .gform_button{
+          width: 100%;
+          margin-bottom:40%;
+        }
+      }
+    }
+  }
   .card {
     // @include breakpoint(md) {
     //   min-height: 321px;
