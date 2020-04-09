@@ -73,9 +73,11 @@ body.page-template-page-proyecto,
 body.single-projects {
   .sidebar{
     .gform_wrapper{
-      position: -webkit-sticky;
-      position: sticky;
-      top: 0;
+      @include breakpoint(md){
+        position: -webkit-sticky;
+        position: sticky;
+        top: 100px;
+      }
       .gform_body{
         .gfield{
           width: 100%;

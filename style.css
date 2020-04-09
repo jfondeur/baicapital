@@ -549,26 +549,28 @@ body.single .modal-body iframe {
   }
 }
 
-/* line 75, css/sass/_projects.scss */
-body.page-template-page-proyecto .sidebar .gform_wrapper,
-body.single-projects .sidebar .gform_wrapper {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+@media (min-width: 992px) {
+  /* line 75, css/sass/_projects.scss */
+  body.page-template-page-proyecto .sidebar .gform_wrapper,
+  body.single-projects .sidebar .gform_wrapper {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+  }
 }
-/* line 80, css/sass/_projects.scss */
+/* line 82, css/sass/_projects.scss */
 body.page-template-page-proyecto .sidebar .gform_wrapper .gform_body .gfield,
 body.single-projects .sidebar .gform_wrapper .gform_body .gfield {
   width: 100%;
 }
-/* line 85, css/sass/_projects.scss */
+/* line 87, css/sass/_projects.scss */
 body.page-template-page-proyecto .sidebar .gform_wrapper .gform_footer .gform_button,
 body.single-projects .sidebar .gform_wrapper .gform_footer .gform_button {
   width: 100%;
   margin-bottom: 40%;
 }
 @media (min-width: 992px) {
-  /* line 96, css/sass/_projects.scss */
+  /* line 98, css/sass/_projects.scss */
   body.page-template-page-proyecto .card .card-title,
   body.single-projects .card .card-title {
     min-height: 55px;
