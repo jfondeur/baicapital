@@ -195,7 +195,7 @@ global $currentlang;
                     </div>
                     <div class="col-md-4 sidebar">
                         <?php //if(get_field('url')): ?>
-                        <h5 class="brown">
+                        <!-- <h5 class="brown"> -->
                         <?php
                             // if($currentlang == 'pt-br'){
                             //     echo 'Baixar Apresentação';
@@ -213,15 +213,15 @@ global $currentlang;
                                 $gravityID = 4;
                             }
                         ?>
-                        </h5>
+                        <!-- </h5> -->
         
                         <?php
                             if($currentlang == 'pt-br'){
-                                echo '<p>Para mais detalhes</p>';
+                                echo '<h5 class="brown">Para mais detalhes</h5>';
                             }elseif($currentlang == 'es'){
-                                echo '<p>Para mas detalles </p>';
+                                echo '<h5 class="brown">Para mas detalles </h5>';
                             }else{
-                                echo '<p>For more information </p>';
+                                echo '<h5 class="brown">or more information </h5>';
                             }
                         ?>
                         <?php 
@@ -230,7 +230,7 @@ global $currentlang;
                         //endif;
                         ?>
                         <?php if(get_field('video_button')):?>
-                        <h5 class="brown mb-3">Videos</h5>
+                        <h5 class="brown my-3">Videos</h5>
                         <p><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-file-video"></i> <?php the_field('video_button')?></a></p>
                         <!-- Button trigger modal -->
                         <!-- Modal -->
