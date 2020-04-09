@@ -212,7 +212,7 @@ global $currentlang;
                                 // Query Arguments
                                 $args = array(
                                     'post_type' => array('projects'),
-                                    'posts_per_page' => 3,
+                                    'posts_per_page' => 2,
                                     'post__not_in' => array($currentID),
                                 );
 
@@ -234,7 +234,7 @@ global $currentlang;
                                 $type_equity    = get_field('type_equity');
                                 ?>
                                     <!-- Custom loop -->
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <div class="card">
                                             <a href="<?php echo $link; ?>">
                                                 <img class="card-img-top" src="<?php echo esc_url($project_img_url) ?>" alt="Card image cap">
