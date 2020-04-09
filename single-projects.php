@@ -192,6 +192,93 @@ global $currentlang;
                                 <?php endif;?>
                             </div>
                         </div>
+
+                        <div class="related projects">
+                        <h5 class="brown mt-3">
+                            <strong>
+                            <?php if($currentlang=='es'){
+                                echo 'Proyectos relacionados';
+                            }
+                            elseif($currentlang=='pt-br'){
+                                echo 'Projectos relacionados';
+                            }else{
+                                echo 'Related projects';
+                            }
+                        ?>
+                            </strong>
+                        </h5>
+                        <?php
+                                $currentID = get_the_ID();
+                                // Query Arguments
+                                $args = array(
+                                    'post_type' => array('projects'),
+                                    'posts_per_page' => 3,
+                                    'post__not_in' => array($currentID),
+                                );
+
+                                // The Query
+                                $projects = new WP_Query( $args );
+
+                                // The Loop
+                                if ( $projects->have_posts() ) : ?>
+                                <div class="row">
+                                <?php while ( $projects->have_posts() ) : $projects->the_post(); 
+                                $i++;
+                                $project_img_url = get_the_post_thumbnail_url(get_the_ID(),'project');
+                                $project_title  = get_the_title();
+                                $link           = get_the_permalink(); 
+                                $location       = get_field('location');
+                                $c              = get_the_category();
+                                $posttags       = get_the_tags();
+                                $type_eb5       = get_field('type_eb5');
+                                $type_equity    = get_field('type_equity');
+                                ?>
+                                    <!-- Custom loop -->
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <a href="<?php echo $link; ?>">
+                                                <img class="card-img-top" src="<?php echo esc_url($project_img_url) ?>" alt="Card image cap">
+                                            </a>
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between">
+                                                    <h5 class="card-title brown"><?php echo $project_title;?></h5>
+                                                    <p class="card-text"><?php echo $location->name; ?></p>
+                                                </div>
+                                                <?php if ($catName == 'eb5-en'):?>
+                                                    <p class="card-text"><?php echo "EB5" . " - " . $type_eb5; ?></p>
+                                                <?php elseif($catName == 'equity-en'):?>
+                                                    <p class="card-text"><?php echo "Equity" . " - " . $type_equity; ?></p>
+                                                <?php endif; ?>
+                                                <?php if ($catName == 'eb5-es'):?>
+                                                    <p class="card-text"><?php echo "EB5" . " - " . $type_eb5; ?></p>
+                                                <?php elseif($catName == 'equity-es'):?>
+                                                    <p class="card-text"><?php echo "Equity" . " - " . $type_equity; ?></p>
+                                                <?php endif; ?>
+                                                <a href="<?php echo $link; ?>" class="btn btn-primary btn-sm">
+                                                <?php
+                                                if($currentlang=='es'){
+                                                    echo 'Más información';
+                                                }
+                                                elseif($currentlang=='pt-br'){
+                                                    echo 'Saber mais';
+                                                }else{
+                                                    echo 'Learn more';
+                                                }
+                                                ?>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Custom loop -->
+                                <?php 
+                            if($i % 3 === 0): echo '</div><div class="row mt-5">'; endif;    
+                            endwhile; 
+                                
+                                endif; ?>
+                                </div> 
+                                <?php wp_reset_postdata();?>
+                                <!-- Loop -->
+                        </div>
                     </div>
                     <div class="col-md-4 sidebar">
                         <?php //if(get_field('url')): ?>
@@ -250,65 +337,6 @@ global $currentlang;
                         </div>
                         </div>
                         <?php endif;?>
-                        <h5 class="brown mt-3">
-                            <strong>
-                            <?php if($currentlang=='es'){
-                                echo 'Proyectos relacionados';
-                            }
-                            elseif($currentlang=='pt-br'){
-                                echo 'Projectos relacionados';
-                            }else{
-                                echo 'Related projects';
-                            }
-                        ?>
-                            </strong>
-                        </h5>
-						<?php
-                            $currentID = get_the_ID();
-                            // Query Arguments
-                            $args = array(
-                                'post_type' => array('projects'),
-                                'posts_per_page' => 3,
-                                'post__not_in' => array($currentID),
-                            );
-
-                            // The Query
-                            $projects = new WP_Query( $args );
-
-                            // The Loop
-                            if ( $projects->have_posts() ) : ?>
-                            <?php while ( $projects->have_posts() ) : $projects->the_post(); 
-                            $i++;
-                            $project_img_url = get_the_post_thumbnail_url(get_the_ID(),'project');
-                            $project_title = get_the_title();
-                            $link = get_the_permalink(); 
-                            $location = get_field('location');
-                            $c = get_the_category();
-                        ?>
-						<!-- Custom loop -->
-						
-							<div class="card mb-3">
-								<a href="<?php echo $link; ?>">
-									<img class="card-img-top" src="<?php echo esc_url($project_img_url) ?>" alt="Card image cap">
-								</a>
-								<div class="card-body">
-									<div class="d-flex justify-content-between">
-										<a href="<?php echo $link ?>" class="brown">
-                                            <h5 class="card-title"><?php echo $project_title;?></h5>
-                                        </a>
-										<p class="card-text"><?php echo $location->name; ?></p>
-									</div>
-									<!-- <p class="card-text"><?php //echo $c[0]->cat_name; ?></p> -->
-								</div>
-							</div>
-						
-						<!-- Custom loop -->
-					<?php endwhile; 
-					
-					endif; ?>
-				
-					<?php wp_reset_postdata();?>
-					<!-- Loop -->
                     </div>
                 </div>
             </div>
