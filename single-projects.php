@@ -250,7 +250,7 @@ global $currentlang;
                         </div>
                         </div>
                         <?php endif;?>
-                        <h5 class="brown">
+                        <h5 class="brown mt-3">
                             <strong>
                             <?php if($currentlang=='es'){
                                 echo 'Proyectos relacionados';
