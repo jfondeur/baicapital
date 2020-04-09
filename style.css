@@ -570,13 +570,19 @@ body.single-projects .sidebar .gform_wrapper .gform_body .gfield .gfield_label {
   margin-bottom: 0;
 }
 /* line 91, css/sass/_projects.scss */
+body.page-template-page-proyecto .sidebar .gform_wrapper .gform_body .ginput_container_address .address_country select,
+body.single-projects .sidebar .gform_wrapper .gform_body .ginput_container_address .address_country select {
+  width: 98%;
+  height: 37px;
+}
+/* line 99, css/sass/_projects.scss */
 body.page-template-page-proyecto .sidebar .gform_wrapper .gform_footer .gform_button,
 body.single-projects .sidebar .gform_wrapper .gform_footer .gform_button {
   width: 100%;
   margin-bottom: 40%;
 }
 @media (min-width: 992px) {
-  /* line 102, css/sass/_projects.scss */
+  /* line 110, css/sass/_projects.scss */
   body.page-template-page-proyecto .card .card-title,
   body.single-projects .card .card-title {
     min-height: 55px;
