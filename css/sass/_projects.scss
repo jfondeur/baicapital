@@ -1,4 +1,8 @@
 body.single {
+  .post-meta{
+    text-transform: capitalize;
+    color: $primaryColor;
+  }
   .projectTop {
     position: relative;
     .projectImage {

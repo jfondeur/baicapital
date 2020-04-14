@@ -323,6 +323,10 @@ body.page-template-page-investment .card ul .benefits i {
       color: #6b4c2d;
       padding: 5px 3px; }
 
+body.single .post-meta {
+  text-transform: capitalize;
+  color: #6b4c2d; }
+
 body.single .projectTop {
   position: relative; }
   body.single .projectTop .projectImage {
