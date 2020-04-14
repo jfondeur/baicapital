@@ -525,6 +525,10 @@ footer.footer .copyright {
   body.page-template-page-blog .card .card-title {
     min-height: 72px; } }
 
+body.page-template-page-blog .card .post-meta p {
+  text-transform: capitalize;
+  color: #6b4c2d; }
+
 #gform_wrapper_3 form .gform_footer {
   width: 100%; }
   #gform_wrapper_3 form .gform_footer input[type="submit"] {

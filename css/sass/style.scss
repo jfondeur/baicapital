@@ -222,6 +222,12 @@ body.page-template-page-blog {
                 min-height: 72px;
             }
         }
+        .post-meta{
+            p{
+                text-transform: capitalize;
+                color: $primaryColor;
+            }
+        }
     }
 }
 
