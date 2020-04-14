@@ -68,6 +68,9 @@ global $curentlang;
                                     <h5 class="card-title"><?php echo $project_title;?></h5>
                                 </a>
                             </div>
+                            <div class="post-meta">
+                                <p><?php the_time('F j, Y'); ?></p>
+                            </div>
                         </div>
                     </div>
                 </div>
