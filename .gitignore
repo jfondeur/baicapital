@@ -40,3 +40,4 @@ ehthumbs.db
 # Ignore docs files
 css/.sass-cache
 css/.sass-cache/*
+css/node_modules
