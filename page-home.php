@@ -1,7 +1,40 @@
 <?php /* Template name: homepage */ get_header();
 $currentlang = apply_filters( 'wpml_current_language', NULL );
 get_template_part('include/hero');
-?>    
+?> 
+
+    <section class="ass-seen-on d-none py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2><?php
+                        if($currentlang=='es'){
+                            echo 'Hemos sido reseñados en:';
+                        }
+                        elseif($currentlang=='pt-br'){
+                            echo 'Ass seen on';
+                        }
+                        else{
+                            echo 'Ass seen on';
+                        }
+                        ?>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <?php 
+                    $rows = get_field('ass_seen_on');
+                    if($rows):
+                        echo '<div class="col-md-4">';
+                        foreach($row as $rows):
+                            echo '<img src=" ' . $row['image'] .'" >';
+                        endforeach;
+                        echo '</div>';
+                    endif;
+                ?>
+            </div>
+        </div>
+    </section>
    
     <!-- SalesPitch -->
     <section class="not-us">
