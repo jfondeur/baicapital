@@ -235,7 +235,7 @@ body.home h4 {
     width: 50% !important; } }
 
 body.home .ass-seen-on .container .row:last-child .col-md-3 img {
-  margin-bottom: 20px;
+  margin: auto 0 20px;
   width: 40%; }
   @media (min-width: 992px) {
     body.home .ass-seen-on .container .row:last-child .col-md-3 img {
