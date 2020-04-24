@@ -7,7 +7,7 @@ get_template_part('include/hero');
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2><?php
+                    <h4 class="brown mb-2"><?php
                         if($currentlang=='es'){
                             echo 'Hemos sido reseñados en:';
                         }
@@ -18,7 +18,7 @@ get_template_part('include/hero');
                             echo 'Ass seen on';
                         }
                         ?>
-                    </h2>
+                    </h4>
                 </div>
             </div>
             <div class="row">
