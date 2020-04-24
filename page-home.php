@@ -7,6 +7,7 @@ get_template_part('include/hero');
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
+                    <!-- heading -->
                     <h4 class="brown mb-4"><?php
                         if($currentlang=='es'){
                            echo 'Hemos sido reseñados en:';
