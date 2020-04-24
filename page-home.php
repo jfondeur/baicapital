@@ -25,11 +25,11 @@ get_template_part('include/hero');
                 <?php 
                     $rows = get_field('ass_seen_on');
                     if($rows):
-                        echo '<div class="col-md-4">';
                         foreach($rows as $row):
+                            echo '<div class="col-md-4">';
                             echo '<img src=" ' . $row['image'] .'" >';
+                            echo '</div>';
                         endforeach;
-                        echo '</div>';
                     endif;
                 ?>
             </div>
