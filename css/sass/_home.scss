@@ -61,9 +61,11 @@ body.home {
                         align-items: center;
                     }
                     img{
+                        margin-bottom:20px;
+                        width: 40%;
                         @include breakpoint(md){
                             max-width: 35%;
-                            margin:auto;
+                            margin:auto 0;
                         }
                     }
                 }

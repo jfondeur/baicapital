@@ -230,10 +230,13 @@ body.home h4 {
   body.home .ass-seen-on .container .row:last-child {
     align-items: center; } }
 
-@media (min-width: 992px) {
-  body.home .ass-seen-on .container .row:last-child img {
-    max-width: 35%;
-    margin: auto; } }
+body.home .ass-seen-on .container .row:last-child img {
+  margin-bottom: 20px;
+  width: 40%; }
+  @media (min-width: 992px) {
+    body.home .ass-seen-on .container .row:last-child img {
+      max-width: 35%;
+      margin: auto 0; } }
 
 body.page-template-page-about .baiHero {
   min-height: 500px;
