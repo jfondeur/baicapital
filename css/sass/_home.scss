@@ -53,4 +53,21 @@ body.home {
             }
         }
     }
+    .ass-seen-on{
+        .container{
+            .row{
+                &:last-child{
+                    @include breakpoint(md){
+                        align-items: center;
+                    }
+                    img{
+                        @include breakpoint(md){
+                            max-width: 35%;
+                            margin:auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
