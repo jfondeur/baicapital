@@ -3,7 +3,7 @@ $currentlang = apply_filters( 'wpml_current_language', NULL );
 get_template_part('include/hero');
 ?> 
 
-    <section class="ass-seen-on d-none py-5">
+    <section class="ass-seen-on py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -26,7 +26,7 @@ get_template_part('include/hero');
                     $rows = get_field('ass_seen_on');
                     if($rows):
                         foreach($rows as $row):
-                            echo '<div class="col-md-4">';
+                            echo '<div class="col-md-3">';
                             echo '<img src=" ' . $row['image'] .'" >';
                             echo '</div>';
                         endforeach;
