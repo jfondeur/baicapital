@@ -59,15 +59,12 @@ body.home {
                 &:last-child{
                     @include breakpoint(md){
                         align-items: center;
-                    }
-                    img{
-                        margin-bottom:20px;
-                        width: 40%;
-                        @include breakpoint(md){
-                            max-width: 35%;
-                            margin:auto 0;
+                    }  
+                    .col-md-3{
+                        @include breakpoint(xs){
+                            width: 50% !important;
                         }
-                    }
+                    }  
                 }
             }
         }
