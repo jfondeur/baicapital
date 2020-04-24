@@ -26,7 +26,7 @@ get_template_part('include/hero');
                     $rows = get_field('ass_seen_on');
                     if($rows):
                         echo '<div class="col-md-4">';
-                        foreach($row as $rows):
+                        foreach($rows as $row):
                             echo '<img src=" ' . $row['image'] .'" >';
                         endforeach;
                         echo '</div>';
