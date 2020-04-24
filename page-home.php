@@ -9,7 +9,7 @@ get_template_part('include/hero');
                 <div class="col-md-12">
                     <h4 class="brown mb-4"><?php
                         if($currentlang=='es'){
-                            echo 'Hemos sido reseñados en:';
+                           echo 'Hemos sido reseñados en:';
                         }
                         elseif($currentlang=='pt-br'){
                             echo 'Ass seen on';
