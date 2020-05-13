@@ -38,7 +38,7 @@ global $curentlang;
             // Query Arguments
             $args = array(
                 'post_type' => array('post'),
-                'posts_per_page' => 10,
+                // 'posts_per_page' => 10,
                 // 'orderby' => 'rand',
                 //'category_name' => $pc[0]->cat_name,
             );
