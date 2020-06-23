@@ -1,5 +1,5 @@
 <?php 
-/* Template name: form */ 
+/* Template name: formpage */ 
 get_header();
 $currentlang = apply_filters( 'wpml_current_language', NULL );
 ?>
