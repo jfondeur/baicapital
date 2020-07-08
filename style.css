@@ -462,7 +462,7 @@ body.single-projects .sidebar .gform_wrapper .gform_footer .gform_button {
 .gform_wrapper .gform_fields {
   list-style: none;
   padding: 0;
-  display: flex;
+  display: flex !important;
   flex-wrap: wrap; }
   .gform_wrapper .gform_fields label {
     color: #6b4c2d;
