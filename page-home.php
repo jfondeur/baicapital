@@ -13,10 +13,10 @@ get_template_part('include/hero');
                            echo 'Hemos sido reseñados en:';
                         }
                         elseif($currentlang=='pt-br'){
-                            echo 'Ass seen on';
+                            echo 'As seen on';
                         }
                         else{
-                            echo 'Ass seen on';
+                            echo 'As seen on';
                         }
                         ?>
                     </h4>
