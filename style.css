@@ -584,3 +584,6 @@ li.gform_validation_container {
 
 body.single article .col-md-8 a {
   color: #007bff; }
+
+body.single article .col-md-8 img {
+  height: auto; }
