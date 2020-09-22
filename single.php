@@ -20,6 +20,9 @@ global $currentlang;
                         <h1 class="brown"><?php the_title(); ?></h1>
                         <p class="post-meta"><?php the_time('F j, Y'); ?> | By <?php the_author(); ?></p>
                         <?php the_content();?>
+                        <hr>
+                        <p>Disclaimer</p>
+                        <p>The material listed in this article is current as of the date noted. Information presented is for illustrative purposes only, and is not intended to serve as investment or legal advice as the availability and effectiveness of any strategy is dependent upon your individual situation and circumstances.</p>
                     </div>
                     <div class="col-md-4 sidebar">
                         <div class="sidebarCta border rounded d-none">
