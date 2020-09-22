@@ -18,7 +18,7 @@ global $currentlang;
                             <?php the_post_thumbnail('project'); // Fullsize image for the single post ?>
                         </div>
                         <h1 class="brown"><?php the_title(); ?></h1>
-                        <p class="post-meta"><?php the_time('F j, Y'); ?> | By <?php echo $author_name; ?></p>
+                        <p class="post-meta"><?php the_time('F j, Y'); ?> | By <?php the_author(); ?></p>
                         <?php the_content();?>
                     </div>
                     <div class="col-md-4 sidebar">
