@@ -277,3 +277,12 @@ li.gform_validation_container{
 .hidden_sub_label{
     display: none;
 }
+
+//blog
+body.single{
+    article{
+        a{
+            color:initial;
+        }
+    }
+}
