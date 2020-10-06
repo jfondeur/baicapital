@@ -9,14 +9,16 @@
 					<div class="footer-2">
 						<ul class="list-unstyled">
 							<li class="mb-2"><a href="https://baicapital.com/about">About BAI Capital</a></li>
-							<li class="mb-2"><a href="https://baicapital.com/eb5-projects">EB5 Projects</a></li>
-							<li class="mb-2 not-us"><a href="https://baicapital.com/equity-projects">Equity projects</a></li>
+							<li class="mb-2"><a href="https:/baicapital.com/visa-eb5-projects">EB5 Projects</a></li>
+							<li class="mb-2"><a href="https://baicapital.com/investment-projects">Investment projects</a></li>
+							<li class="mb-2"><a href="https://baicapital.com/property-projects">Property projects</a></li>
 						</ul>
 					</div>
 					<div class="footer-3">
 						<ul class="list-unstyled">
-							<li class="mb-2"><a href="https://baicapital.com/equity-investment">Equity</a></li>
-							<li class="mb-2 not-us"><a href="https://baicapital.com/en/eb5-investment">EB5</a></li>
+							<li class="mb-2"><a href="https://baicapital.com/investment">Investment</a></li>
+							<li class="mb-2 "><a href="https://baicapital.com/en/eb5-investment">Visas</a></li>
+							<li class="mb-2 "><a href="https://baicapital.com/realty">Property</a></li>
 						</ul>
 					</div>
 					<div class="footer-4">
