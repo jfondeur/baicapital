@@ -1,4 +1,4 @@
-		<?php global $currentlang; ?>
+
 		<!-- footer -->
 		<footer class="footer text-center py-5" role="contentinfo">
 			<div class="container">
@@ -8,67 +8,28 @@
 					</div>
 					<div class="footer-2">
 						<ul class="list-unstyled">
-						<?php if($currentlang == 'pt-br'): ?>
-							<li class="mb-2"><a href="/pt-br/sobrebaicapital">Sobre BAI Capital</a></li>
-							<li class="mb-2"><a href="/pt-br/projetos-eb5/">Projetos EB5</a></li>
-							<li class="mb-2 not-us"><a href="/pt-br/projetos-equity">Projetos Equity</a></li>
-						<?php elseif($currentlang == 'es'): ?>
-							<li class="mb-2"><a href="/es/sobre-bai-capital">Sobre BAI Capital</a></li>
-							<li class="mb-2"><a href="/es/proyectos-eb5">Proyetos EB5</a></li>
-							<li class="mb-2 not-us"><a href="/proyectos-en-equity">Proyetos Equity</a></li>
-						<?php elseif($currentlang == 'en'): ?>
-							<li class="mb-2"><a href="/about">About BAI Capital</a></li>
-							<li class="mb-2"><a href="/eb5-projects">EB5 Projects</a></li>
-							<li class="mb-2 not-us"><a href="/equity-projects">Equity projects</a></li>
-						<?php endif;?>
+							<li class="mb-2"><a href="https://baicapital.com/about">About BAI Capital</a></li>
+							<li class="mb-2"><a href="https://baicapital.com/eb5-projects">EB5 Projects</a></li>
+							<li class="mb-2 not-us"><a href="https://baicapital.com/equity-projects">Equity projects</a></li>
 						</ul>
 					</div>
 					<div class="footer-3">
 						<ul class="list-unstyled">
-						<?php if($currentlang == 'pt-br'): ?>
-							<li class="mb-2"><a href="/pt-br/investimento-equity">Equity</a></li>
-							<li class="mb-2 not-us"><a href="/investimento-eb-5">EB5</a></li>
-						<?php elseif($currentlang == 'es'): ?>
-							<li class="mb-2"><a href="/es/inversion-equity">Equity</a></li>
-							<li class="mb-2 not-us"><a href="/es/inversion-eb5">EB5</a></li>
-						<?php elseif($currentlang == 'en'): ?>
-							<li class="mb-2"><a href="/equity-investment">Equity</a></li>
-							<li class="mb-2 not-us"><a href="/en/eb5-investment">EB5</a></li>
-						<?php endif;?>
-
+							<li class="mb-2"><a href="https://baicapital.com/equity-investment">Equity</a></li>
+							<li class="mb-2 not-us"><a href="https://baicapital.com/en/eb5-investment">EB5</a></li>
 						</ul>
 					</div>
 					<div class="footer-4">
 						<ul class="list-unstyled">
-							<!-- <li class="mb-2"><a href="#">Imprensa</a></li> -->
-						<?php if($currentlang == 'pt-br'): ?>
-							<li class="mb-2"><a href="/pt-br/blog/">Blog</a></li>
-							<li class="mb-2"><a href="/pt-br/contact/">Contato</a></li>
-							<li class="mb-2"><a href="/legal-notices-and-disclaimers/">Disclaimers</a></li>
-						<?php elseif($currentlang == 'es'): ?>
-							<li class="mb-2"><a href="/es/blog/">Blog</a></li>
-							<li class="mb-2"><a href="/es/contacto/">Contacto</a></li>
-							<li class="mb-2"><a href="/legal-notices-and-disclaimers/">Disclaimers</a></li>
-						<?php elseif($currentlang == 'en'): ?>
-							<li class="mb-2"><a href="/blog/">Blog</a></li>
-							<li class="mb-2"><a href="/contact/">Contact</a></li>
-							<li class="mb-2"><a href="/legal-notices-and-disclaimers/">Disclaimers</a></li>
-						<?php endif;?>
+							<li class="mb-2"><a href="/">Blog</a></li>
+							<li class="mb-2"><a href="https://baicapital.com/contact/">Contact</a></li>
+							<li class="mb-2"><a href="https://blog.baicapital.com/legal-notices-and-disclaimers/">Disclaimers</a></li>
 						</ul>
 					</div>
 					<div class="newsletter footer-5 d-none">
 						<h6 class="brown">Newsletter</h6>
 						<?php 
-							if($currentlang == 'pt-br'){
-								echo '<p>Se inscreva e receba atualizações importantes no seu email</p>';
-                                get_template_part('include/optin');
-                            }elseif($currentlang == 'es'){
-								echo '<p>Si inscribe y recibe actualizaciones importantes en su correo electrónico</p>';
-                                get_template_part('include/optin-es');
-							}else{
-								echo '<p>Sign up for important email updates</p>';
-								get_template_part('include/optin-en');
-							}
+							get_template_part('include/optin-en');
 						?>
 					</div>
 				</div>
@@ -82,8 +43,6 @@
 		</footer>
 			<!-- /footer -->
 		<?php wp_footer(); ?>
-		<script type="text/javascript" src="https://qz363.infusionsoft.com/app/webTracking/getTrackingCode"></script>
-		<script type="text/javascript" src="https://qz363.infusionsoft.com/app/timezone/timezoneInputJs?xid=6730495c336af971211de89344250e00"></script>
 
 	</body>
 </html>
