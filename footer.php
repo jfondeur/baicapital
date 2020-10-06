@@ -36,8 +36,7 @@
 			</div>
 			<!-- copyright -->
 			<p class="copyright mt-5">
-				&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Developed by', 'html5blank'); ?>
-				<a href="//jeanfondeur.com" title="Jean Fondeur" target="_blank">Jean Fondeur</a>.
+				&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>
 			</p>
 			<!-- /copyright -->
 		</footer>
