@@ -34,7 +34,7 @@ $currentlang = apply_filters( 'wpml_current_language', NULL );
                             echo '<a class="btn btn-primary" href="/es/contacto/">Pongase en contacto con Bai Capital</a>';
                         }else{
                             //get_template_part('include/optin-en');
-                            echo '<a class="btn btn-primary" href="/contact/">Get in touch with Bai Capital</a>';
+                            echo '<a class="btn btn-primary" href="baicapital.com/contact/">Get in touch with Bai Capital</a>';
                         }
                     ?>
                 </div>
