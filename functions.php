@@ -264,7 +264,8 @@ function html5wp_excerpt($length_callback = '', $more_callback = '')
     $output = get_the_excerpt();
     $output = apply_filters('wptexturize', $output);
     $output = apply_filters('convert_chars', $output);
-    $output = '<p>' . $output . '</p>';
+    $output_f = str_replace("&nbsp;", "", $output);
+    $output = '<p>' . $output_f . '</p>';
     echo $output;
 }
 
