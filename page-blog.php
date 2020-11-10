@@ -68,12 +68,12 @@ global $curentlang;
                                     <h5 class="card-title"><?php echo $project_title;?></h5>
                                 </a>
                             </div>
-                            <p class="card-text">
-                                <?php html5wp_excerpt('html5wp_index'); ?>
-                            </p>
                             <div class="post-meta">
                                 <p><?php the_time('F j, Y'); ?></p>
                             </div>
+                            <p class="card-text">
+                                <?php html5wp_excerpt('html5wp_index'); ?>
+                            </p>
                         </div>
                     </div>
                 </div>
